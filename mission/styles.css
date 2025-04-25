@@ -30,15 +30,15 @@ header {
 }
 
 header h1 {
-  font-size: 28px;
-  letter-spacing: 2px;
+  font-size: 36px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 header h2 {
-  font-size: 14px;
+  font-size: 18px;
   color: #006eb6;
   text-transform: uppercase;
   letter-spacing: 2px;
