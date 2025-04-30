@@ -10,17 +10,15 @@ body {
   line-height: 1.5;
   color: #000;
   background-color: #fff;
-  border: 1px solid #ccc;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10px;
 }
 
 /* Main content container with frame */
 .container {
   max-width: 600px;
-  margin: 40px auto;
   padding: 20px;
+  border: 1px solid #ccc;
+  margin: 40px auto;
+  padding: 40px 40px;
 }
 
 /* Header */
@@ -71,4 +69,14 @@ footer {
 footer img {
   width: 150px;
   height: auto;
+}
+
+/* Dark mode */
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.dark h2 {
+  color: #4f9acf;
 }

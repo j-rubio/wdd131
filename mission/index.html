@@ -10,8 +10,14 @@
     />
     <title>BYUI Mission Statement</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./mission.js" defer></script>
   </head>
   <body>
+    <label for="theme-select">Choose the theme:</label>
+    <select name="themes" id="theme-select">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
     <div class="container">
       <header>
         <h1>Mission Statement</h1>
@@ -44,7 +50,11 @@
         </ol>
       </main>
       <footer>
-        <img src="./byui-logo_blue.webp" alt="BYUI logo" />
+        <img
+          id="byui-logo_footer"
+          src="./byui-logo_blue.webp"
+          alt="BYUI logo"
+        />
       </footer>
     </div>
   </body>
