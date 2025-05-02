@@ -1,5 +1,5 @@
 const themeSelector = document.querySelector('select')
-const footerLogo = document.getElementById('byui-logo_footer')
+const footerLogo = document.querySelector('#byui-logo_footer')
 
 function changeTheme() {
   if (themeSelector.value == 'dark') {
