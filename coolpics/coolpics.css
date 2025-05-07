@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=family=Mooli&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,7 +8,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=family=Mooli&display=swap');
 :root {
   --primary-color: #52489c;
   --secondary-color: #59c3c3;
@@ -24,6 +25,16 @@ img {
   object-fit: cover;
   border: 6px solid white;
   box-shadow: 4px 4px 8px rgba(16, 16, 16, 0.863);
+}
+
+/* menu setting for small and medium devices (phone & tablet)*/
+header button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
 body {
@@ -45,6 +56,7 @@ main {
 
 main h2 {
   padding-top: 20px;
+  font-family: var(--secondary-font);
 }
 
 .gallery {
