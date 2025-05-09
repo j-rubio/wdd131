@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=family=Mooli&display=swap');
 
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Mooli, san-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -8,23 +17,16 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #52489c;
-  --secondary-color: #59c3c3;
-  --accent-color: #f45b69;
-  --text-dark: #333;
-  --text-light: #ebebeb;
-  --primary-font: Arial, Helvetica, sans-serif;
-  --secondary-font: Mooli, san-serif;
+body {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
 }
 
-img {
-  width: 250px;
-  height: 250px;
-  max-width: 100%;
-  object-fit: cover;
-  border: 6px solid white;
-  box-shadow: 4px 4px 8px rgba(16, 16, 16, 0.863);
+header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* menu setting for small and medium devices (phone & tablet)*/
@@ -37,16 +39,9 @@ header button {
   cursor: pointer;
 }
 
-body {
-  font-family: var(--primary-font);
-  font-size: 1.2em;
-}
-
-header {
-  background-color: #51489c;
-  color: var(--text-light);
-  text-align: center;
-  padding: 20px 0;
+nav {
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -67,20 +62,28 @@ main h2 {
   padding-bottom: 20px;
 }
 
+img {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 4px 4px 8px rgba(16, 16, 16, 0.863);
+}
+
 footer {
-  background-color: #51489c;
+  background-color: var(--primary-color);
   color: var(--text-light);
   padding-left: 10%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-a:link,
 a:visited {
   color: var(--accent-color);
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -88,9 +91,13 @@ a:visited {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  nav {
+    display: none;
+  }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,5 +108,11 @@ a:visited {
 
   header button {
     display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
