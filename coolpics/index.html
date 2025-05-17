@@ -14,7 +14,7 @@
     <header>
       <h1>Cool Pics 📷</h1>
       <button>Menu</button>
-      <nav>
+      <nav class="hide">
         <a href="/">Home</a>
         <a href="/people">People</a>
         <a href="/places">Places</a>
@@ -39,5 +39,11 @@
     <footer>
       <p>©2025 Not a real site 😀</p>
     </footer>
+    <dialog class="image-modal">
+      <div style="position: relative; display: inline-block">
+        <button class="close-viewer">X</button>
+        <img src="./images/your-image.jpeg" alt="Modal image" />
+      </div>
+    </dialog>
   </body>
 </html>
