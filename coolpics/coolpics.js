@@ -7,7 +7,6 @@ menuButton.addEventListener('click', () => {
 // function handler
 function handleResize() {
   const windowSize = window.innerWidth
-  // console.log(windowSize)
 
   const menu = document.querySelector('nav')
 
@@ -24,35 +23,14 @@ handleResize()
 // Update on windows resize
 window.addEventListener('resize', handleResize)
 
-/****************************** */
-
 // creating all the modal-needed elements
 const gallery = document.querySelector('.gallery')
 
 const modal = document.createElement('dialog')
 modal.classList.add('image-modal')
-// modal.innerHTML = `<img><button class='close-viewer'>X</button>`
+
 modal.innerHTML = `<button class='close-viewer'>X</button><img>`
 
-// modal.innerHTML = `<dialog class="image-modal">
-//   <div style="position: relative; display: inline-block;">
-//     <button class="close-viewer">X</button>
-//     <img src="./images/your-image.jpeg" alt="Modal image" />
-//   </div>
-// </dialog>
-// `
-
-// modal.innerHTML = `<dialog class="image-modal">
-//   <div class="modal-content">
-//     <button class="close-viewer">X</button>
-//     <img src="" alt="Enlarged view" />
-//   </div>
-// </dialog>`
-// modal.innerHTML = `
-//   <div class="image-modal style="position: relative; display: inline-block;">
-//     <button class="close-viewer">X</button>
-//     <img src="./images/your-image.jpeg" alt="Modal image" />
-//   </div>`
 document.body.appendChild(modal)
 
 const modalImage = modal.querySelector('img')
@@ -70,17 +48,8 @@ function modalHandler(e) {
 
   const imageSrcParsed = './images/' + imageSrc.split('-')[0] + '-full.jpeg'
 
-  console.log(imageSrcFullPath)
-  console.log(imageAlt)
-  console.log(imageSrcParsed)
-
   modalImage.src = imageSrcParsed
   modalImage.alt = imageAlt
-  // modal.querySelector('img').src = imageSrcParsed
-  // modal.querySelector('img').alt = imageAlt
-
-  console.log(modalImage.src)
-  console.log(modalImage.alt)
 
   modal.showModal()
 }
@@ -96,12 +65,3 @@ closeButton.addEventListener('click', () => {
 modal.addEventListener('click', (e) => {
   if (e.target === modal) modal.close()
 })
-
-// modal.addEventListener('click', (e) => {
-//   // Close if clicking outside the image (on the modal backdrop)
-//   const clickedInsideImage = modalImage.contains(e.target)
-//   const clickedCloseButton = closeButton.contains(e.target)
-//   if (!clickedInsideImage && !clickedCloseButton) {
-//     modal.close()
-//   }
-// })
