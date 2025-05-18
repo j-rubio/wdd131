@@ -172,11 +172,11 @@ a:visited {
   .image-modal img {
     max-width: 90vw;
     max-height: 90vh;
-    margin-left: 3vw;
   }
 
   .image-modal img,
   .close-viewer {
     margin-top: 3vh;
+    margin-left: 3vw;
   }
 }
