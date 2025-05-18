@@ -151,6 +151,14 @@ a:visited {
 }
 
 @media screen and (min-width: 900px) {
+  .image-modal img,
+  .close-viewer {
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -172,11 +180,5 @@ a:visited {
   .image-modal img {
     max-width: 90vw;
     max-height: 90vh;
-  }
-
-  .image-modal img,
-  .close-viewer {
-    margin-top: 3vh;
-    margin-left: 3vw;
   }
 }
