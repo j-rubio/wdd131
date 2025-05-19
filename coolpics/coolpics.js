@@ -4,7 +4,7 @@ menuButton.addEventListener('click', () => {
   document.querySelector('nav').classList.toggle('hide')
 })
 
-// function handler
+// Resize handler function
 function handleResize() {
   const windowSize = window.innerWidth
 
@@ -24,19 +24,21 @@ handleResize()
 window.addEventListener('resize', handleResize)
 
 // creating all the modal-needed elements
-const gallery = document.querySelector('.gallery')
-
 const modal = document.createElement('dialog')
+
 modal.classList.add('image-modal')
 
-modal.innerHTML = `<div class='modal-content'><button class='close-viewer'>X</button><img></div>`
+modal.innerHTML = `<button class='close-viewer'>X</button><img>`
 
 document.body.appendChild(modal)
 
-const modalImage = modal.querySelector('img')
-const closeButton = modal.querySelector('.close-viewer')
+// viewerTemplate function
+function viewerTemplate(pic, alt) {
+  return `<div class='modal-content'><button class='close-viewer'>X</button><img src="${pic}" alt="${alt}"></div>`
+}
 
-function modalHandler(e) {
+// viewHandler
+function viewHandler(e) {
   const imageClicked = e.target.closest('img')
   if (!imageClicked) return
 
@@ -48,20 +50,22 @@ function modalHandler(e) {
 
   const imageSrcParsed = './images/' + imageSrc.split('-')[0] + '-full.jpeg'
 
-  modalImage.src = imageSrcParsed
-  modalImage.alt = imageAlt
+  modal.innerHTML = viewerTemplate(imageSrcParsed, imageAlt)
 
   modal.showModal()
 }
 
-gallery.addEventListener('click', modalHandler)
+const gallery = document.querySelector('.gallery')
+gallery.addEventListener('click', viewHandler)
 
-// close modal on 'X' button
-closeButton.addEventListener('click', () => {
-  modal.close()
-})
-
-// close modal on outside click.
 modal.addEventListener('click', (e) => {
-  if (e.target === modal) modal.close()
+  // Close modal on clicking close button
+  if (e.target.classList.contains('close-viewer')) {
+    modal.close()
+  }
+
+  // Also close modal on clicking outside the image/content
+  if (e.target === modal) {
+    modal.close()
+  }
 })
