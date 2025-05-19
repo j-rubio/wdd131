@@ -10,7 +10,7 @@ function handleResize() {
 
   const menu = document.querySelector('nav')
 
-  if (windowSize > 1000) {
+  if (windowSize >= 1000) {
     menu.classList.remove('hide')
   } else {
     menu.classList.add('hide')

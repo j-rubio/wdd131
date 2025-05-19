@@ -82,7 +82,6 @@ img {
 dialog[open] {
   width: 100%;
   max-width: 100vw;
-  /* height: auto; */
   height: 100lvh;
   padding: 0;
   margin: 0;
