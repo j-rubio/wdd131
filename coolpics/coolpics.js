@@ -29,7 +29,7 @@ const gallery = document.querySelector('.gallery')
 const modal = document.createElement('dialog')
 modal.classList.add('image-modal')
 
-modal.innerHTML = `<button class='close-viewer'>X</button><img>`
+modal.innerHTML = `<div class='modal-content'><button class='close-viewer'>X</button><img></div>`
 
 document.body.appendChild(modal)
 
