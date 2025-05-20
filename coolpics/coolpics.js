@@ -26,15 +26,13 @@ window.addEventListener('resize', handleResize)
 // creating all the modal-needed elements
 const modal = document.createElement('dialog')
 
-modal.classList.add('image-modal')
-
-modal.innerHTML = `<button class='close-viewer'>X</button><img>`
+modal.innerHTML = ''
 
 document.body.appendChild(modal)
 
 // viewerTemplate function
-function viewerTemplate(pic, alt) {
-  return `<div class='modal-content'><button class='close-viewer'>X</button><img src="${pic}" alt="${alt}"></div>`
+function viewerTemplate(src, alt) {
+  return `<div class='modal-content'><button class='close-viewer'>X</button><img src="${src}" alt="${alt}"></div>`
 }
 
 // viewHandler
