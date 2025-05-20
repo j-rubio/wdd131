@@ -85,7 +85,7 @@ dialog[open] {
   padding: 0;
   margin: 0;
   border: none;
-  background: rgba(0, 0, 0, 0.6);
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,6 +93,10 @@ dialog[open] {
 
 dialog {
   display: none;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
