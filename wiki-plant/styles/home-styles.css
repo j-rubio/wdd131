@@ -272,7 +272,7 @@ footer {
 /*section with the torah scroll and biblical account */
 #torah-background {
   height: 725px;
-  background-color: #013354;
+  background-color: #011523;
   grid-column: 1 / 11;
   grid-row: 9 / 15;
   margin-bottom: 6em;
@@ -309,7 +309,7 @@ footer {
 /* section with Daniel's story */
 #daniel-background {
   width: 100%;
-  background-color: #777708;
+  background-color: #848406;
   grid-column: 1 / 11;
   grid-row: 16 / 18;
   margin-top: 3em;
@@ -330,7 +330,7 @@ footer {
 }
 
 .daniel-story h2 {
-  color: #013354;
+  color: #011523;
   font-family: 'Segoe UI', sans-serif;
 }
 
