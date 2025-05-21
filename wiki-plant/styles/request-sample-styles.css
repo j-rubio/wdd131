@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&family=Roboto&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    margin-left: 3em;
+    
+}
+
+nav a {
+    text-align: center;
+    color: #789a79;
+    text-decoration: none;
+    padding: 10px 35px 10px 35px;
+    align-self: flex-end;
+}
+
+nav a:hover {
+    background-color: #00577b;
+    color: white;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    width: 80px;
+    margin-left: 2em;
+    margin-right: 0;
+
+}
+
+.logo-text {
+    display: flex;
+    align-items: flex-end;
+    color: #789a79;
+    margin-left: 0;
+    margin-right: -5em;
+    margin-bottom: 0.5em;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+
+/* plant-grid */
+.request-sample-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    row-gap: 0.3em;
+}
+
+
+#hero-img{
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    border-radius: 1.3em;
+    margin-top: 2em;
+}
+
+
+#hero-text {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: -0.6em;
+    padding: 0.5em;
+    color: #00577b;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+#request-sample-text {
+    grid-column: 6 / 10;
+    grid-row: 1 / 2;
+    background-color:#00577b;
+    color: white;
+    padding: 2em;
+    border-radius: 2em;
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+
+
+form {
+    grid-column: 4 / 8;
+    grid-row: 2 / 3;
+    background-color: #b59848;
+    color: white;
+    border-radius: 1em;
+    margin: 2em 0;
+    max-width: 100%;
+    padding: 2em;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+
+label {
+    /* uniform size & alignment */
+    display: inline;
+    width: auto;
+    max-width: 100%;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings.
+            By default, textareas have a monospace font. */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: auto;
+    width: 100%;
+    min-height: 1em;
+}
+
+
+
+/* #msg {
+    height: 5em;
+} */
+
+button {
+    /* This extramargin represent roughly the same space as the space
+            between the labels and their text fields */
+    margin-left: auto;
+    background-color: #00577b;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: #789a79;
+}
+
+
+#terms {
+    /* display: inline; */
+    width: auto;
+    margin-top: 2em;    
+}
+
+
+#state-selector {
+    margin-left: auto;
+    background-color: white;
+    color: #00577b;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+
+#extract {
+    margin-left: auto;
+    background-color: #b59848;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+#feedback {
+    background-color: #789a79;
+    grid-column: 3 / 9;
+    grid-row: 2 / 3;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    color: white;
+    /* padding: 2rem; */
+    padding: 2em;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 1.3em;
+    /* make this element invisible until we are ready for it */
+    display: none;
+    z-index: 99999;
+}
+
+
+
+/* I keep this rule for future features */
+/* .moveDown {
+    margin-top: 3em;
+} */
+
+
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+
+
+h4 {
+    color: #789a79;
+}
+
+
+h2 {
+    margin: 0;
+}
+
+
+/* footer */
+footer {
+    background-color: white;
+    border-top: 0.3em solid #b59848;
+    padding: 25px 50px;
+    /* margin-top: 150px; */
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-copy-right-and-author-link {
+    color: #b59848;
+    font-size: 0.9em;
+
+}
+
+.footer-site-plan-link a {
+    color: #b59848;
+    font-size: 1.2em;
+}
+
+.footer-plants-link a {
+    color: #b59848;
+    font-size: 1.2em;
+}
+
+.footer-contact-us-link a {
+    color: #b59848;
+    font-size: 1.2em;
+}
+
+
+footer a {
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #00577b;
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}

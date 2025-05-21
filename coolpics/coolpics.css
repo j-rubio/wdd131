@@ -39,6 +39,13 @@ header button {
   cursor: pointer;
 }
 
+/* adding some accessibility to the button */
+header button:focus {
+  outline: 2px solid var(--accent-color);
+  padding: 2px;
+  border-radius: 4px;
+}
+
 nav {
   display: flex;
   flex-direction: column;

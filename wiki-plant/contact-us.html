@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Plant extracts reference">
+    <meta name="author" content="Julius Rubio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki-Plant | Your reference for plant extracts | Contact Us</title>
+    <link
+      rel="shortcut icon"
+      href="./images/wiki-plant-logo-transparent-green.png"
+      type="image/x-icon">
+    <link rel="stylesheet" href="./styles/contact-us-styles.css">
+  </head>
+  <body id="body-contact-us-page">
+    <div id="content">
+      <header>
+        <div class="logo-box">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="./images/wiki-plant-logo-transparent-green.png"
+              alt="wiki plant logo">
+          </a>
+          <h2 class="logo-text">Wiki-Plant</h2>
+        </div>
+
+        <nav>
+          <a class="index-link" href="./index.html">Home</a>
+          <a class="plants-link" href="./index.html#plants-heading">Plants</a>
+          <a class="about-us-link" href="./about-us.html">About Us</a>
+          <a class="contact-us-link" href="./contact-us.html">Contact Us</a>
+        </nav>
+      </header>
+      
+      <main class="contact-us-grid">              
+        <img
+          id="contact-us-background-img"
+          src="./images/other-plant-pictures/plants-in-flasks.jpg"
+          alt="plant samples in flasks">
+
+
+        <div id="contact-us-text">
+          <p>
+            If you want to know more and get involved in the development of this
+            project, you can contact us directly:
+          </p>
+
+          <ul id="contact-info">
+            <li id="phone">
+              <img
+                id="contact-phone-icon"
+                src="./images/phone-icon.png"
+                alt="phone icon">
+              <p id="contact-phone-text">Phone: +1 123 456 7788</p>
+            </li>
+            <li>
+              <img
+                id="contact-email-icon"
+                src="./images/email-icon.png"
+                alt="email icon">
+              <p id="contact-email-text">Email: hello@wiki-plant.com</p>
+            </li>
+          </ul>
+          
+        </div>
+        
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+          <div id="form-text">
+            <p>
+              Or if you want us to reach out to you, please leave your contact
+              details in the form below.
+            </p>
+          </div>
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+              <label for="mail">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Contact Me</button>
+            </li>
+          </ul>
+          <input id="terms" type="checkbox" name="terms" value="accept-terms" checked>I accept the terms and conditions.
+        </form>
+      </main>
+
+      <footer>
+        <p class="footer-copy-right-and-author-link">Wiki-Plant &copy; 2022</p>
+        <p class="footer-site-plan-link">
+          <a href="./site-plan.html">Site Plan</a>
+        </p>
+        <p class="footer-plants-link">
+          <a href="./index.html#plants-heading">Plants</a>
+        </p>
+        <p class="footer-contact-us-link">
+          <a href="./contact-us.html">Contact Us</a>
+        </p>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="./images/facebook.png" alt="fb icon">
+          </a>
+
+          <a href="https://twitter.com" target="_blank">
+            <img src="./images/twitter.png" alt="twitter icon">
+          </a>
+
+          <a href="https://instagram.com" target="_blank">
+            <img src="./images/instagram.png" alt="instagram icon">
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById('feedback');
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener('submit', function (e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          'Hello ' +
+          formElement.user_name.value +
+          '! Thank you for your message. We will get back with you as soon as possible!' +
+          '<br><br>If you do not get an email from us at ' +
+          `<strong>${formElement.user_email.value}</strong>` +
+          ' within the next 48 hours, please feel free to reach out to us again.';
+        // make the feedback element visible.
+        feedbackElement.style.display = 'block';
+        // add a class to move everything down so our message doesn't cover it.
+        // document.body.classList.toggle('moveDown');
+      });
+    </script>
+  </body>
+</html>
