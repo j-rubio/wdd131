@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Mooli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap');
+
+:root {
+  --primary-color: #af1b3f;
+  --secondary-color: #473144;
+  --accent-color: #efc69b;
+  --primary-font: Helvetica, Arial, sans-serif;
+  --secondary-font: Lora, Impact, serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: large;
+  padding: 10px;
+}
+
+.skiptocontent a:focus {
+  top: 0;
+}
+
+header > h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+nav > ul {
+  display: grid;
+  grid-template-columns: 75px 75px 75px;
+  justify-content: end;
+  justify-items: end;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding: 20px 60px;
+}
+
+nav > ul li {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: large;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
+
+h1,
+h2 {
+  font-family: var(--secondary-font);
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
