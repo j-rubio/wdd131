@@ -49,6 +49,7 @@ h1 {
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
   padding: 10px 0;
+  width: 100%;
 }
 
 .main-nav ul {
@@ -56,7 +57,6 @@ h1 {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
-  margin-right: 40px;
 }
 
 .main-nav a {
@@ -69,12 +69,15 @@ h1 {
   padding: 0 3px 0 3px;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .content-area {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
   gap: 30px;
 }
 
@@ -110,9 +113,4 @@ h1 {
 
 .review-content p > a {
   color: var(--color-accent);
-}
-
-.sidebar {
-  padding-left: 30px;
-  /* Removed left border */
 }
