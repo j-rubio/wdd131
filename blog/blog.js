@@ -52,7 +52,12 @@ function createReviewHTML(book) {
       <div class="review-content">
         <h2>${book.title}</h2>
         <div>
-          <img src="${book.imgSrc}" alt="${book.imgAlt}" />
+          <img 
+            src="${book.imgSrc}" 
+            alt="${book.imgAlt}" 
+            width="150" 
+            height="200"
+          />
         </div>
         <p>${book.description} <a href="#">Read more...</a></p>
       </div>
