@@ -5,7 +5,8 @@ const bookReviews = [
     date: 'July 5, 2022',
     description:
       'If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.',
-    imgSrc: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg',
+    // imgSrc: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg',
+    imgSrc: './images/Magkycover2.jpg',
     imgAlt: 'Magyk book cover',
     ages: '10-14',
     genre: 'Fantasy',
@@ -17,8 +18,9 @@ const bookReviews = [
     date: 'December 12, 2021',
     description:
       'Rick Riordan explores Norse mythology in a fast-paced adventure.',
-    imgSrc:
-      'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
+    // imgSrc:
+    // 'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
+    imgSrc: './images/xWuyBAAAQBAJ.jpeg',
     imgAlt: 'Sword of Summer cover',
     ages: '12-16',
     genre: 'Fantasy',
@@ -30,7 +32,8 @@ const bookReviews = [
     date: 'Feb 12, 2022',
     description:
       'A powerful Orb is stolen and a boy named Garion embarks on an epic quest.',
-    imgSrc: 'https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg',
+    // imgSrc: 'https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg',
+    imgSrc: './images/41ZxXA+nInL.jpg',
     imgAlt: 'Pawn of Prophecy cover',
     ages: '12-16',
     genre: 'Fantasy',
