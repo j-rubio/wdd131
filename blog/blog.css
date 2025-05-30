@@ -96,6 +96,11 @@ h1 {
   border-right: 2px solid var(--color-border);
 }
 
+.review-meta h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
 .review-content h2 {
   color: var(--color-accent);
   font-size: 1.4rem;

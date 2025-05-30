@@ -44,7 +44,7 @@ function createReviewHTML(book) {
   return `
     <article class="review-entry">
       <div class="review-meta">
-        <h3>${book.date}</h3>
+        <h2>${book.date}</h2>
         <p>Age: ${book.ages}</p>
         <p>Genre: ${book.genre}</p>
         <p>${book.stars}</p>
