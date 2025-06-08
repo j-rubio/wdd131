@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 100px auto;
+  max-width: 400px;
+}
+
+.front-card,
+.back {
+  background-color: #ddd;
+  border-radius: 8px;
+  width: 400px;
+  height: 250px;
+  text-transform: uppercase;
+}
+
+.front-card {
+  display: grid;
+  box-shadow: 3px 3px 0px #b4aeae;
+  z-index: 10;
+}
+
+.back {
+  display: grid;
+  align-items: end;
+  justify-items: end;
+  margin: 40px 30px 15px 0;
+  z-index: 5;
+}
+
+button {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0 0 0 75%;
+  max-width: 80px;
+  padding: 6px;
+}
+
+#code {
+  max-width: 60px;
+}
+
+label[for='code'] {
+  margin-bottom: 40px;
+  margin-right: 20px;
+  max-width: 60px;
+}
+
+#magneticBand {
+  background-color: #444444;
+  position: relative;
+  top: -40px;
+  left: 0px;
+  width: 150px;
+  height: 40px;
+}
+
+input {
+  padding: 5px;
+}
+
+.amount-to-pay {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 50px 0 0 40px;
+}
+
+.front-card img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 30px 0px 0px 320px;
+}
+
+#cardNumber {
+  display: block;
+  width: 92%;
+}
+
+label[for='cardNumber'] {
+  margin-left: 40px;
+}
+
+#cardHolderName {
+  display: block;
+  width: 60%;
+}
+
+label[for='cardHolderName'] {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-left: 40px;
+}
+
+#expirationDate {
+  border: none;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-left: 70%;
+}
+
+#date-month,
+#date-year {
+  width: 35%;
+}
+
+#date-year {
+  width: auto;
+}
