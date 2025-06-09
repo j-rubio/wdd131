@@ -26,9 +26,10 @@
               name="cardNumber"
               id="cardNumber"
               inputmode="numeric"
-              pattern="[0-9]{13,19}"
+              pattern="^\d{4}\s\d{4}\s\d{4}\s\d{4}$"
               maxlength="19"
-              placeholder="1234 5678 9101 1020"
+              placeholder="1234 1234 1234 1234"
+              required
             />
           </label>
           <label for="cardHolderName">
@@ -48,18 +49,18 @@
               name="date-month"
               id="date-month"
               placeholder="MM"
-              required
               min="01"
               max="12"
+              required
             />
             <input
               type="number"
               name="date-year"
               id="date-year"
               placeholder="YYYY"
-              required
               min="2025"
               max="2050"
+              required
             />
           </fieldset>
         </div>
@@ -71,6 +72,10 @@
               type="text"
               name="code"
               id="code"
+              inputmode="numeric"
+              maxlength="4"
+              min="0001"
+              max="9999"
               placeholder="xxx"
               required
             />
