@@ -180,11 +180,12 @@ button:hover {
 
 .participants {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 1rem;
-  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px; */
+  gap: 1rem;
+}
+
+.participants > section:only-of-type {
+  grid-column: 1 / -1; /* spans all columns */
 }
 
 .hide {
