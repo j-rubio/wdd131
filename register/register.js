@@ -55,7 +55,7 @@ function totalFees() {
 
   let total = 0
   feeElements.forEach((ele) => {
-    total += parseInt(ele.value)
+    total += parseFloat(ele.value) || 0
   })
   return total
 }
