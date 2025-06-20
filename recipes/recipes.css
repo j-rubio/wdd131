@@ -27,7 +27,7 @@ h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--text-dark);
 }
 
@@ -55,7 +55,7 @@ header {
 }
 
 .title img {
-  width: 100px;
+  width: 4rem;
 }
 
 .search form {
