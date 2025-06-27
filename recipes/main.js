@@ -13,7 +13,7 @@ function getRandomListEntry(list) {
 function recipeTemplate(recipe) {
   return `<section class="recipe">
           <img
-            src="${recipe.image}" alt="${recipe.description}"
+            srcset="${recipe.image}" alt="${recipe.description}"
           />
           <div class="info">
             <div class="tags">
