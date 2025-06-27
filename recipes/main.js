@@ -104,4 +104,6 @@ function searchHandler(event) {
   renderRecipes(sortedRecipes)
 }
 
-buttonSearch.addEventListener('click', searchHandler)
+// buttonSearch.addEventListener('click', searchHandler)
+const form = document.querySelector('form')
+form.addEventListener('submit', searchHandler)
