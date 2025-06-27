@@ -7,7 +7,7 @@ const recipes = [
     datePublished: '2016-10-16',
     tags: ['Waffles', 'Sweet Potato', 'Side'],
     description: 'Savory waffles made with Sweet potato with a hint of Ginger',
-    image: './images/sweet-potato-waffle-md.jpg',
+    image: './images/sweet-potato-waffle-md.webp',
     recipeIngredient: [
       '2 separated eggs',
       '1/4 C Oil',
@@ -105,7 +105,7 @@ const recipes = [
     tags: ['Southwest', 'entree'],
     description:
       'Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.',
-    image: './images/black-beans-and-rice.jpg',
+    image: './images/black-beans-and-rice.webp',
     recipeIngredient: [
       '1 Medium Onion, diced',
       '2 Cloves Garlic, minced',
@@ -175,7 +175,7 @@ const recipes = [
     datePublished: '2018-09-19',
     tags: ['dessert'],
     description: 'Delicious soft chocolate chip cookies with coconut.',
-    image: './images/chocolate-chip-cookies.jpg',
+    image: './images/chocolate-chip-cookies.webp',
     recipeIngredient: [
       '1 Lb butter, softened',
       '1 C white sugar',
@@ -210,7 +210,7 @@ const recipes = [
     tags: ['dessert', 'German'],
     description:
       "This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!",
-    image: './images/german-gooseberry-cake.jpg',
+    image: './images/german-gooseberry-cake.webp',
     recipeIngredient: [
       'For the Cake Base:',
       '180 g (1 ½ cups/ 6.3 oz) plain flour',
@@ -253,7 +253,7 @@ const recipes = [
     tags: ['dessert'],
     description:
       "This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
-    image: './images/apple-crisp.jpg',
+    image: './images/apple-crisp.webp',
     recipeIngredient: [
       '10 C apples, cored and sliced',
       '1 C white sugar',
