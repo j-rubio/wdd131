@@ -10,23 +10,45 @@ function getRandomListEntry(list) {
   return list[randomNum]
 }
 
-function recipeTemplate(recipe) {
+// function recipeTemplate(recipe) {
+//   return `<section class="recipe">
+//           <img
+//             src="${recipe.image}" alt="${recipe.description}"
+//             loading="lazy"
+//           />
+//           <div class="info">
+//             <div class="tags">
+//               ${tagsTemplate(recipe.tags)}
+//             </div>
+//             <h2>${recipe.name}</h2>
+//             ${ratingTemplate(recipe.rating)}
+//             <p class="description">
+//               ${recipe.description}
+//             </p>
+//           </div>
+//         </section>`
+// }
+
+function recipeTemplate(recipe, isFirst = false) {
   return `<section class="recipe">
-          <img
-            src="${recipe.image}" alt="${recipe.description}"
-            loading="lazy"
-          />
-          <div class="info">
-            <div class="tags">
-              ${tagsTemplate(recipe.tags)}
+            <img
+              src="${recipe.image}"
+              alt="${recipe.description}"
+              width="600"
+              height="400"
+              ${isFirst ? '' : 'loading="lazy"'}
+            />
+            <div class="info">
+              <div class="tags">
+                ${tagsTemplate(recipe.tags)}
+              </div>
+              <h2>${recipe.name}</h2>
+              ${ratingTemplate(recipe.rating)}
+              <p class="description">
+                ${recipe.description}
+              </p>
             </div>
-            <h2>${recipe.name}</h2>
-            ${ratingTemplate(recipe.rating)}
-            <p class="description">
-              ${recipe.description}
-            </p>
-          </div>
-        </section>`
+          </section>`
 }
 
 function tagsTemplate(tags) {
@@ -53,9 +75,15 @@ function ratingTemplate(rating) {
   return html
 }
 
+// function renderRecipes(recipeList) {
+//   const recipesHolder = document.querySelector('.recipes')
+//   const html = recipeList.map(recipeTemplate).join('')
+//   recipesHolder.innerHTML = html
+// }
+
 function renderRecipes(recipeList) {
   const recipesHolder = document.querySelector('.recipes')
-  const html = recipeList.map(recipeTemplate).join('')
+  const html = recipeList.map((r, i) => recipeTemplate(r, i === 0)).join('')
   recipesHolder.innerHTML = html
 }
 
