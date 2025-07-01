@@ -14,6 +14,7 @@ function recipeTemplate(recipe) {
   return `<section class="recipe">
           <img
             src="${recipe.image}" alt="${recipe.description}"
+            loading="lazy"
           />
           <div class="info">
             <div class="tags">
