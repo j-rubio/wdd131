@@ -10,25 +10,6 @@ function getRandomListEntry(list) {
   return list[randomNum]
 }
 
-// function recipeTemplate(recipe) {
-//   return `<section class="recipe">
-//           <img
-//             src="${recipe.image}" alt="${recipe.description}"
-//             loading="lazy"
-//           />
-//           <div class="info">
-//             <div class="tags">
-//               ${tagsTemplate(recipe.tags)}
-//             </div>
-//             <h2>${recipe.name}</h2>
-//             ${ratingTemplate(recipe.rating)}
-//             <p class="description">
-//               ${recipe.description}
-//             </p>
-//           </div>
-//         </section>`
-// }
-
 function recipeTemplate(recipe, isFirst = false) {
   return `<section class="recipe">
             <img
@@ -74,12 +55,6 @@ function ratingTemplate(rating) {
   html += `</span>`
   return html
 }
-
-// function renderRecipes(recipeList) {
-//   const recipesHolder = document.querySelector('.recipes')
-//   const html = recipeList.map(recipeTemplate).join('')
-//   recipesHolder.innerHTML = html
-// }
 
 function renderRecipes(recipeList) {
   const recipesHolder = document.querySelector('.recipes')
