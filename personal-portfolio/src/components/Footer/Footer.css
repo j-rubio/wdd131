@@ -1,0 +1,25 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* this part below is the original one */
+  min-height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: var(--bg-color-dark); */
+  text-align: center;
+  gap: 0.7rem;
+  background-color: var(--bg-color-dark);
+}
+
+footer p,
+footer a {
+  font-size: 1rem;
+  /* color: var(--secondary-color); */
+  color: var(--primary-color-dark);
+}
