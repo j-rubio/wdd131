@@ -3,7 +3,7 @@ import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
 export const Header = () => {
   return `
     <nav>
-      <h2>P Parker</h2>
+      <h2>J Rubio</h2>
       <ul>
         <li><a href="#" data-link="home">Home</a></li>
         <li><a href="#" data-link="tech">Tech Stack</a></li>
