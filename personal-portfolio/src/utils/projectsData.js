@@ -1,30 +1,42 @@
 export const projectsData = [
   {
     title: 'Project One',
-    image:
-      'https://images.unsplash.com/photo-1569693799105-4eb645d89aea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80',
-    description:
-      'Este ha sido el primer proyecto que hemos realizado en Rock the Code',
-    tech: ['HTML 5', 'CSS 3', 'ReactJS', 'Mongo'],
-    link: 'http://miproyecto.vercel.app',
-    github: 'http://github.com/miperfil/mirepo'
+    image: './public/images/project01.png',
+    description: 'This is my first project in WDD131',
+    tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
+    link: 'https://j-rubio.github.io/wdd131/mission/index.html',
+    github: 'https://github.com/j-rubio/wdd131/tree/main/mission'
   },
   {
     title: 'Project Two',
-    image:
-      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80',
+    image: './public/images/project02.png',
     description: 'Esta ha sido la segunda entrega que hicimos en el Modulo 1',
-    tech: ['HTML 5', 'CSS 3', 'Vite', 'JavaScript Vanilla'],
-    link: 'http://miproyecto.vercel.app',
-    github: 'http://github.com/miperfil/mirepo'
+    tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
+    link: 'https://j-rubio.github.io/wdd131/coolpics/index.html',
+    github: 'https://github.com/j-rubio/wdd131/tree/main/coolpics'
   },
   {
     title: 'Project Three',
-    image:
-      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80',
+    image: './public/images/project03.png',
     description: 'Esta ha sido la tercera entrega que hicimos en el Modulo 1',
-    tech: ['HTML 5', 'CSS 3', 'Vite', 'JavaScript Vanilla'],
-    link: 'http://miproyecto.vercel.app',
-    github: 'http://github.com/miperfil/mirepo'
+    tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
+    link: 'https://j-rubio.github.io/wdd131/blog/index.html',
+    github: 'https://github.com/j-rubio/wdd131/tree/main/blog'
+  },
+  {
+    title: 'Project Four',
+    image: './public/images/project04.png',
+    description: 'Esta ha sido la tercera entrega que hicimos en el Modulo 1',
+    tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
+    link: 'https://j-rubio.github.io/wdd131/creditcard/index.html',
+    github: 'https://github.com/j-rubio/wdd131/tree/main/creditcard'
+  },
+  {
+    title: 'Project Five',
+    image: './public/images/project05.png',
+    description: 'Esta ha sido la tercera entrega que hicimos en el Modulo 1',
+    tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
+    link: 'https://j-rubio.github.io/wdd131/recipes/index.html',
+    github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
   }
 ]

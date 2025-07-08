@@ -1,55 +1,36 @@
-// export const HambMenu = () => {
-//   return `
-//     <label class="hamburger-menu">
-//           <input type="checkbox" />
-//         </label>
-//         <aside class="sidebar-menu">
-//           <nav>
-//             <ul>
-//               <li><a href="#null">Home</a></li>
-//               <li><a href="#null">Tech Stack</a></li>
-//               <li><a href="#null">Projects</a></li>
-//             </ul>
-//           </nav>
-//         </aside>
-//     `
-// }
-// export const HambMenu = () => {
-//   return `
-//     <label class="hamburger-menu">
-//       <input type="checkbox" id="hamburgerToggle" />
-//     </label>
-//     <aside class="sidebar-menu">
-//       <nav>
-//         <ul>
-//           <li><a href="#" id="mobile-homelink">Home</a></li>
-//           <li><a href="#" id="mobile-techlink">Tech Stack</a></li>
-//           <li><a href="#" id="mobile-projectslink">Projects</a></li>
-//         </ul>
-//       </nav>
-//     </aside>
-//   `
-// }
+import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
+
 export const HambMenu = () => {
   return `
-    <label class="hamburger-menu">
-      <input type="checkbox" id="hamburgerToggle">
-    </label>
-    <aside class="sidebar-menu">
-      <nav>
-        <ul>
-          <li><a href="#" id="mobile-homelink">Home</a></li>
-          <li><a href="#" id="mobile-techlink">Tech Stack</a></li>
-          <li><a href="#" id="mobile-projectslink">Projects</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <div class="hamburger-container">
+      <label class="hamburger-menu">
+        <input type="checkbox" id="hamburgerToggle" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <aside class="sidebar-menu">
+          <nav>
+            <ul>
+              <li><a href="#" data-link="home">Home</a></li>
+              <li><a href="#" data-link="tech">Tech Stack</a></li>
+              <li><a href="#" data-link="projects">Projects</a></li>
+              <hr>
+              <div class="social">
+                <li>${SocialIcon(
+                  'https://www.github.com',
+                  './public/icons/github.png',
+                  'GitHub icon'
+                )}</li>
+                <li>${SocialIcon(
+                  'https://www.linkedin.com',
+                  './public/icons/linkedin.png',
+                  'LinkedIn icon'
+                )}</li>                          
+              </div>
+            </ul>
+          </nav>
+        </aside>
+      </label>
+    </div>
   `
 }
-
-document.addEventListener('click', (e) => {
-  const toggle = document.querySelector('#hamburger-toggle')
-  if (e.target.closest('.sidebar-menu a')) {
-    toggle.checked = false
-  }
-})

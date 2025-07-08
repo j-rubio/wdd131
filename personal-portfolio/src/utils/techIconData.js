@@ -16,15 +16,6 @@ export const techIconData = [
     desc: 'NodeJs'
   },
   {
-    icon: './public/tech/ts.png',
-    desc: 'Typescript'
-  },
-  {
-    icon: './public/tech/react.png',
-    desc: 'ReactJS'
-  },
-
-  {
     icon: './public/tech/python.png',
     desc: 'Python'
   },
@@ -39,6 +30,10 @@ export const techIconData = [
   {
     icon: './public/tech/cpp.png',
     desc: 'C++ language'
+  },
+  {
+    icon: './public/tech/csharp.png',
+    desc: 'C# language'
   },
   {
     icon: './public/tech/git.png',

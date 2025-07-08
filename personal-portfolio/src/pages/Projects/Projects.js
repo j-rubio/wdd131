@@ -1,12 +1,5 @@
-// import './Projects.css'
-// import { loadStyle } from '../../utils/loadStyle'
-// loadStyle('./src/pages/Projects/Projects.css')
-
 import { ProjectCard } from '../../components/ProjectCard/ProjectCard.js'
-// import { ProjectCard } from './src/components/ProjectCard/ProjectCard.js'
-
 import { projectsData } from '../../utils/projectsData.js'
-// import { projectsData } from './src/utils/projectsData.js'
 
 export const Projects = () => {
   const main = document.querySelector('main')

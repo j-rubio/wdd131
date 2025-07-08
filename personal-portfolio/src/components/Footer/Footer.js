@@ -1,11 +1,7 @@
-// import './Footer.css'
-// import { loadStyle } from '../../utils/loadStyle'
-// loadStyle('./src/components/Footer/Footer.css')
-
 export const Footer = () => {
   return `
-    <p><a href="tel:+11231231234">+1 123-123-1234</a></p>
-    <a href="mailto:thisisi@gmail.com">thisisi@gmail.com</a>
-    <p>Designed and built by <span>This is I</span></p>
+    <p><a href="tel:+1 9453011095">+1 945-301-1045</a></p>
+    <a href="mailto:rubioconnect@gmail.com">rubioconnect@gmail.com</a>
+    <p>©2025 Designed and built by <span>J Rubio</span></p>
     `
 }
