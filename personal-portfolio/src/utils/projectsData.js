@@ -12,7 +12,7 @@ export const projectsData = [
     title: 'Project Two',
     image: './public/images/project02.png',
     description:
-      'With this project, I created a page to act as a photography gallery. The gallery is responsive, meaning that it will look good on small screens and large.',
+      'I created a page to act as a photography gallery. The gallery is responsive, meaning that it will look good on small screens and large.',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/coolpics/index.html',
     github: 'https://github.com/j-rubio/wdd131/tree/main/coolpics'
