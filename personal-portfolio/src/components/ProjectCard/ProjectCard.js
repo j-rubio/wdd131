@@ -6,8 +6,12 @@ export const ProjectCard = (project) => {
         <p>${project.description}</p>
         <p>Tech Stack: ${project.tech.join(', ')}</p>
         <div>
-            <a href=${project.link} target="_blank">🔗 Live Preview</a>
-            <a href=${project.github} target="_blank">🐱 View Code</a>
+            <a href=${
+              project.link
+            } target="_blank" rel="noopener">🔗 Live Preview →</a>
+            <a href=${
+              project.github
+            } target="_blank" rel="noopener">🐱 View Code →</a>
         </div>
     </article>
     `

@@ -1,42 +1,19 @@
 import { Avatar } from '../../components/Avatar/Avatar.js'
 
-// export const Home = () => {
-//   const main = document.querySelector('main')
-//   main.innerHTML = `
-//     <section class="home">
-//         <div id="div-video">
-//             <video class="myVideo" autoplay muted loop playsinline aria-hidden="true">
-//                 <source src="./public/videos/waterfall.mp4" type="video/mp4" />
-//             </video>
-//         </div>
-//         <div id="div-text">
-//             <h2>
-//             Hi 👋🏻, My name is <span>Julio Rubio</span>
-//             </h2>
-//             <h2>I build things for web</h2>
-//         </div>
-//         <div id="div-avatar">
-//         ${Avatar('./public/images/portrait.jpg', 'J Rubio Portrait')}
-//         </div>
-//     </section>
-//     `
-// }
+/* Home.js */
 export const Home = () => {
   const main = document.querySelector('main')
   main.innerHTML = `
-    <section class="home">
-        <div id="div-video">
-           
+    <section class="home" aria-labelledby="home-heading">
+      <div class="home-content">
+        <h1 id="home-heading">Hi, I'm Julio Rubio</h1>
+        <p>
+          I’m an Electronic Engineer and Developer passionate about building intuitive, responsive web apps and embedded systems. I blend hardware and software skills to create efficient and impactful tech solutions.
+        </p>
+        <div class="avatar-container">
+          <img src="./public/images/portrait.jpg" alt="Portrait of J Rubio" loading="lazy" />
         </div>
-        <div id="div-text">
-            <h2>
-            Hi 👋🏻, My name is <span>J Rubio</span>
-            </h2>
-            <h2>I build things for web</h2>
-        </div>
-        <div id="div-avatar">
-        ${Avatar('./public/images/portrait.jpg', 'J Rubio Portrait')}
-        </div>
+      </div>
     </section>
-    `
+  `
 }

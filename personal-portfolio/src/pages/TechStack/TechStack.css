@@ -1,22 +1,85 @@
+/* TechStack.css */
 .tech {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-content {
+  max-width: 800px;
   text-align: center;
 }
 
-.tech > article {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0 30%;
-  justify-content: center;
-  margin: 1rem;
+.tech h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 600px) {
-  .tech > article {
-    padding: 0 5%;
+.tech p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--secondary-color);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* .tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
+
+/* .tech-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease;
+} */
+
+/* .tech-icon img:hover {
+  transform: scale(1.1);
+} */
+
+/* .tech-icon figcaption {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+} */
+
+/* Tablet & up */
+@media screen and (min-width: 700px) {
+  .tech h2 {
+    font-size: 2.4rem;
   }
+
+  .tech p {
+    font-size: 1.2rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+  }
+
+  /* .tech-icon img {
+    width: 64px;
+    height: 64px;
+  } */
+
+  /* .tech-icon figcaption {
+    font-size: 0.85rem;
+  } */
 }

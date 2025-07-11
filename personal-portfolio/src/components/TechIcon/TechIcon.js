@@ -1,5 +1,8 @@
 export const TechIcon = (icon, desc) => {
   return `
-    <img class="tech-icon" src=${icon} alt=${desc} />
-    `
+    <figure class="tech-icon" role="listitem">
+      <img src="${icon}" alt="${desc}" loading="lazy" />
+      <figcaption>${desc}</figcaption>
+    </figure>
+  `
 }

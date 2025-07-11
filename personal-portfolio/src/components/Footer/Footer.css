@@ -1,10 +1,11 @@
 footer {
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
   z-index: 1000;
-  min-height: 10vh;
+  min-height: 8vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -15,8 +16,24 @@ footer {
   background-color: var(--bg-color-dark);
 }
 
-footer p,
+/* footer p,
 footer a {
   font-size: 1rem;
   color: var(--primary-color-dark);
+} */
+
+footer p a {
+  font-size: 1rem;
+  color: var(--primary-color-dark);
+}
+
+footer p a:hover {
+  color: rgb(253, 29, 29);
+}
+
+p > span {
+  background: var(--highlight-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
 }
