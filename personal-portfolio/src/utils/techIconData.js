@@ -20,12 +20,12 @@ export const techIconData = [
     desc: 'Python'
   },
   {
-    icon: './public/tech/c.png',
-    desc: 'C language'
-  },
-  {
     icon: './public/tech/r.png',
     desc: 'R language'
+  },
+  {
+    icon: './public/tech/c.png',
+    desc: 'C language'
   },
   {
     icon: './public/tech/cpp.png',
