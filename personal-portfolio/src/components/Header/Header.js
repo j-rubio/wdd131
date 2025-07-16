@@ -176,17 +176,17 @@ export const Header = () => {
           './public/icons/linkedin.png',
           'LinkedIn'
         )}</li>
-        <li>${SocialIcon(
-          '#',
-          './public/icons/logo-transparent.png',
-          'LogoIcon'
-        )}</li>
-      </ul>
-
-      <button id="themeBtn" aria-label="Toggle theme">☀️ Light Mode</button>
-    </nav>
-  `
+        </ul>
+        
+        <button id="themeBtn" aria-label="Toggle theme">☀️ Light Mode</button>
+        </nav>
+        `
 }
+// <li>${SocialIcon(
+//   '#',
+//   './public/icons/logo-transparent.png',
+//   'LogoIcon'
+// )}</li>
 
 // <img
 //     src="./public/icons/logo-transparent.png"
