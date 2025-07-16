@@ -11,9 +11,17 @@ export const Home = () => {
           I’m an Electronic Engineer and Developer passionate about building intuitive, responsive web apps and embedded systems. I blend hardware and software skills to create efficient and impactful tech solutions.
         </p>
         <div class="avatar-container">
-          <img src="./public/images/portrait.jpg" alt="Portrait of J Rubio" loading="lazy" />
+          <img src="./public/images/portrait-400.webp" srcset="./public/images/portrait-400.webp 400w, ./public/images/portrait-800.webp 800w,./public/images/portrait-1200.webp 1200w"
+            sizes="(max-width: 600px) 100vw, 50vw"
+            alt="Portrait of Manu Rubio"
+            loading="lazy"
+            width="400"
+            height="400"
+          />
         </div>
       </div>
     </section>
-  `
+        `
 }
+
+// <img src="./public/images/portrait.jpg" alt="Portrait of J Rubio" loading="lazy" />

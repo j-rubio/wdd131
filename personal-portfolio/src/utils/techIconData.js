@@ -40,6 +40,10 @@ export const techIconData = [
     desc: 'Git'
   },
   {
+    icon: './public/tech/mysql.png',
+    desc: 'MySQL'
+  },
+  {
     icon: './public/tech/mongo.png',
     desc: 'Mongo'
   },

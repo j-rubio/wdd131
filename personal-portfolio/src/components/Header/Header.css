@@ -120,17 +120,16 @@
     list-style: none;
   }
 
-  .nav-links li:last-child {
-    /* width: 48px; */
-    /* height: 48px; */
+  /* .nav-links li:last-child {
+    
     object-fit: contain;
     transform: scale(1.6);
     transition: transform 0.3s ease-in-out;
-  }
+  } */
 
-  .nav-links li:last-child:hover {
-    transform: scale(1.7);
-  }
+  /* .nav-links li:last-child:hover {
+    transform: scale(1.1);
+  } */
 
   #themeBtn {
     font-size: 1rem;

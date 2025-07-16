@@ -144,7 +144,7 @@ export const Header = () => {
         <span></span>
       </label>
 
-      <aside class="sidebar-menu" aria-hidden="true">
+      <aside class="sidebar-menu" aria-hidden="false">
         <ul>
           <li><a href="#" data-link="home">Home</a></li>
           <li><a href="#" data-link="tech">Tech Stack</a></li>
