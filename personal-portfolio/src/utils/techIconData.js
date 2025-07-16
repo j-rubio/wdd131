@@ -1,66 +1,82 @@
 export const techIconData = [
   {
-    icon: './public/tech/html-5.png',
-    desc: 'HTML 5'
+    name: 'HTML 5',
+    icon: '/public/icons/tech/backup/html-5.png',
+    alt: 'HTML 5'
   },
   {
-    icon: './public/tech/css-3.png',
-    desc: 'CSS 3'
+    name: 'CSS 3',
+    icon: '/public/icons/tech/backup/css-3.png',
+    alt: 'CSS 3'
   },
   {
-    icon: './public/tech/js.png',
-    desc: 'JavaScript'
+    name: 'JavaScript',
+    icon: '/public/icons/tech/backup/js.png',
+    alt: 'JavaScript'
   },
   {
-    icon: './public/tech/node.png',
-    desc: 'NodeJs'
+    name: 'NodeJs',
+    icon: '/public/icons/tech/backup/node.png',
+    alt: 'NodeJs'
   },
   {
-    icon: './public/tech/python.png',
-    desc: 'Python'
+    name: 'Python',
+    icon: '/public/icons/tech/backup/python.png',
+    alt: 'Python'
   },
   {
-    icon: './public/tech/r.png',
-    desc: 'R language'
+    name: 'R language',
+    icon: '/public/icons/tech/backup/r.png',
+    alt: 'R language'
   },
   {
-    icon: './public/tech/c.png',
-    desc: 'C language'
+    name: 'C language',
+    icon: '/public/icons/tech/backup/c.png',
+    alt: 'C language'
   },
   {
-    icon: './public/tech/cpp.png',
-    desc: 'C++ language'
+    name: 'C++ language',
+    icon: '/public/icons/tech/backup/cpp.png',
+    alt: 'C++ language'
   },
   {
-    icon: './public/tech/csharp.png',
-    desc: 'C# language'
+    name: 'C# language',
+    icon: '/public/icons/tech/backup/csharp.png',
+    alt: 'C# language'
   },
   {
-    icon: './public/tech/git.png',
-    desc: 'Git'
+    name: 'Git',
+    icon: '/public/icons/tech/backup/git.png',
+    alt: 'Git'
   },
   {
-    icon: './public/tech/mysql.png',
-    desc: 'MySQL'
+    name: 'MySQL',
+    icon: '/public/icons/tech/backup/mysql.png',
+    alt: 'MySQL'
   },
   {
-    icon: './public/tech/mongo.png',
-    desc: 'Mongo'
+    name: 'Mongo',
+    icon: '/public/icons/tech/backup/mongo.png',
+    alt: 'Mongo'
   },
   {
-    icon: './public/tech/visual.png',
-    desc: 'Visual'
+    name: 'Visual',
+    icon: '/public/icons/tech/backup/visual.png',
+    alt: 'Visual'
   },
   {
-    icon: './public/tech/linux.png',
-    desc: 'Linux'
+    name: 'Linux',
+    icon: '/public/icons/tech/backup/linux.png',
+    alt: 'Linux'
   },
   {
-    icon: './public/tech/windows.png',
-    desc: 'Windows'
+    name: 'Windows',
+    icon: '/public/icons/tech/backup/windows.png',
+    alt: 'Windows'
   },
   {
-    icon: './public/tech/macos.png',
-    desc: 'MacOs'
+    name: 'MacOs',
+    icon: '/public/icons/tech/backup/macos.png',
+    alt: 'MacOs'
   }
 ]

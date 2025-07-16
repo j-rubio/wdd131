@@ -1,5 +1,5 @@
 // Header.js
-import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
+// import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
 
 // export const Header = () => {
 //   return `
@@ -128,6 +128,10 @@ import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
 //     </nav>
 //   `
 // }
+
+// Header.js
+import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
+
 export const Header = () => {
   return `
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
@@ -151,12 +155,12 @@ export const Header = () => {
           <li><a href="#" data-link="projects">Projects</a></li>
           <li>${SocialIcon(
             'https://www.github.com',
-            './public/icons/github.png',
+            '/public/icons/social-media/backup/github.png',
             'GitHub'
           )}</li>
           <li>${SocialIcon(
             'https://www.linkedin.com',
-            './public/icons/linkedin.png',
+            '/public/icons/social-media/backup/linkedin.png',
             'LinkedIn'
           )}</li>
         </ul>
@@ -168,12 +172,12 @@ export const Header = () => {
         <li><a href="#" data-link="projects">Projects</a></li>
         <li>${SocialIcon(
           'https://www.github.com',
-          './public/icons/github.png',
+          '/public/icons/social-media/backup/github.png',
           'GitHub'
         )}</li>
         <li>${SocialIcon(
           'https://www.linkedin.com',
-          './public/icons/linkedin.png',
+          '/public/icons/social-media/backup/linkedin.png',
           'LinkedIn'
         )}</li>
         </ul>

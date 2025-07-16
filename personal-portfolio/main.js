@@ -3,7 +3,6 @@ import { loadStyle } from './src/utils/loadStyle.js'
 import { Header } from './src/components/Header/Header.js'
 import { Footer } from './src/components/Footer/Footer.js'
 import { changeTheme } from './src/utils/changeTheme.js'
-// import { initHeaderBehavior } from './src/utils/initHeaderBehavior-notworking.js'
 
 import { Home } from './src/pages/Home/Home.js'
 import { TechStack } from './src/pages/TechStack/TechStack.js'
@@ -21,7 +20,7 @@ loadStyle('./src/components/SocialMediaIcon/SocialMediaIcon.css')
 loadStyle('./src/components/TechIcon/TechIcon.css')
 
 document.querySelector('header').innerHTML = Header()
-// initHeaderBehavior()
+
 document.querySelector('footer').innerHTML = Footer()
 
 changeTheme()
