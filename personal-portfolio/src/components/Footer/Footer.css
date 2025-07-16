@@ -1,8 +1,6 @@
 footer {
   position: fixed;
-  /* position: absolute; */
   bottom: 0;
-  /* left: 0; */
   width: 100%;
   z-index: 1000;
   min-height: 8vh;
@@ -15,12 +13,6 @@ footer {
   gap: 0.7rem;
   background-color: var(--bg-color-dark);
 }
-
-/* footer p,
-footer a {
-  font-size: 1rem;
-  color: var(--primary-color-dark);
-} */
 
 footer p a {
   font-size: 1rem;

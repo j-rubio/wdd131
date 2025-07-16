@@ -31,19 +31,10 @@
 }
 
 .logo-container {
-  /* align-self: center; */
   position: relative;
-  /* top: 80px;
-  left: 100px; */
   margin-bottom: -3rem;
   margin-left: 8rem;
-  /* margin-bottom: -80px;
-  margin-left: 150px; */
 }
-
-/* .avatar-container {
-  margin-top: 1rem;
-} */
 
 .avatar-container img {
   width: 160px;

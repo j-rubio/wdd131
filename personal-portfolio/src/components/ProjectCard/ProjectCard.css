@@ -38,7 +38,6 @@
 
 .project-info p {
   font-size: 1rem;
-  /* color: var(--text-color, #333); */
   color: var(--text-color, #fff);
   margin-bottom: 0.5rem;
   word-break: break-word;

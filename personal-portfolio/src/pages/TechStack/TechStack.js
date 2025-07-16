@@ -1,6 +1,4 @@
-// import { techIconData } from '../../utils/techIconData.js'
 import { techIconData } from '/src/utils/techIconData.js'
-// import { TechIcon } from '../../components/TechIcon/TechIcon.js'
 import { TechIcon } from '/src/components/TechIcon/TechIcon.js'
 
 export const TechStack = () => {

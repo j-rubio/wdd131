@@ -1,5 +1,3 @@
-// import { ProjectCard } from '../../components/ProjectCard/ProjectCard.js'
-// import { projectsData } from '../../utils/projectsData.js'
 import { ProjectCard } from '/src/components/ProjectCard/ProjectCard.js'
 import { projectsData } from '/src/utils/projectsData.js'
 

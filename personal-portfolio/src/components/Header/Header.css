@@ -1,9 +1,7 @@
 /* Header.css */
-
 .main-nav {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-end; */
   background-color: var(--bg-color-dark);
   padding: 0.5rem 2rem;
   width: 100%;
@@ -12,12 +10,6 @@
   left: 0;
   z-index: 1000;
 }
-
-/* #logo img {
-  height: 48px;
-  width: auto;
-  cursor: pointer;
-} */
 
 #themeBtn {
   background: none;
@@ -48,7 +40,6 @@
 
 /* Hamburger animation */
 .hamburger-toggle:checked ~ .hamburger-menu span:nth-child(1) {
-  /* transform: rotate(45deg) translate(5px, 5px); */
   transform: rotate(401deg) translate(4px, 4px);
 }
 .hamburger-toggle:checked ~ .hamburger-menu span:nth-child(2) {
@@ -119,17 +110,6 @@
     gap: 1rem;
     list-style: none;
   }
-
-  /* .nav-links li:last-child {
-    
-    object-fit: contain;
-    transform: scale(1.6);
-    transition: transform 0.3s ease-in-out;
-  } */
-
-  /* .nav-links li:last-child:hover {
-    transform: scale(1.1);
-  } */
 
   #themeBtn {
     font-size: 1rem;
