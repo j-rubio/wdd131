@@ -1,82 +1,85 @@
+import { BASE_PATH } from '../utils/constants.js'
+// const BASE_PATH = './'
+
 export const techIconData = [
   {
     name: 'HTML 5',
-    icon: '/personal-portfolio/assets/icons/tech/backup/html-5.png',
+    icon: `${BASE_PATH}assets/tech/html-5.png`,
     alt: 'HTML 5'
   },
   {
     name: 'CSS 3',
-    icon: '/personal-portfolio/assets/icons/tech/backup/css-3.png',
+    icon: `${BASE_PATH}assets/tech/css-3.png`,
     alt: 'CSS 3'
   },
   {
     name: 'JavaScript',
-    icon: '/personal-portfolio/assets/icons/tech/backup/js.png',
+    icon: `${BASE_PATH}assets/tech/js.png`,
     alt: 'JavaScript'
   },
   {
     name: 'NodeJs',
-    icon: '/personal-portfolio/assets/icons/tech/backup/node.png',
+    icon: `${BASE_PATH}assets/tech/node.png`,
     alt: 'NodeJs'
   },
   {
     name: 'Python',
-    icon: '/personal-portfolio/assets/icons/tech/backup/python.png',
+    icon: `${BASE_PATH}assets/tech/python.png`,
     alt: 'Python'
   },
   {
     name: 'R language',
-    icon: '/personal-portfolio/assets/icons/tech/backup/r.png',
+    icon: `${BASE_PATH}assets/tech/r.png`,
     alt: 'R language'
   },
   {
     name: 'C language',
-    icon: '/personal-portfolio/assets/icons/tech/backup/c.png',
+    icon: `${BASE_PATH}assets/tech/c.png`,
     alt: 'C language'
   },
   {
     name: 'C++ language',
-    icon: '/personal-portfolio/assets/icons/tech/backup/cpp.png',
+    icon: `${BASE_PATH}assets/tech/cpp.png`,
     alt: 'C++ language'
   },
   {
     name: 'C# language',
-    icon: '/personal-portfolio/assets/icons/tech/backup/csharp.png',
+    icon: `${BASE_PATH}assets/tech/csharp.png`,
     alt: 'C# language'
   },
   {
     name: 'Git',
-    icon: '/personal-portfolio/assets/icons/tech/backup/git.png',
+    icon: `${BASE_PATH}assets/tech/git.png`,
     alt: 'Git'
   },
   {
     name: 'MySQL',
-    icon: '/personal-portfolio/assets/icons/tech/backup/mysql.png',
+    icon: `${BASE_PATH}assets/tech/mysql.png`,
     alt: 'MySQL'
   },
   {
     name: 'Mongo',
-    icon: '/personal-portfolio/assets/icons/tech/backup/mongo.png',
+    icon: `${BASE_PATH}assets/tech/mongo.png`,
     alt: 'Mongo'
   },
   {
     name: 'Visual',
-    icon: '/personal-portfolio/assets/icons/tech/backup/visual.png',
+    icon: `${BASE_PATH}assets/tech/visual.png`,
     alt: 'Visual'
   },
   {
     name: 'Linux',
-    icon: '/personal-portfolio/assets/icons/tech/backup/linux.png',
+    icon: `${BASE_PATH}assets/tech/linux.png`,
     alt: 'Linux'
   },
   {
     name: 'Windows',
-    icon: '/personal-portfolio/assets/icons/tech/backup/windows.png',
+    icon: `${BASE_PATH}assets/tech/windows.png`,
     alt: 'Windows'
   },
   {
     name: 'MacOs',
-    icon: '/personal-portfolio/assets/icons/tech/backup/macos.png',
+    icon: `${BASE_PATH}assets/tech/macos.png`,
     alt: 'MacOs'
   }
 ]

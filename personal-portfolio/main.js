@@ -1,4 +1,4 @@
-// main.js
+// import { BASE_PATH } from './src/utils/constants.js'
 import { loadStyle } from './src/utils/loadStyle.js'
 import { Header } from './src/components/Header/Header.js'
 import { Footer } from './src/components/Footer/Footer.js'
@@ -20,7 +20,6 @@ loadStyle('./src/components/SocialMediaIcon/SocialMediaIcon.css')
 loadStyle('./src/components/TechIcon/TechIcon.css')
 
 document.querySelector('header').innerHTML = Header()
-
 document.querySelector('footer').innerHTML = Footer()
 
 changeTheme()

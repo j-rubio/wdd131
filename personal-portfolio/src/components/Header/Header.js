@@ -1,5 +1,7 @@
 // Header.js
-import { SocialIcon } from '/personal-portfolio/src/components/SocialMediaIcon/SocialMediaIcon.js'
+import { BASE_PATH } from '../../utils/constants.js'
+// import { SocialIcon } from `${BASE_PATH}components/SocialMediaIcon/SocialMediaIcon.`
+import { SocialIcon } from '../../components/SocialMediaIcon/SocialMediaIcon.js'
 
 export const Header = () => {
   return `
@@ -24,12 +26,12 @@ export const Header = () => {
           <li><a href="#" data-link="projects">Projects</a></li>
           <li>${SocialIcon(
             'https://www.github.com',
-            '/personal-portfolio/assets/icons/social-media/backup/github.png',
+            `${BASE_PATH}assets/smedia/github.png`,
             'GitHub'
           )}</li>
           <li>${SocialIcon(
             'https://www.linkedin.com',
-            '/personal-portfolio/assets/icons/social-media/backup/linkedin.png',
+            `${BASE_PATH}assets/smedia/linkedin.png`,
             'LinkedIn'
           )}</li>
         </ul>
@@ -41,12 +43,12 @@ export const Header = () => {
         <li><a href="#" data-link="projects">Projects</a></li>
         <li>${SocialIcon(
           'https://www.github.com',
-          '/personal-portfolio/assets/icons/social-media/backup/github.png',
+          `${BASE_PATH}assets/smedia/github.png`,
           'GitHub'
         )}</li>
         <li>${SocialIcon(
           'https://www.linkedin.com',
-          '/personal-portfolio/assets/icons/social-media/backup/linkedin.png',
+          `${BASE_PATH}assets/smedia/linkedin.png`,
           'LinkedIn'
         )}</li>
         </ul>
