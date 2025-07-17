@@ -1,11 +1,13 @@
 export const TechIcon = (icon, desc, size = 400) => {
-  const iconName = `${icon}`.split('/')[5].split('.')[0]
+  // const iconName = `${icon}`.split('/')[iconName.length - 4].split('.')[0]
+  let iconName = `${icon}`.split('/')
+  iconName = iconName[iconName.length - 1].split('.')[0]
 
   return `
     <figure class="tech-icon" role="listitem">
       <picture>
-          <source srcset="/public/icons/tech/${iconName}-${size}.avif" type="image/avif" />
-          <source srcset="/public/icons/tech/${iconName}-${size}.webp" type="image/webp" />
+          <source srcset="../../../assets/icons/tech/${iconName}-${size}.avif" type="image/avif" />
+          <source srcset="../../../assets/icons/tech/${iconName}-${size}.webp" type="image/webp" />
           <img
             src="${iconName}"
             alt="${desc}"
@@ -13,8 +15,7 @@ export const TechIcon = (icon, desc, size = 400) => {
             width="${size}"
             height="${size}"
             />
-        </picture>
-        <figcaption>${desc}</figcaption>
-      </figure>
-        `
+      </picture>
+      <figcaption>${desc}</figcaption>
+    </figure>`
 }

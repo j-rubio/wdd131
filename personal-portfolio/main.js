@@ -8,7 +8,7 @@ import { Home } from './src/pages/Home/Home.js'
 import { TechStack } from './src/pages/TechStack/TechStack.js'
 import { Projects } from './src/pages/Projects/Projects.js'
 
-loadStyle('./style.css')
+loadStyle('./main.css')
 loadStyle('./src/components/Header/Header.css')
 loadStyle('./src/components/Footer/Footer.css')
 loadStyle('./src/components/Avatar/Avatar.css')

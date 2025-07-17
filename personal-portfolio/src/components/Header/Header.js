@@ -24,12 +24,12 @@ export const Header = () => {
           <li><a href="#" data-link="projects">Projects</a></li>
           <li>${SocialIcon(
             'https://www.github.com',
-            '/public/icons/social-media/backup/github.png',
+            './assets/icons/social-media/backup/github.png',
             'GitHub'
           )}</li>
           <li>${SocialIcon(
             'https://www.linkedin.com',
-            '/public/icons/social-media/backup/linkedin.png',
+            './assets/icons/social-media/backup/linkedin.png',
             'LinkedIn'
           )}</li>
         </ul>
@@ -41,12 +41,12 @@ export const Header = () => {
         <li><a href="#" data-link="projects">Projects</a></li>
         <li>${SocialIcon(
           'https://www.github.com',
-          '/public/icons/social-media/backup/github.png',
+          './assets/icons/social-media/backup/github.png',
           'GitHub'
         )}</li>
         <li>${SocialIcon(
           'https://www.linkedin.com',
-          '/public/icons/social-media/backup/linkedin.png',
+          './assets/icons/social-media/backup/linkedin.png',
           'LinkedIn'
         )}</li>
         </ul>
