@@ -1,4 +1,3 @@
-// import { BASE_PATH } from './src/utils/constants.js'
 import { loadStyle } from './src/utils/loadStyle.js'
 import { Header } from './src/components/Header/Header.js'
 import { Footer } from './src/components/Footer/Footer.js'

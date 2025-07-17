@@ -1,4 +1,3 @@
-import { BASE_PATH } from '../../utils/constants.js'
 import { ProjectCard } from '../../components/ProjectCard/ProjectCard.js'
 import { projectsData } from '../../utils/projectsData.js'
 

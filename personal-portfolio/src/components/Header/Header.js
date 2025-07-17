@@ -1,6 +1,4 @@
-// Header.js
 import { BASE_PATH } from '../../utils/constants.js'
-// import { SocialIcon } from `${BASE_PATH}components/SocialMediaIcon/SocialMediaIcon.`
 import { SocialIcon } from '../../components/SocialMediaIcon/SocialMediaIcon.js'
 
 export const Header = () => {

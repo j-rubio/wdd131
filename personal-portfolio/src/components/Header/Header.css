@@ -1,4 +1,3 @@
-/* Header.css */
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -49,7 +48,6 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Sidebar menu */
 .sidebar-menu {
   position: fixed;
   top: 0;
@@ -77,17 +75,14 @@
   font-weight: 500;
 }
 
-/* Toggle sidebar */
 .hamburger-toggle:checked ~ .sidebar-menu {
   transform: translateX(0);
 }
 
-/* Desktop nav */
 .nav-links {
   display: none;
 }
 
-/* Lock scroll when sidebar is open */
 .no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -97,7 +92,7 @@
   margin-left: 1rem;
   margin-right: 0.5rem;
 }
-/* Responsive behavior */
+
 @media screen and (min-width: 700px) {
   .hamburger-menu,
   .sidebar-menu {

@@ -23,7 +23,6 @@
   color: var(--secondary-color);
 }
 
-/* Tablet & up */
 @media screen and (min-width: 700px) {
   .tech-icon img {
     width: 64px;

@@ -1,4 +1,3 @@
-import { BASE_PATH } from '../../utils/constants.js'
 import { techIconData } from '../../utils/techIconData.js'
 import { TechIcon } from '../../components/TechIcon/TechIcon.js'
 

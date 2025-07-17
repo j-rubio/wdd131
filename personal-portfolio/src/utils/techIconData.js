@@ -1,5 +1,4 @@
 import { BASE_PATH } from '../utils/constants.js'
-// const BASE_PATH = './'
 
 export const techIconData = [
   {
