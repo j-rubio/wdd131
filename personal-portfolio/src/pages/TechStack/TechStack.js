@@ -1,5 +1,6 @@
-import { techIconData } from '../../utils/techIconData.js'
-import { TechIcon } from '../../components/TechIcon/TechIcon.js'
+// import { techIconData } from '../../utils/techIconData.js'
+import { techIconData } from '/personal-portfolio/src/utils/techIconData.js'
+import { TechIcon } from '/personal-portfolio/src/components/TechIcon/TechIcon.js'
 
 export const TechStack = () => {
   const main = document.querySelector('main')

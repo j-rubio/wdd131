@@ -4,7 +4,7 @@ export const projectsData = [
     title: 'Project One',
     description:
       'This project re-creates the University mission statement in HTML and CSS. I payed close attention to detail and applied padding margin, font-size, line-height, letter-spacing, centering and more to get it right.',
-    image: '../../assets/images/projects/backup/project01.png',
+    image: '/personal-portfolio/assets/images/projects/backup/project01.png',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://my-name.github.io/wdd131/mission/index.html',
     github: 'https://github.com/my-name/wdd131/tree/main/mission'
@@ -14,7 +14,7 @@ export const projectsData = [
     title: 'Project Two',
     description:
       'I created a page to act as a photography gallery. The gallery is responsive, meaning that it will look good on small screens and large.',
-    image: '../../assets/images/projects/backup/project02.png',
+    image: '/personal-portfolio/assets/images/projects/backup/project02.png',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://my-name.github.io/wdd131/coolpics/index.html',
     github: 'https://github.com/my-name/wdd131/tree/main/coolpics'
@@ -24,7 +24,7 @@ export const projectsData = [
     title: 'Project Three',
     description:
       'This project is a simple blog site. I made the page somewhat dynamic by generating some of the markup for the page with Javascript.',
-    image: '../../assets/images/projects/backup/project03.png',
+    image: '/personal-portfolio/assets/images/projects/backup/project03.png',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://my-name.github.io/wdd131/blog/index.html',
     github: 'https://github.com/my-name/wdd131/tree/main/blog'
@@ -34,7 +34,7 @@ export const projectsData = [
     title: 'Project Four',
     description:
       'In this project, I created and styled a credit card submission form.',
-    image: '../../assets/images/projects/backup/project04.png',
+    image: '/personal-portfolio/assets/images/projects/backup/project04.png',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://my-name.github.io/wdd131/creditcard/index.html',
     github: 'https://github.com/my-name/wdd131/tree/main/creditcard'
@@ -44,7 +44,7 @@ export const projectsData = [
     title: 'Project Five',
     description:
       'This project is a styled form that could be used to register youth for a camp. The two buttons on the form are functional.',
-    image: '../../assets/images/projects/backup/project05.png',
+    image: '/personal-portfolio/assets/images/projects/backup/project05.png',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://my-name.github.io/wdd131/register/index.html',
     github: 'https://github.com/my-name/wdd131/tree/main/register'
@@ -54,7 +54,7 @@ export const projectsData = [
     title: 'Project Six',
     description:
       'This project is a recipe site. It is responsive and include good SEO, is accessible, and gave me the opportunity to practice using Flexbox.',
-    image: '../../assets/images/projects/backup/project06.png',
+    image: '/personal-portfolio/assets/images/projects/backup/project06.png',
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://my-name.github.io/wdd131/recipes/index.html',
     github: 'https://github.com/my-name/wdd131/tree/main/recipes'

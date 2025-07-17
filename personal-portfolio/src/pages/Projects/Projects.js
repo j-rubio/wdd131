@@ -1,5 +1,5 @@
-import { ProjectCard } from '../../components/ProjectCard/ProjectCard.js'
-import { projectsData } from '../../utils/projectsData.js'
+import { ProjectCard } from '/personal-portfolio/src/components/ProjectCard/ProjectCard.js'
+import { projectsData } from '/personal-portfolio/src/utils/projectsData.js'
 
 export const Projects = () => {
   const main = document.querySelector('main')

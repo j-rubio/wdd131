@@ -6,8 +6,8 @@ export const TechIcon = (icon, desc, size = 400) => {
   return `
     <figure class="tech-icon" role="listitem">
       <picture>
-          <source srcset="../../../assets/icons/tech/${iconName}-${size}.avif" type="image/avif" />
-          <source srcset="../../../assets/icons/tech/${iconName}-${size}.webp" type="image/webp" />
+          <source srcset="/personal-portfolio/assets/icons/tech/${iconName}-${size}.avif" type="image/avif" />
+          <source srcset="/personal-portfolio/assets/icons/tech/${iconName}-${size}.webp" type="image/webp" />
           <img
             src="${iconName}"
             alt="${desc}"

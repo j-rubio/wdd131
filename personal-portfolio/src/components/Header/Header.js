@@ -1,5 +1,5 @@
 // Header.js
-import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
+import { SocialIcon } from '/personal-portfolio/src/components/SocialMediaIcon/SocialMediaIcon.js'
 
 export const Header = () => {
   return `
@@ -24,12 +24,12 @@ export const Header = () => {
           <li><a href="#" data-link="projects">Projects</a></li>
           <li>${SocialIcon(
             'https://www.github.com',
-            './assets/icons/social-media/backup/github.png',
+            '/personal-portfolio/assets/icons/social-media/backup/github.png',
             'GitHub'
           )}</li>
           <li>${SocialIcon(
             'https://www.linkedin.com',
-            './assets/icons/social-media/backup/linkedin.png',
+            '/personal-portfolio/assets/icons/social-media/backup/linkedin.png',
             'LinkedIn'
           )}</li>
         </ul>
@@ -41,12 +41,12 @@ export const Header = () => {
         <li><a href="#" data-link="projects">Projects</a></li>
         <li>${SocialIcon(
           'https://www.github.com',
-          './assets/icons/social-media/backup/github.png',
+          '/personal-portfolio/assets/icons/social-media/backup/github.png',
           'GitHub'
         )}</li>
         <li>${SocialIcon(
           'https://www.linkedin.com',
-          './assets/icons/social-media/backup/linkedin.png',
+          '/personal-portfolio/assets/icons/social-media/backup/linkedin.png',
           'LinkedIn'
         )}</li>
         </ul>

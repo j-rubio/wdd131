@@ -1,4 +1,4 @@
-import { Avatar } from '../../components/Avatar/Avatar.js'
+import { Avatar } from '/personal-portfolio/src/components/Avatar/Avatar.js'
 
 export const Home = () => {
   const main = document.querySelector('main')
@@ -13,7 +13,7 @@ export const Home = () => {
         <div class="logo-container">
           <a href="https://www.google.com">
             <img
-              src="./assets/icons/logo/logo-transparent-400.webp"
+              src="/personal-portfolio/assets/icons/logo/logo-transparent-400.webp"
               alt="Site logo"
               loading="lazy"
               width="64"
@@ -24,7 +24,7 @@ export const Home = () => {
 
         <div class="avatar-container">
           ${Avatar(
-            './assets/images/portrait/portrait-400.webp',
+            '/personal-portfolio/assets/images/portrait/portrait-400.webp',
             'Portrait of my name'
           )}
         </div>
