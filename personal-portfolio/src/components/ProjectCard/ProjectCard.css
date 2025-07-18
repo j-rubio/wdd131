@@ -3,11 +3,17 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background-color: var(--card-color, #ffffff);
+  background-color: var(--card-color);
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--primary-color-dark);
+}
+
+body.light .project-card {
+  background-color: #ffffff;
+  color: var(--primary-color-light);
 }
 
 .project-card:hover,
@@ -20,7 +26,7 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 2px solid var(--card-color, #fff);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .project-info {
@@ -32,13 +38,22 @@
 .project-info h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+  color: var(--primary-color-dark);
+}
+
+body.light .project-info h3 {
+  color: var(--primary-color-light);
 }
 
 .project-info p {
   font-size: 1rem;
-  color: var(--text-color, #fff);
+  color: var(--primary-color-dark);
   margin-bottom: 0.5rem;
   word-break: break-word;
+}
+
+body.light .project-info p {
+  color: var(--primary-color-light);
 }
 
 .project-links {
@@ -51,15 +66,19 @@
 
 .project-links a {
   font-weight: 600;
-  color: var(--primary-color-dark, #0056b3);
+  color: #00bcd4;
   text-decoration: none;
   transition: color 0.2s ease;
   outline-offset: 2px;
 }
 
+body.light .project-links a {
+  color: #00688b;
+}
+
 .project-links a:hover,
 .project-links a:focus {
-  color: var(--accent-color, #ff6600);
+  color: #ff9800;
   text-decoration: underline;
 }
 

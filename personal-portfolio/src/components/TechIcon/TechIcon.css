@@ -20,7 +20,11 @@
 .tech-icon figcaption {
   font-size: 0.75rem;
   margin-top: 0.5rem;
-  color: var(--secondary-color);
+  color: var(--primary-color-dark);
+}
+
+body.light .tech-icon figcaption {
+  color: var(--primary-color-light);
 }
 
 @media screen and (min-width: 700px) {

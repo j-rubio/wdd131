@@ -1,6 +1,6 @@
 import { BASE_PATH } from '../../utils/constants.js'
 
-export const Avatar = (imageName, desc, size = 400) => {
+export const Avatar = (imageName, desc, size = 200) => {
   const filename = imageName.replace(/^\.\/|^\//, '') // Remove ./ or / prefix
 
   return `

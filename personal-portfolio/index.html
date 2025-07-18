@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My Portfolio | Projects</title>
+    <title>J Rubio | Portfolio</title>
+
+    <!-- Meta for SEO and social -->
     <meta
       name="description"
-      content="A showcase of my recent front-end development projects using modern web technologies."
+      content="Explore J Rubio’s web development portfolio and projects."
     />
     <meta name="author" content="J Rubio" />
-    <meta property="og:title" content="My Portfolio | Projects" />
+    <meta property="og:title" content="J Rubio | Portfolio" />
     <meta
       property="og:description"
       content="Explore my recent work in front-end development."
@@ -19,19 +20,91 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://j-rubio.github.io/wdd131/personal-portfolio/index.html"
+      content="https://j-rubio.github.io/wdd131/personal-portfolio/"
     />
+
+    <!-- Preconnect & preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="./assets/logo/logo-transparent.png"
-      type="image/png"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="stylesheet" href="./main.css" />
-    <link
-      rel="stylesheet"
-      href="./src/components/ProjectCard/ProjectCard.css"
-    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
+      />
+    </noscript>
+
+    <!-- Favicon -->
+    <!-- Standard favicon -->
+    <link rel="icon" href="./assets/logo/favicon.ico" type="image/x-icon" />
+
+    <!-- PNG fallbacks for specific sizes -->
+    <link rel="icon" sizes="16x16" href="./assets/logo/favicon-16.png" />
+    <link rel="icon" sizes="32x32" href="./assets/logo/favicon-32.png" />
+    <link rel="icon" sizes="48x48" href="./assets/logo/favicon-48.png" />
+
+    <!-- Apple touch icon for iOS home screen -->
+    <link rel="apple-touch-icon" href="./assets/logo/apple-touch-icon.png" />
+
+    <!-- Inlined critical CSS -->
+    <style>
+      :root {
+        --bg-color-dark: #121212;
+        --primary-color-dark: #ffffff;
+        --bg-color-light: #f8f8f8;
+        --primary-color-light: #1c1c1c;
+        --secondary-color: #9f9f9f;
+        --highlight-gradient: linear-gradient(
+          87deg,
+          rgba(131, 58, 180, 1) 0%,
+          rgba(253, 29, 29, 1) 50%,
+          rgba(252, 176, 69, 1) 100%
+        );
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        color: #ffffff;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+
+      body.light {
+        background-color: var(--bg-color-light);
+        color: var(--primary-color-light);
+      }
+
+      main {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        min-height: calc(100vh - 18vh);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .home h1 {
+        font-size: 2rem;
+        background: var(--highlight-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
     <script type="module" src="./main.js" defer></script>
   </head>
   <body>

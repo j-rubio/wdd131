@@ -1,12 +1,14 @@
+/* Section Container */
 .home {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem 1.5rem;
-  text-align: center;
   min-height: calc(100vh - 18vh);
+  text-align: center;
 }
 
+/* Content Wrapper */
 .home-content {
   max-width: 700px;
   display: flex;
@@ -14,6 +16,22 @@
   gap: 1.5rem;
 }
 
+.home-content {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Headline */
 .home h1 {
   font-size: 2rem;
   background: var(--highlight-gradient);
@@ -23,18 +41,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Description Text */
 .home p {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--secondary-color);
 }
 
-.logo-container {
-  position: relative;
-  margin-bottom: -3rem;
-  margin-left: 8rem;
+body.light .home p {
+  color: #222; /* High-contrast for light mode */
 }
 
+/* Avatar */
 .avatar-container img {
   width: 160px;
   height: 160px;
@@ -44,7 +62,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 700px) {
+body.light .avatar-container img {
+  border-color: var(--primary-color-light);
+}
+
+@media (min-width: 700px) {
   .home h1 {
     font-size: 3rem;
   }

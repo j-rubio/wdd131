@@ -1,12 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-
 :root {
-  --bg-color-dark: #19191986;
+  --bg-color-dark: #121212;
   --primary-color-dark: #ffffff;
-  --bg-color-light: #d9d9d9;
-  --primary-color-light: #42446e;
+
+  --bg-color-light: #f8f8f8;
+  --primary-color-light: #1c1c1c;
+
   --card-color: #353535;
-  --secondary-color: #fbfbfb;
+  --secondary-color: #9f9f9f;
+
   --highlight-gradient: linear-gradient(
     87deg,
     rgba(131, 58, 180, 1) 0%,
@@ -15,13 +16,15 @@
   );
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  color: inherit;
   font-family: 'Poppins', sans-serif;
+  color: inherit;
+  text-decoration: none;
 }
 
 html,
@@ -29,15 +32,26 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 body {
   background-color: var(--bg-color-dark);
   color: var(--primary-color-dark);
-  transition: all 0.5s ease-in-out;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.light {
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body.light {
   background-color: var(--bg-color-light);
   color: var(--primary-color-light);
 }
@@ -52,14 +66,20 @@ main {
 }
 
 main > * {
-  animation: fade 1s ease-in-out;
+  animation: fade 0.8s ease-in-out;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 @keyframes fade {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
