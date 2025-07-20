@@ -59,14 +59,21 @@ body.light {
 main {
   margin-top: 10vh;
   margin-bottom: 10vh;
-  min-height: calc(100vh - 18vh);
+  /* min-height: calc(100vh - 18vh); */
+  min-height: 82vh;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+  /* align-items: stretch; */
 }
 
 main > * {
   animation: fade 0.8s ease-in-out;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 p {
