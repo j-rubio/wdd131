@@ -1,6 +1,6 @@
 import { BASE_PATH } from '../../utils/constants.js'
 
-export const TechIcon = (icon, desc, size = 400) => {
+export const TechIcon = (icon, desc, size = 200) => {
   let iconName = `${icon}`.split('/')
   iconName = iconName[iconName.length - 1].split('.')[0]
 

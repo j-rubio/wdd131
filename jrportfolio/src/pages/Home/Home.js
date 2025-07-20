@@ -12,7 +12,7 @@ export const Home = () => {
         </p>        
         <div class="avatar-container">
         ${Avatar(
-          `${BASE_PATH}assets/images/portrait-200.webp`,
+          `${BASE_PATH}assets/images/portrait-200.avif`,
           'Portrait of J Rubio'
         )}
           </div>
