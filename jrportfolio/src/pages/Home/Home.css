@@ -30,7 +30,7 @@
   }
 }
 
-.home h1 {
+.home h2 {
   font-size: 2rem;
   background: var(--highlight-gradient);
   background-clip: text;
@@ -63,7 +63,7 @@ body.light .avatar-container img {
 }
 
 @media (min-width: 700px) {
-  .home h1 {
+  .home h2 {
     font-size: 3rem;
   }
 
