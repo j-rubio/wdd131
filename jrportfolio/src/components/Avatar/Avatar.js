@@ -1,23 +1,15 @@
 import { BASE_PATH } from '../../utils/constants.js'
 
-/**
- * Returns an accessible, responsive avatar component.
- *
- * @param {string} imagePath - Relative path to fallback image (e.g., "assets/images/portrait-200.avif").
- * @param {string} alt - Alternative text for accessibility.
- * @param {number} size - Width/height in pixels (default 200).
- */
-export const Avatar = (imagePath, alt = 'Avatar', size = 200) => {
-  const filename = imagePath.replace(/^\.\/|^\//, '') // sanitize leading './' or '/' if present
-  const base = `${BASE_PATH}assets/images/portrait-${size}`
+export const Avatar = (imageName, desc, size = 150) => {
+  const filename = imageName.replace(/^\.\/|^\//, '') // Remove ./ or / prefix
 
   return `
-    <picture class="avatar-container" style="width:${size}px;height:${size}px;">
-      <source srcset="${base}.avif" type="image/avif" />
-      <source srcset="${base}.webp" type="image/webp" />
+    <picture>
+      <source srcset="${BASE_PATH}assets/images/portrait-${size}.avif" type="image/avif" />
+      <source srcset="${BASE_PATH}assets/images/portrait-${size}.webp" type="image/webp" />
       <img
         src="${BASE_PATH}${filename}"
-        alt="${alt}"
+        alt="${desc}"
         class="avatar"
         loading="eager"
         decoding="async"

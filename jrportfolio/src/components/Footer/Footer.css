@@ -8,9 +8,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
   text-align: center;
-  gap: 0.7rem;
   background-color: var(--bg-color-dark);
   color: var(--primary-color-dark);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -38,6 +36,10 @@ footer p a {
 
 body.light footer p a {
   color: var(--primary-color-light);
+}
+
+footer a {
+  display: inline-block;
 }
 
 footer p a:hover,

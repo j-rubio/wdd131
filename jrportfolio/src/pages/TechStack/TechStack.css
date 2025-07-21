@@ -1,4 +1,3 @@
-/* Section Layout */
 .tech {
   display: flex;
   flex-direction: column;
@@ -10,13 +9,11 @@
   max-width: 1200px;
 }
 
-/* Content Area */
 .tech-content {
   max-width: 800px;
   text-align: center;
 }
 
-/* Headings & Text */
 .tech h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -37,7 +34,6 @@ body.light .tech p {
   color: #222; /* High contrast for light mode */
 }
 
-/* Tech Grid */
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));

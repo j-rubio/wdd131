@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J Rubio | Portfolio</title>
 
-    <!-- SEO & Social -->
+    <!-- Meta for SEO and social -->
     <meta
       name="description"
       content="Explore J Rubio’s web development portfolio and projects."
@@ -22,52 +22,29 @@
       property="og:url"
       content="https://j-rubio.github.io/wdd131/personal-portfolio/"
     />
-
-    <!-- Preconnect: Fonts + CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://j-rubio.github.io" crossorigin />
 
-    <!-- Preload font stylesheet (non-blocking) -->
-    <!-- <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
-    /> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
-      media="print"
-      onload="this.media='all'"
+      type="font/woff2"
+      crossorigin="anonymous"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
-      />
-    </noscript>
+    <!-- Favicon -->
+    <!-- Standard favicon -->
+    <link rel="icon" href="./assets/logo/favicon.ico" type="image/x-icon" />
 
-    <!-- Favicon + Apple Touch Icon -->
-    <link rel="icon" href="./assets/logo/favicon.ico" sizes="any" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/logo/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="48x48"
-      href="./assets/logo/favicon-48.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/logo/apple-touch-icon.png"
-    />
+    <!-- PNG fallbacks for specific sizes -->
+    <link rel="icon" sizes="16x16" href="./assets/logo/favicon-16.png" />
+    <link rel="icon" sizes="32x32" href="./assets/logo/favicon-32.png" />
+    <link rel="icon" sizes="48x48" href="./assets/logo/favicon-48.png" />
+    <link rel="icon" sizes="180x180" href="./assets/logo/favicon-180.png" />
 
-    <!-- Inlined Critical CSS -->
+    <!-- Apple touch icon for iOS home screen -->
+    <link rel="apple-touch-icon" href="./assets/logo/apple-touch-icon.png" />
+
+    <!-- Inlined critical CSS -->
     <style>
       :root {
         --bg-color-dark: #121212;
@@ -108,11 +85,10 @@
       main {
         margin-top: 10vh;
         margin-bottom: 10vh;
-        min-height: 80vh;
+        min-height: calc(100vh - 18vh);
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: stretch;
       }
 
       .home h1 {
@@ -123,19 +99,10 @@
         color: transparent;
         -webkit-text-fill-color: transparent;
       }
-
-      @media (min-width: 700px) {
-        .home h1 {
-          font-size: 3rem;
-        }
-      }
     </style>
-
-    <!-- Load JS Module + main CSS -->
     <script type="module" src="./main.js?v=1.0.3" defer></script>
-    <link rel="stylesheet" href="./main.css?v=1.0.3" />
+    <link rel="preconnect" href="https://j-rubio.github.io" crossorigin />
   </head>
-
   <body>
     <header></header>
     <main></main>
