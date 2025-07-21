@@ -11,7 +11,8 @@ export const Avatar = (imageName, desc, size = 200) => {
         src="${BASE_PATH}${filename}"
         alt="${desc}"
         class="avatar"
-        loading="lazy"
+        loading="eager"
+        decoding="async"
         width="${size}"
         height="${size}"
       />
