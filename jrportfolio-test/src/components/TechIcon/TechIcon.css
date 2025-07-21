@@ -1,0 +1,39 @@
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tech-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.tech-icon img:hover {
+  transform: scale(1.1);
+}
+
+.tech-icon figcaption {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: var(--primary-color-dark);
+}
+
+body.light .tech-icon figcaption {
+  color: var(--primary-color-light);
+}
+
+@media screen and (min-width: 700px) {
+  .tech-icon img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .tech-icon figcaption {
+    font-size: 0.85rem;
+  }
+}

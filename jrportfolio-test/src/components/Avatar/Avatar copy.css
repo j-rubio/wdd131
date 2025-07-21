@@ -1,0 +1,30 @@
+.avatar {
+  /* width: 180px; */
+  /* height: 180px; */
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--highlight-gradient);
+  padding: 0.3rem;
+  opacity: 0.95;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  transition: box-shadow 0.3s ease, opacity 0.3s ease;
+  border: 2px solid var(--primary-color-dark);
+}
+
+body.light .avatar {
+  border: 2px solid var(--primary-color-light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.avatar:hover,
+.avatar:focus {
+  opacity: 1;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 700px) {
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+}
