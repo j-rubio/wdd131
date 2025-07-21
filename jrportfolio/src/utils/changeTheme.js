@@ -30,6 +30,6 @@ function updateThemeIcon(mode) {
 
   themeBtn.innerHTML =
     mode === 'light'
-      ? '🌙' // Moon icon for switching to dark
+      ? '🌚' // Moon icon for switching to dark
       : '☀️' // Sun icon for switching to light
 }
