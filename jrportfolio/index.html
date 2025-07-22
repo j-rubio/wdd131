@@ -11,6 +11,17 @@
       content="Explore J Rubio’s web development portfolio and projects."
     />
     <meta name="author" content="J Rubio" />
+    <script>
+      // Immediate theme application to prevent CLS
+      ;(function () {
+        const storedTheme = localStorage.getItem('theme')
+        const prefersDark = window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches
+        const mode = storedTheme || (prefersDark ? 'dark' : 'light')
+        document.documentElement.classList.add(mode)
+      })()
+    </script>
     <meta property="og:title" content="J Rubio | Portfolio" />
     <meta
       property="og:description"
@@ -22,10 +33,9 @@
       property="og:url"
       content="https://j-rubio.github.io/wdd131/personal-portfolio/"
     />
-    <link rel="preconnect" href="https://j-rubio.github.io" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <style>
+    <!-- <style>
       :root {
         --bg: white;
         --text: black;
@@ -40,7 +50,7 @@
         background-color: var(--bg);
         color: var(--text);
       }
-    </style>
+    </style> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&display=swap"
@@ -64,6 +74,7 @@
     <meta name="apple-mobile-web-app-title" content="J Rubio | Projects" />
     <link rel="manifest" href="./assets/logo/site.webmanifest" />
 
+    <link rel="preconnect" href="https://j-rubio.github.io" crossorigin />
     <script type="module" src="./main.js?v=1.0.3" defer></script>
   </head>
   <body>
