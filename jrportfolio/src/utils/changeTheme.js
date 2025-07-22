@@ -11,10 +11,26 @@ export const toggleTheme = () => {
   updateThemeIcon(next)
 }
 
+// export const initTheme = () => {
+//   const storedTheme = localStorage.getItem('theme')
+//   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+//   const mode = storedTheme || (prefersDark ? 'dark' : 'light')
+//   setTheme(mode)
+//   updateThemeIcon(mode)
+
+//   const themeBtn = document.getElementById('themeBtn')
+//   if (themeBtn) {
+//     themeBtn.addEventListener('click', toggleTheme)
+//   }
+// }
 export const initTheme = () => {
   const storedTheme = localStorage.getItem('theme')
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-  const mode = storedTheme || (prefersDark ? 'dark' : 'light')
+  // const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  // const mode = storedTheme || (prefersDark ? 'dark' : 'light')
+  const prefersLight = window.matchMedia(
+    '(prefers-color-scheme: light)'
+  ).matches
+  const mode = storedTheme || (prefersLight ? 'light' : 'dark')
   setTheme(mode)
   updateThemeIcon(mode)
 

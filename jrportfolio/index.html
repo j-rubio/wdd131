@@ -15,10 +15,14 @@
       // Immediate theme application to prevent CLS
       ;(function () {
         const storedTheme = localStorage.getItem('theme')
-        const prefersDark = window.matchMedia(
-          '(prefers-color-scheme: dark)'
+        // const prefersDark = window.matchMedia(
+        //   '(prefers-color-scheme: dark)'
+        // ).matches
+        // const mode = storedTheme || (prefersDark ? 'dark' : 'light')
+        const prefersLight = window.matchMedia(
+          '(prefers-color-scheme: light)'
         ).matches
-        const mode = storedTheme || (prefersDark ? 'dark' : 'light')
+        const mode = storedTheme || (prefersLight ? 'light' : 'dark')
         document.documentElement.classList.add(mode)
       })()
     </script>
