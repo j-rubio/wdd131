@@ -8,11 +8,7 @@
   transition: box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
-/* body.light .avatar {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-} */
-
-html.light .avatar {
+body.light .avatar {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 

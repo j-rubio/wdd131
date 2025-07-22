@@ -23,11 +23,7 @@
   color: var(--primary-color-dark);
 }
 
-/* body.light .tech-icon figcaption {
-  color: var(--primary-color-light);
-} */
-
-html.light .tech-icon figcaption {
+body.light .tech-icon figcaption {
   color: var(--primary-color-light);
 }
 
