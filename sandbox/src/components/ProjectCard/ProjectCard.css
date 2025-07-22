@@ -11,7 +11,7 @@
   color: var(--primary-color-dark);
 }
 
-body.light .project-card {
+html.light .project-card {
   background-color: #ffffff;
   color: var(--primary-color-light);
 }
@@ -41,7 +41,7 @@ body.light .project-card {
   color: var(--primary-color-dark);
 }
 
-body.light .project-info h3 {
+html.light .project-info h3 {
   color: var(--primary-color-light);
 }
 
@@ -52,7 +52,7 @@ body.light .project-info h3 {
   word-break: break-word;
 }
 
-body.light .project-info p {
+html.light .project-info p {
   color: var(--primary-color-light);
 }
 
@@ -72,7 +72,7 @@ body.light .project-info p {
   outline-offset: 2px;
 }
 
-body.light .project-links a {
+html.light .project-links a {
   color: #00688b;
 }
 

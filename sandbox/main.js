@@ -24,9 +24,9 @@ requestIdleCallback(() => {
 })
 
 document.querySelector('header').innerHTML = Header()
+initTheme()
 document.querySelector('footer').innerHTML = Footer()
 
-initTheme()
 Home()
 
 const routes = {

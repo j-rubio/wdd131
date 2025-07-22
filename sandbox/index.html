@@ -11,6 +11,17 @@
       content="Explore J Rubio’s web development portfolio and projects."
     />
     <meta name="author" content="J Rubio" />
+    <script>
+      // Immediate theme application to prevent CLS
+      ;(function () {
+        const storedTheme = localStorage.getItem('theme')
+        const prefersLight = window.matchMedia(
+          '(prefers-color-scheme: light)'
+        ).matches
+        const mode = storedTheme || (prefersLight ? 'light' : 'dark')
+        document.documentElement.classList.add(mode)
+      })()
+    </script>
     <meta property="og:title" content="J Rubio | Portfolio" />
     <meta
       property="og:description"
@@ -20,39 +31,17 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://j-rubio.github.io/wdd131/personal-portfolio/"
+      content="https://j-rubio.github.io/wdd131/jrportfolio/"
     />
-    <link rel="preload" as="image" href="./assets/images/portrait-150.avif" />
-
-    <!-- Preload primary font -->
-    <!-- <link
-      rel="preload"
-      href="/fonts/Poppins.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    /> -->
-    <!-- Load stylesheet -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
-    />
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&display=swap"
       type="font/woff2"
       crossorigin="anonymous"
-    /> -->
+    />
     <!-- Favicon -->
     <link
       rel="icon"
@@ -70,265 +59,18 @@
     <meta name="apple-mobile-web-app-title" content="J Rubio | Projects" />
     <link rel="manifest" href="./assets/logo/site.webmanifest" />
 
-    <!-- Inlined critical CSS -->
-    <!-- <style>
-      :root {
-        --bg-color-dark: #121212;
-        --primary-color-dark: #ffffff;
-        --bg-color-light: #f8f8f8;
-        --primary-color-light: #1c1c1c;
-        --secondary-color: #9f9f9f;
-        --highlight-gradient: linear-gradient(
-          87deg,
-          rgba(131, 58, 180, 1) 0%,
-          rgba(253, 29, 29, 1) 50%,
-          rgba(252, 176, 69, 1) 100%
-        );
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-      }
-
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        background-color: #121212;
-        color: #ffffff;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-      }
-
-      body.light {
-        background-color: var(--bg-color-light);
-        color: var(--primary-color-light);
-      }
-
-      main {
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-        min-height: calc(100vh - 18vh);
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .home h1 {
-        font-size: 2rem;
-        background: var(--highlight-gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-      }
-    </style> -->
-    <head>
-      <style>
-        /* Critical CSS */
-        body {
-          margin: 0;
-          font-family: 'Lato', sans-serif;
-        }
-        header,
-        main {
-          display: block;
-          width: 100%;
-        }
-        img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-        }
-      </style>
-      <link
-        rel="stylesheet"
-        href="./main.css"
-        media="print"
-        onload="this.media='all'"
-      />
-    </head>
-
-    <script type="module" src="./main.js?v=1.0.3" defer></script>
     <link
       rel="preconnect"
       href="https://j-rubio.github.io/wdd131/jrportfolio/index.html"
       crossorigin
     />
+    <script type="module" src="./main.js?v=1.0.3" defer></script>
   </head>
   <body>
     <header></header>
     <main>
-      <!-- Protrait image -->
-      <img
-        src="./assets/images/portrait-150.webp"
-        width="150"
-        height="150"
-        alt="J Rubio portrait"
-        style="display: block"
-      />
+      <img width="200" height="200" />
     </main>
     <footer></footer>
   </body>
 </html>
-
-<!-- Tech icon images -->
-<!-- <img
-    src="./assets/tech/c-64.webp"
-    alt="C language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/cpp-64.webp"
-    alt="C plus plus language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/csharp-64.webp"
-    alt="C sharp language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/css-3-64.webp"
-    alt="CSS language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/git-64.webp"
-    alt="Git logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/html-5-64.webp"
-    alt="HTML language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/js-64.webp"
-    alt="JavaScript language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/linux-64.webp"
-    alt="Linux OS logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/macos-64.webp"
-    alt="MacOs OS logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/mongo-64.webp"
-    alt="Mongo logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/mysql-64.webp"
-    alt="MySQL language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/node-64.webp"
-    alt="Node logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/python-64.webp"
-    alt="Python language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/r-64.webp"
-    alt="R language logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/visual-64.webp"
-    alt="Visual Studio logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <img
-    src="./assets/tech/windows-64.webp"
-    alt="Windows OS logo"
-    width="64"
-    height="64"
-    style="display: block"
-  />
-  <!-- Project images -->
-<img
-  src="./assets/images/project01-200.webp"
-  width="600"
-  height="400"
-  loading="lazy"
-  alt="Project 1"
-/>
-<img
-  src="./assets/images/project02-200.webp"
-  width="600"
-  height="400"
-  loading="lazy"
-  alt="Project 2"
-/>
-<img
-  src="./assets/images/project03-200.webp"
-  width="600"
-  height="400"
-  loading="lazy"
-  alt="Project 3"
-/>
-<img
-  src="./assets/images/project04-200.webp"
-  width="600"
-  height="400"
-  loading="lazy"
-  alt="Project 4"
-/>
-<img
-  src="./assets/images/project05-200.webp"
-  width="600"
-  height="400"
-  loading="lazy"
-  alt="Project 5"
-/>
-<img
-  src="./assets/images/project06-200.webp"
-  width="600"
-  height="400"
-  loading="lazy"
-  alt="Project 6"
-/>
--->

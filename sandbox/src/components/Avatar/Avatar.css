@@ -8,7 +8,7 @@
   transition: box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
-body.light .avatar {
+html.light .avatar {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -18,13 +18,9 @@ body.light .avatar {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
-.avatar-container img {
-  aspect-ratio: 1/1;
-}
-
 @media screen and (min-width: 700px) {
   .avatar {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 }

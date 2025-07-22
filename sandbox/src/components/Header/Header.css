@@ -13,7 +13,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-body.light .main-nav {
+html.light .main-nav {
   background-color: var(--bg-color-light);
   color: var(--primary-color-light);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -25,8 +25,8 @@ body.light .main-nav {
   font-weight: 600;
 }
 
-body.light .main-nav a,
-body.light .main-nav p {
+html.light .main-nav a,
+html.light .main-nav p {
   color: var(--primary-color-light);
 }
 
@@ -73,7 +73,7 @@ body.light .main-nav p {
   display: none;
 }
 
-body.light .hamburger-menu span {
+html.light .hamburger-menu span {
   background: var(--primary-color-light);
 }
 
@@ -90,7 +90,7 @@ body.light .hamburger-menu span {
   z-index: 1100;
 }
 
-body.light .sidebar-menu {
+html.light .sidebar-menu {
   background: var(--bg-color-light);
 }
 
@@ -112,7 +112,7 @@ body.light .sidebar-menu {
   color: var(--primary-color-dark);
 }
 
-body.light .sidebar-menu a {
+html.light .sidebar-menu a {
   color: var(--primary-color-light);
 }
 
@@ -127,11 +127,11 @@ body.light .sidebar-menu a {
   height: 32px;
 }
 
-body.light #themeBtn {
+html.light #themeBtn {
   background-color: var(--bg-color-light);
 }
 
-body.dark #themeBtn {
+html.dark #themeBtn {
   background-color: var(--bg-color-dark);
 }
 

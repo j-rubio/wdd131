@@ -30,7 +30,7 @@
   }
 }
 
-.home h1 {
+.home h2 {
   font-size: 2rem;
   background: var(--highlight-gradient);
   background-clip: text;
@@ -45,7 +45,7 @@
   color: var(--secondary-color);
 }
 
-body.light .home p {
+html.light .home p {
   color: #222;
 }
 
@@ -58,12 +58,12 @@ body.light .home p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-body.light .avatar-container img {
+html.light .avatar-container img {
   border-color: var(--primary-color-light);
 }
 
 @media (min-width: 700px) {
-  .home h1 {
+  .home h2 {
     font-size: 3rem;
   }
 
