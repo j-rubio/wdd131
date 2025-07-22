@@ -1,8 +1,16 @@
 const setTheme = (mode) => {
+  // Prevent layout shitts during theme change
+  document.body.style.contain = 'layout style'
+
   requestAnimationFrame(() => {
     document.documentElement.classList.remove('light', 'dark')
     document.documentElement.classList.add(mode)
     localStorage.setItem('theme', mode)
+
+    // Remove containment after theme is applied
+    setTimeout(() => {
+      document.body.style.contain = ''
+    }, 100)
   })
 }
 

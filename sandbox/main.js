@@ -6,11 +6,11 @@ import { TechStack } from './src/pages/TechStack/TechStack.js'
 import { Projects } from './src/pages/Projects/Projects.js'
 import { initTheme } from './src/utils/changeTheme.js'
 
-loadStyle('./main.css', { async: false })
-loadStyle('./src/components/Header/Header.css', { async: false })
-loadStyle('./src/pages/Home/Home.css', { async: false })
+// loadStyle('./main.css', { async: true })
+// loadStyle('./src/components/Header/Header.css', { async: true })
+// loadStyle('./src/components/Footer/Footer.css', { async: true })
+// loadStyle('./src/pages/Home/Home.css', { async: true })
 
-loadStyle('./src/components/Footer/Footer.css', { async: true })
 loadStyle('./src/components/Avatar/Avatar.css', { async: true })
 loadStyle('./src/pages/TechStack/TechStack.css', { async: true })
 loadStyle('./src/pages/Projects/Projects.css', { async: true })
