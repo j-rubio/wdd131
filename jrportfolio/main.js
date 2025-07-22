@@ -6,6 +6,7 @@ import { TechStack } from './src/pages/TechStack/TechStack.js'
 import { Projects } from './src/pages/Projects/Projects.js'
 import { initTheme } from './src/utils/changeTheme.js'
 
+initTheme()
 loadStyle('./main.css', { async: true })
 loadStyle('./src/components/Header/Header.css', { async: true })
 loadStyle('./src/components/Footer/Footer.css', { async: true })
@@ -26,7 +27,7 @@ requestIdleCallback(() => {
 document.querySelector('header').innerHTML = Header()
 document.querySelector('footer').innerHTML = Footer()
 
-initTheme()
+// initTheme()
 Home()
 
 const routes = {
