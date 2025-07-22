@@ -63,7 +63,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*  these lines are added to prevent shifts*/
   contain: layout style;
   will-change: contents;
 }
