@@ -1,5 +1,4 @@
 const setTheme = (mode) => {
-  // Use requestAnimationFrame to prevent layout thrashing
   requestAnimationFrame(() => {
     document.documentElement.classList.remove('light', 'dark')
     document.documentElement.classList.add(mode)
@@ -13,7 +12,6 @@ export const toggleTheme = () => {
     : 'dark'
   const next = current === 'light' ? 'dark' : 'light'
 
-  // Use requestAnimationFrame to prevent layout shifts
   requestAnimationFrame(() => {
     setTheme(next)
     updateThemeIcon(next)
@@ -25,7 +23,6 @@ export const initTheme = () => {
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   const mode = storedTheme || (prefersDark ? 'dark' : 'light')
 
-  // Apply theme immediately without requestAnimationFrame for initial load
   document.documentElement.classList.remove('light', 'dark')
   document.documentElement.classList.add(mode)
   localStorage.setItem('theme', mode)

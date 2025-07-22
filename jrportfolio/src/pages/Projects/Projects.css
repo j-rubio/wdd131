@@ -17,10 +17,6 @@
   color: var(--primary-color-dark);
 }
 
-/* body.light .projects h2 {
-  color: var(--primary-color-light);
-} */
-
 html.light .projects h2 {
   color: var(--primary-color-light);
 }
@@ -31,10 +27,6 @@ html.light .projects h2 {
   color: var(--secondary-color);
   margin-bottom: 2rem;
 }
-
-/* body.light .projects p {
-  color: #1f1f1f;
-} */
 
 html.light .projects p {
   color: #1f1f1f;

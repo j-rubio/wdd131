@@ -42,7 +42,6 @@ html {
 body {
   background-color: var(--bg-color-dark);
   color: var(--primary-color-dark);
-  /* transition: background-color 0.3s ease, color 0.3s ease; */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -50,11 +49,6 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* body.light {
-  background-color: var(--bg-color-light);
-  color: var(--primary-color-light);
-} */
 
 html.light body {
   background-color: var(--bg-color-light);

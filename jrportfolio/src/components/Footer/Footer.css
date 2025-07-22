@@ -14,12 +14,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* body.light footer {
-  background-color: var(--bg-color-light);
-  color: var(--primary-color-light);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-} */
-
 html.light footer {
   background-color: var(--bg-color-light);
   color: var(--primary-color-light);
@@ -31,10 +25,6 @@ footer p {
   color: var(--primary-color-dark);
 }
 
-/* body.light footer p {
-  color: var(--primary-color-light);
-} */
-
 html.light footer p {
   color: var(--primary-color-light);
 }
@@ -43,10 +33,6 @@ footer p a {
   color: var(--primary-color-dark);
   font-weight: 600;
 }
-
-/* body.light footer p a {
-  color: var(--primary-color-light);
-} */
 
 html.light footer p a {
   color: var(--primary-color-light);
