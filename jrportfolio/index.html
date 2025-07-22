@@ -22,9 +22,25 @@
       property="og:url"
       content="https://j-rubio.github.io/wdd131/personal-portfolio/"
     />
+    <link rel="preconnect" href="https://j-rubio.github.io" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <style>
+      :root {
+        --bg: white;
+        --text: black;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: black;
+          --text: white;
+        }
+      }
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&display=swap"
@@ -49,7 +65,6 @@
     <link rel="manifest" href="./assets/logo/site.webmanifest" />
 
     <script type="module" src="./main.js?v=1.0.3" defer></script>
-    <link rel="preconnect" href="https://j-rubio.github.io" crossorigin />
   </head>
   <body>
     <header></header>
