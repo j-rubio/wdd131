@@ -49,6 +49,15 @@ html.light .home p {
   color: #222;
 }
 
+.avatar-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .avatar-container img {
   max-width: 100%;
   width: 200px;

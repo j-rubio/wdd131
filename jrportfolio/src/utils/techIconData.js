@@ -1,5 +1,4 @@
 import { BASE_PATH } from '../utils/constants.js'
-
 export const techIconData = [
   {
     name: 'HTML 5',

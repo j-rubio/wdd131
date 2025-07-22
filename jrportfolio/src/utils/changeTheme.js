@@ -1,8 +1,14 @@
 const setTheme = (mode) => {
+  document.body.style.contain = 'layout style'
+
   requestAnimationFrame(() => {
     document.documentElement.classList.remove('light', 'dark')
     document.documentElement.classList.add(mode)
     localStorage.setItem('theme', mode)
+
+    setTimeout(() => {
+      document.body.style.contain = ''
+    }, 100)
   })
 }
 
