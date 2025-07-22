@@ -15,10 +15,6 @@
       // Immediate theme application to prevent CLS
       ;(function () {
         const storedTheme = localStorage.getItem('theme')
-        // const prefersDark = window.matchMedia(
-        //   '(prefers-color-scheme: dark)'
-        // ).matches
-        // const mode = storedTheme || (prefersDark ? 'dark' : 'light')
         const prefersLight = window.matchMedia(
           '(prefers-color-scheme: light)'
         ).matches
@@ -39,22 +35,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <style>
-      :root {
-        --bg: white;
-        --text: black;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: black;
-          --text: white;
-        }
-      }
-      body {
-        background-color: var(--bg);
-        color: var(--text);
-      }
-    </style> -->
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&display=swap"
