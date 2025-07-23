@@ -66,6 +66,11 @@ export const techIconData = [
     alt: 'Visual'
   },
   {
+    name: 'Figma',
+    icon: `${BASE_PATH}assets/tech/figma.png`,
+    alt: 'Figma'
+  },
+  {
     name: 'Linux',
     icon: `${BASE_PATH}assets/tech/linux.png`,
     alt: 'Linux'

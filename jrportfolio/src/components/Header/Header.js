@@ -28,12 +28,12 @@ export const Header = () => {
           <li><a href="#" data-link="tech">Tech Stack</a></li>
           <li><a href="#" data-link="projects">Projects</a></li>
           <li>${SocialIcon(
-            'https://www.github.com',
+            'https://www.github.com/j-rubio/',
             `${BASE_PATH}assets/smedia/github-32.webp`,
             'GitHub'
           )}</li>
           <li>${SocialIcon(
-            'https://www.linkedin.com',
+            'https://www.linkedin.com/in/rubioconnect/',
             `${BASE_PATH}assets/smedia/linkedin-32.webp`,
             'LinkedIn'
           )}</li>
@@ -47,12 +47,12 @@ export const Header = () => {
         <li><a href="#" data-link="tech">Tech Stack</a></li>
         <li><a href="#" data-link="projects">Projects</a></li>
         <li>${SocialIcon(
-          'https://www.github.com',
+          'https://www.github.com/j-rubio/',
           `${BASE_PATH}assets/smedia/github-32.webp`,
           'GitHub'
         )}</li>
         <li>${SocialIcon(
-          'https://www.linkedin.com',
+          'https://www.linkedin.com/in/rubioconnect/',
           `${BASE_PATH}assets/smedia/linkedin-32.webp`,
           'LinkedIn'
         )}</li>
