@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J Rubio | Portfolio</title>
+
+    <!-- Meta for SEO and social -->
+    <meta
+      name="description"
+      content="Explore Julio Rubio’s web development portfolio and projects."
+    />
+    <meta name="author" content="J Rubio" />
+    <script>
+      // Immediate theme application to prevent CLS
+      ;(function () {
+        const storedTheme = localStorage.getItem('theme')
+        const prefersLight = window.matchMedia(
+          '(prefers-color-scheme: light)'
+        ).matches
+        const mode = storedTheme || (prefersLight ? 'light' : 'dark')
+        document.documentElement.classList.add(mode)
+      })()
+    </script>
+    <meta property="og:title" content="J Rubio | Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my recent work in front-end development."
+    />
+    <meta property="og:image" content="./assets/images/portrait-400.webp" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://j-rubio.github.io/wdd131/jrportfolio/"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./src/components/Header/Header.css" />
+    <link rel="stylesheet" href="./src/components/Footer/Footer.css" />
+    <link rel="stylesheet" href="./src/pages/Home/Home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&display=swap"
+      />
+    </noscript>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/logo/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/logo/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="J Rubio | Projects" />
+    <link rel="manifest" href="./assets/logo/site.webmanifest" />
+
+    <link
+      rel="preconnect"
+      href="https://j-rubio.github.io/wdd131/jrportfolio/index.html"
+      crossorigin
+    />
+    <script type="module" src="./main.js?v=1.0.3" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
