@@ -123,8 +123,7 @@ html.light .sidebar-menu a {
 #themeBtn {
   border: none;
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  font-size: 2rem;
 }
 
 html.light #themeBtn {
