@@ -8,7 +8,7 @@ export const Home = () => {
       <div class="home-content">
         <h2 id="home-heading">Hi, I'm Julio Rubio</h2>
         <p>
-          I’m an Electronic Engineer and Developer passionate about building intuitive, responsive web apps and embedded systems.
+          I’m an Electronic Engineer Tech and Web Developer passionate about building intuitive, responsive web apps and embedded systems.
         </p>        
         <div class="avatar-container">
         ${Avatar(
