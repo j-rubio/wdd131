@@ -40,7 +40,7 @@ export const Header = () => {
         </ul>
       </nav>
 
-      <a href="#" data-link="home"><p><strong>J Rubio</strong></p></a>
+      <a href="#" data-link="home"><p><strong>JR</strong></p></a>
       
       <ul class="nav-links">
         <li><a href="#" data-link="home">Home</a></li>

@@ -54,4 +54,5 @@ footer span {
   -webkit-text-fill-color: transparent;
   background-clip: text; /* Firefox support */
   padding-top: 1px;
+  padding-right: 1px;
 }

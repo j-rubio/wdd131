@@ -6,7 +6,7 @@ export const Home = () => {
   main.innerHTML = `
     <section class="home" aria-labelledby="home-heading">
       <div class="home-content">
-        <h2 id="home-heading">Hi, I'm Julio Rubio</h2>
+        <h2 id="home-heading">Hi, I'm JR</h2>
         <p>
           I’m an Electronic Engineer Tech and Web Developer passionate about building intuitive, responsive web apps and embedded systems.
         </p>        
