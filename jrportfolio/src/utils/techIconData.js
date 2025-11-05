@@ -45,11 +45,11 @@ export const techIconData = [
     icon: `${BASE_PATH}assets/tech/csharp.png`,
     alt: 'C# language'
   },
-  {
-    name: 'Git',
-    icon: `${BASE_PATH}assets/tech/git.png`,
-    alt: 'Git'
-  },
+  // {
+  //   name: 'Git',
+  //   icon: `${BASE_PATH}assets/tech/git.png`,
+  //   alt: 'Git'
+  // },
   {
     name: 'MySQL',
     icon: `${BASE_PATH}assets/tech/mysql.png`,
@@ -60,29 +60,29 @@ export const techIconData = [
     icon: `${BASE_PATH}assets/tech/mongo.png`,
     alt: 'Mongo'
   },
-  {
-    name: 'Visual',
-    icon: `${BASE_PATH}assets/tech/visual.png`,
-    alt: 'Visual'
-  },
+  // {
+  //   name: 'Visual',
+  //   icon: `${BASE_PATH}assets/tech/visual.png`,
+  //   alt: 'Visual'
+  // },
   {
     name: 'Figma',
     icon: `${BASE_PATH}assets/tech/figma.png`,
     alt: 'Figma'
   },
-  {
-    name: 'Linux',
-    icon: `${BASE_PATH}assets/tech/linux.png`,
-    alt: 'Linux'
-  },
-  {
-    name: 'Windows',
-    icon: `${BASE_PATH}assets/tech/windows.png`,
-    alt: 'Windows'
-  },
-  {
-    name: 'MacOs',
-    icon: `${BASE_PATH}assets/tech/macos.png`,
-    alt: 'MacOs'
-  }
+  // {
+  //   name: 'Linux',
+  //   icon: `${BASE_PATH}assets/tech/linux.png`,
+  //   alt: 'Linux'
+  // },
+  // {
+  //   name: 'Windows',
+  //   icon: `${BASE_PATH}assets/tech/windows.png`,
+  //   alt: 'Windows'
+  // },
+  // {
+  //   name: 'MacOs',
+  //   icon: `${BASE_PATH}assets/tech/macos.png`,
+  //   alt: 'MacOs'
+  // }
 ]
