@@ -67,6 +67,6 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project06-400.webp`,
     tech: ['HTML 5', 'CSS 3'],
     link: 'https://j-rubio.github.io/wdd131/crc/index.html',
-    github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
+    github: 'https://github.com/j-rubio/wdd131/tree/main/crc'
   }
 ]
