@@ -8,11 +8,11 @@ export const Home = () => {
       <div class="home-content">
         <h2 id="home-heading">Hi, I'm JR</h2>
         <p>
-          I’m an Electronic Engineer Tech and Web Developer passionate about building intuitive, responsive web apps and embedded systems.
+          I’m an Electronic Engineering Tech and Web Developer passionate about building intuitive, responsive web apps and embedded systems.
         </p>        
         <div class="avatar-container">
         ${Avatar(
-          `${BASE_PATH}assets/images/jr-avatar.avif`,
+          `${BASE_PATH}assets/images/jr-avatar-150.avif`,
           'Avatar of J Rubio'
         )}
           </div>

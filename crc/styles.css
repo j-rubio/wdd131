@@ -48,3 +48,9 @@ details > p {
   letter-spacing: 0.02em;
   text-indent: 1.5em;
 }
+
+details:open {
+  summary {
+    background-color: rgba(43, 153, 226, 0.473);
+  }
+}
