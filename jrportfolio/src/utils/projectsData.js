@@ -20,7 +20,8 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project02-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/coolpics/index.html',
-    github: 'https://github.com/j-rubio/wdd131/tree/main/coolpics'
+    // github: 'https://github.com/j-rubio/wdd131/tree/main/coolpics'
+    github: '#'
   },
   {
     id: 3,
@@ -30,7 +31,8 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project03-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/blog/index.html',
-    github: 'https://github.com/j-rubio/wdd131/tree/main/blog'
+    // github: 'https://github.com/j-rubio/wdd131/tree/main/blog'
+    github: '#'
   },
   {
     id: 4,
@@ -40,7 +42,8 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project04-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/creditcard/index.html',
-    github: 'https://github.com/j-rubio/wdd131/tree/main/creditcard'
+    // github: 'https://github.com/j-rubio/wdd131/tree/main/creditcard'
+    github: '#'
   },
   {
     id: 5,
@@ -50,7 +53,8 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project05-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/register/index.html',
-    github: 'https://github.com/j-rubio/wdd131/tree/main/register'
+    // github: 'https://github.com/j-rubio/wdd131/tree/main/register'
+    github: '#'
   },
   {
     id: 6,
@@ -60,7 +64,8 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project06-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/recipes/index.html',
-    github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
+    // github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
+    github: '#'
   },
   {
     id: 7,
@@ -69,7 +74,7 @@ export const projectsData = [
     image: `${BASE_PATH}assets/images/project07-400.webp`,
     tech: ['HTML 5', 'CSS 3'],
     link: 'https://j-rubio.github.io/wdd131/crc/index.html',
-    github: '#'
     // github: 'https://github.com/j-rubio/wdd131/tree/main/crc'
+    github: '#'
   }
 ]
