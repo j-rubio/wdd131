@@ -65,8 +65,7 @@ export const projectsData = [
   {
     id: 7,
     title: 'Project Seven',
-    description:
-      'This project is a simple study card app using the html tag "detail."',
+    description: 'This project is a simple study card app."',
     image: `${BASE_PATH}assets/images/project07-400.webp`,
     tech: ['HTML 5', 'CSS 3'],
     link: 'https://j-rubio.github.io/wdd131/crc/index.html',
