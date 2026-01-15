@@ -59,5 +59,14 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     link: 'https://j-rubio.github.io/wdd131/recipes/index.html',
     github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
+  },
+  {
+    id: 7,
+    title: 'Project Seven',
+    description: 'This project is a simple study card using html <detail> tag',
+    image: `${BASE_PATH}assets/images/project06-400.webp`,
+    tech: ['HTML 5', 'CSS 3'],
+    link: 'https://j-rubio.github.io/wdd131/crc/index.html',
+    github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
   }
 ]
