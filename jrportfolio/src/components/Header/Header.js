@@ -28,7 +28,7 @@ import { SocialIcon } from '../SocialMediaIcon/SocialMediaIcon.js'
 //           <li><a href="#" data-link="tech">Tech Stack</a></li>
 //           <li><a href="#" data-link="projects">Projects</a></li>
 //           <li>${SocialIcon(
-//             'https://www.github.com/j-rubio/',
+//             'https://www.github.com',
 //             `${BASE_PATH}assets/smedia/github-32.webp`,
 //             'GitHub'
 //           )}</li>
@@ -109,7 +109,7 @@ export const Header = () => {
         <li><a href="#" data-link="tech">Tech Stack</a></li>
         <li><a href="#" data-link="projects">Projects</a></li>
         <li>${SocialIcon(
-          'https://www.github.com/j-rubio/',
+          'https://www.github.com',
           `${BASE_PATH}assets/smedia/github-32.webp`,
           'GitHub'
         )}</li>

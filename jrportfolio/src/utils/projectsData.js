@@ -7,8 +7,8 @@ export const projectsData = [
       'This project re-creates the University mission statement in HTML and CSS. I payed close attention to detail and applied padding margin, font-size, line-height, letter-spacing, centering and more to get it right.',
     image: `${BASE_PATH}assets/images/project01-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
     // link: 'https://j-rubio.github.io/wdd131/mission/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/mission'
   },
@@ -21,8 +21,8 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     // link: 'https://j-rubio.github.io/wdd131/coolpics/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/coolpics'
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     // link: 'https://j-rubio.github.io/wdd131/blog/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/blog'
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
   },
   {
     id: 4,
@@ -45,8 +45,8 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     // link: 'https://j-rubio.github.io/wdd131/creditcard/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/creditcard'
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
   },
   {
     id: 5,
@@ -57,8 +57,8 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     // link: 'https://j-rubio.github.io/wdd131/register/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/register'
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
   },
   {
     id: 6,
@@ -69,8 +69,8 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
     // link: 'https://j-rubio.github.io/wdd131/recipes/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ export const projectsData = [
     tech: ['HTML 5', 'CSS 3'],
     // link: 'https://j-rubio.github.io/wdd131/crc/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/crc'
-    link: '#',
-    github: '#'
+    link: 'https://www.github.com',
+    github: 'https://www.github.com'
   }
 ]
