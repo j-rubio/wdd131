@@ -7,7 +7,9 @@
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   color: var(--primary-color-dark);
 }
 
@@ -80,6 +82,19 @@ html.light .project-links a {
 .project-links a:focus {
   color: #ff9800;
   text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  color: black;
+  border-radius: 8px;
+  padding: 4px;
+  border: none;
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: black;
 }
 
 @media (max-width: 480px) {
