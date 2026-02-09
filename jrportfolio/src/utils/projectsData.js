@@ -49,7 +49,7 @@ export const projectsData = [
     class: '',
     // link: 'https://j-rubio.github.io/wdd131/creditcard/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/creditcard'
-    class: 'live-preview no-modal',
+    class: '',
     link: 'https://www.github.com',
     github: 'https://www.github.com'
   },
