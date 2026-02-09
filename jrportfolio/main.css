@@ -121,3 +121,35 @@ body {
 body {
   font-display: swap;
 }
+
+/* style for the typing effect */
+.typing {
+  font-family: 'Courier New', monospace;
+  font-size: 4rem;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide the text that goes beyond the width */
+  border-right: 0.15em solid rgba(0, 255, 0, 0.75); /* Cursor effect */
+  width: 0; /* Start with no width, gradually increase */
+  animation:
+    typing 4s steps(60, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(0, 255, 0, 0.75);
+  }
+}

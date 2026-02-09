@@ -120,7 +120,7 @@ const addModalListeners = () => {
         window.open(link, '_blank') // Open the link in a new tab
       } else {
         e.preventDefault()
-        showModal(`[ACCESS DENIED]`)
+        showModal(`[DENIED]`)
       }
     })
   })
@@ -133,11 +133,27 @@ const addModalListeners = () => {
         window.open(githubLink, '_blank') // Open the link in the current tab
       } else {
         e.preventDefault()
-        showModal(`[ACCESS DENIED]`)
+        showModal(`[DENIED]`)
       }
     })
   })
 }
+
+// const showModal = (message) => {
+//   // Clone modal and insert the relevant content
+//   const template = document.getElementById('admin-modal-template')
+//   const modalInstance = template.content.cloneNode(true)
+//   const overlay = modalInstance.querySelector('#modal-overlay')
+//   const closeBtn = modalInstance.querySelector('#close-modal')
+
+//   modalInstance.querySelector('h2').innerText = message
+
+//   closeBtn.addEventListener('click', () => {
+//     document.body.removeChild(overlay)
+//   })
+
+//   document.body.appendChild(modalInstance)
+// }
 
 const showModal = (message) => {
   // Clone modal and insert the relevant content
@@ -146,7 +162,24 @@ const showModal = (message) => {
   const overlay = modalInstance.querySelector('#modal-overlay')
   const closeBtn = modalInstance.querySelector('#close-modal')
 
-  modalInstance.querySelector('h2').innerText = message
+  // Get the heading and apply the typing effect
+  const heading = modalInstance.querySelector('h2')
+  heading.classList.add('typing') // Add the typing class
+  heading.innerText = '' // Clear the existing text
+
+  // Typing effect function
+  let index = 0
+  const speed = 300 // Typing speed in milliseconds
+  const type = () => {
+    if (index < message.length) {
+      heading.innerText += message.charAt(index)
+      index++
+      setTimeout(type, speed)
+    }
+  }
+
+  // Start typing effect
+  type()
 
   closeBtn.addEventListener('click', () => {
     document.body.removeChild(overlay)
