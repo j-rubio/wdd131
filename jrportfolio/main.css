@@ -131,7 +131,7 @@ body {
   border-right: 0.15em solid rgba(0, 255, 0, 0.75); /* Cursor effect */
   width: 0; /* Start with no width, gradually increase */
   animation:
-    typing 4s steps(60, end),
+    typing 3s steps(60, end),
     blink-caret 0.75s step-end infinite;
 }
 
