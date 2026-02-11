@@ -293,7 +293,7 @@ const recipes = [
     cookTime: '20min',
     datePublished: '2026-02-11',
     tags: ['salad'],
-    description: 'This healthy salad is perfect as all-season entry.',
+    description: 'This healthy salad is perfect as all-season entree.',
     image: './images/salads/balsamic-tomato-mushroom-salad.jpeg',
     recipeIngredient: [
       '18 oz. carton mushrooms, peeled and sliced',
