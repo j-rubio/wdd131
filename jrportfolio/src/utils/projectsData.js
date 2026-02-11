@@ -73,12 +73,13 @@ export const projectsData = [
       'This project is a recipe site. It is responsive and include good SEO, is accessible, and gave me the opportunity to practice using Flexbox.',
     image: `${BASE_PATH}assets/images/project06-400.webp`,
     tech: ['HTML 5', 'CSS 3', 'JavaScript Vanilla'],
-    class: '',
-    // link: 'https://j-rubio.github.io/wdd131/recipes/index.html',
+    class: 'no-modal',
+    link: 'https://j-rubio.github.io/wdd131/shabbatmeals/index.html',
     // github: 'https://github.com/j-rubio/wdd131/tree/main/recipes'
-    link: 'https://www.github.com',
+    // link: 'https://www.github.com',
     github: 'https://www.github.com'
   },
+
   {
     id: 7,
     title: 'Project Seven',
