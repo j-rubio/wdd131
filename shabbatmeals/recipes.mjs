@@ -5,7 +5,7 @@ const recipes = [
     isBasedOn: '',
     cookTime: '30 Min',
     datePublished: '2016-10-16',
-    tags: ['Waffles', 'Sweet Potato', 'Side'],
+    tags: ['Waffles', 'Sweet Potato', 'Side', 'Dessert'],
     description: 'Savory waffles made with Sweet potato with a hint of Ginger',
     image: './images/sweet-potato-waffle-md.webp',
     recipeIngredient: [
@@ -35,46 +35,46 @@ const recipes = [
     recipeYield: '6 waffles',
     rating: 4
   },
-  {
-    author: 'Unknown',
-    url: '#',
-    isBasedOn: '',
-    cookTime: '20 min',
-    datePublished: '',
-    tags: ['Chicken', 'Entree'],
-    description:
-      'Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully',
-    image: './images/escalopes-de-poulet-a-la-creme.webp',
-    recipeIngredient: [
-      '2 Chicken Tenders, Cubed',
-      '4 Mushrooms, Sliced',
-      '1/2 C Whipping Cream',
-      '1-2 Tbsp Stone Ground Mustard',
-      '1 tsp Lemon Juice',
-      'Salt and Pepper to taste',
-      '1 C Rice, uncooked',
-      '4-5 oz Fresh Green Beans'
-    ],
-    dressingIngredient: [],
-    name: 'Escalope de Poulet a la Creme with steamed green beans (Chicken with Cream)',
-    prepTime: '10 min',
-    recipeInstructions: [
-      'Add 1 1/2 cups of water to a pan and bring to a boil.  Add the rice and reduce heat to low and simmer for 10-15 minutes or until all the moisture is gone.',
-      'Cube chicken then cook over medium high heat in a fry pan, add the mushrooms about halfway through. (10 minutes). ',
-      'Pour in cream, mustard and salt and pepper.  Stir.  On medium heat, simmer until it thickens (5 minutes)',
-      'While preparing sauce: wash the beans, then trim the ends and snap (or cut) into 2in lengths.  In a sauce pan with a colander add about 1 cup water and steam the beans (10-15 minutes)',
-      'Serve sauce over rice, with the Green beans on the side.'
-    ],
-    recipeYield: '3 servings',
-    rating: 4.5
-  },
+  // {
+  //   author: 'Unknown',
+  //   url: '#',
+  //   isBasedOn: '',
+  //   cookTime: '20 min',
+  //   datePublished: '',
+  //   tags: ['Chicken', 'Entree'],
+  //   description:
+  //     'Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully',
+  //   image: './images/escalopes-de-poulet-a-la-creme.webp',
+  //   recipeIngredient: [
+  //     '2 Chicken Tenders, Cubed',
+  //     '4 Mushrooms, Sliced',
+  //     '1/2 C Whipping Cream',
+  //     '1-2 Tbsp Stone Ground Mustard',
+  //     '1 tsp Lemon Juice',
+  //     'Salt and Pepper to taste',
+  //     '1 C Rice, uncooked',
+  //     '4-5 oz Fresh Green Beans'
+  //   ],
+  //   dressingIngredient: [],
+  //   name: 'Escalope de Poulet a la Creme with steamed green beans (Chicken with Cream)',
+  //   prepTime: '10 min',
+  //   recipeInstructions: [
+  //     'Add 1 1/2 cups of water to a pan and bring to a boil.  Add the rice and reduce heat to low and simmer for 10-15 minutes or until all the moisture is gone.',
+  //     'Cube chicken then cook over medium high heat in a fry pan, add the mushrooms about halfway through. (10 minutes). ',
+  //     'Pour in cream, mustard and salt and pepper.  Stir.  On medium heat, simmer until it thickens (5 minutes)',
+  //     'While preparing sauce: wash the beans, then trim the ends and snap (or cut) into 2in lengths.  In a sauce pan with a colander add about 1 cup water and steam the beans (10-15 minutes)',
+  //     'Serve sauce over rice, with the Green beans on the side.'
+  //   ],
+  //   recipeYield: '3 servings',
+  //   rating: 4.5
+  // },
   {
     author: 'Unknown',
     url: '#',
     isBasedOn: '',
     cookTime: '30 min',
     datePublished: '2018-09-19',
-    tags: ['Potatoes', 'side'],
+    tags: ['Potatoes', 'Side'],
     description:
       'Easy and delicious oven roasted potatoes that go great with almost anything.',
     image: './images/roasted-potatoes.webp',
@@ -105,7 +105,7 @@ const recipes = [
     isBasedOn: '',
     cookTime: '20 min',
     datePublished: '2018-09-19',
-    tags: ['Southwest', 'entree'],
+    tags: ['Southwest', 'Entree'],
     description:
       'Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.',
     image: './images/black-beans-and-rice.webp',
@@ -133,52 +133,52 @@ const recipes = [
     recipeYield: '4 servings',
     rating: 3
   },
-  {
-    author: 'Unknown',
-    url: '#',
-    isBasedOn: '',
-    cookTime: '30 min',
-    datePublished: '2018-09-19',
-    tags: ['chicken', 'entree', 'Indian'],
-    description:
-      'Quick and easy Chicken curry recipe made with easy to find ingredients.',
-    image: './images/chicken-curry.webp',
-    recipeIngredient: [
-      '4 Slices Bacon',
-      '1 clove Garlic',
-      '2 Tbsp Flour',
-      '1 C water',
-      '1 C Milk',
-      '3 Tbsp Tomato Paste',
-      '1/2 C Apple Sauce',
-      '3-4 tsp Curry Powder',
-      '2 tsp Chicken Bouillion',
-      '3/4 C Sour Cream',
-      '1-2 C Chicken, cubed',
-      '2 C Rice, uncooked'
-    ],
-    dressingIngredient: [],
-    name: 'Chicken Curry',
-    prepTime: '10 min',
-    recipeInstructions: [
-      'Add 3 cups water to a saucepan and bring to a boil. Add Rice, stir, cover, and reduce heat to low. Cook until moisture is gone. (15-20 minutes)',
-      'Cook bacon until crisp, drain reserving 1 Tbsp of bacon drippings, crumble bacon and set aside.',
-      'Cook Chicken and Cube.',
-      'Blend flour into bacon drippings then stir in the milk until the flour is well mixed. Stir in water, applesauce, tomato paste, curry, and bullion, and garlic.',
-      'Bring to a boil, then reduce heat and simmer until rice is done.',
-      'Before serving add crumbled bacon, chicken and stir in sour cream. Serve over rice.',
-      'Can add condiments if desired: fried potatoes, raisins, toasted coconut, chutney, diced peppers, almonds, cashews.'
-    ],
-    recipeYield: '5 servings',
-    rating: 5
-  },
+  // {
+  //   author: 'Unknown',
+  //   url: '#',
+  //   isBasedOn: '',
+  //   cookTime: '30 min',
+  //   datePublished: '2018-09-19',
+  //   tags: ['chicken', 'entree', 'Indian'],
+  //   description:
+  //     'Quick and easy Chicken curry recipe made with easy to find ingredients.',
+  //   image: './images/chicken-curry.webp',
+  //   recipeIngredient: [
+  //     '4 Slices Bacon',
+  //     '1 clove Garlic',
+  //     '2 Tbsp Flour',
+  //     '1 C water',
+  //     '1 C Milk',
+  //     '3 Tbsp Tomato Paste',
+  //     '1/2 C Apple Sauce',
+  //     '3-4 tsp Curry Powder',
+  //     '2 tsp Chicken Bouillion',
+  //     '3/4 C Sour Cream',
+  //     '1-2 C Chicken, cubed',
+  //     '2 C Rice, uncooked'
+  //   ],
+  //   dressingIngredient: [],
+  //   name: 'Chicken Curry',
+  //   prepTime: '10 min',
+  //   recipeInstructions: [
+  //     'Add 3 cups water to a saucepan and bring to a boil. Add Rice, stir, cover, and reduce heat to low. Cook until moisture is gone. (15-20 minutes)',
+  //     'Cook bacon until crisp, drain reserving 1 Tbsp of bacon drippings, crumble bacon and set aside.',
+  //     'Cook Chicken and Cube.',
+  //     'Blend flour into bacon drippings then stir in the milk until the flour is well mixed. Stir in water, applesauce, tomato paste, curry, and bullion, and garlic.',
+  //     'Bring to a boil, then reduce heat and simmer until rice is done.',
+  //     'Before serving add crumbled bacon, chicken and stir in sour cream. Serve over rice.',
+  //     'Can add condiments if desired: fried potatoes, raisins, toasted coconut, chutney, diced peppers, almonds, cashews.'
+  //   ],
+  //   recipeYield: '5 servings',
+  //   rating: 5
+  // },
   {
     author: 'Unknown',
     url: '#',
     isBasedOn: '',
     cookTime: '11 min',
     datePublished: '2018-09-19',
-    tags: ['dessert'],
+    tags: ['Dessert'],
     description: 'Delicious soft chocolate chip cookies with coconut.',
     image: './images/chocolate-chip-cookies.webp',
     recipeIngredient: [
@@ -213,7 +213,7 @@ const recipes = [
     isBasedOn: '',
     cookTime: '45min',
     datePublished: '2023-10-10',
-    tags: ['dessert', 'German'],
+    tags: ['Dessert', 'German'],
     description:
       "This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!",
     image: './images/german-gooseberry-cake.webp',
@@ -257,7 +257,7 @@ const recipes = [
     isBasedOn: '',
     cookTime: '45min',
     datePublished: '2023-10-10',
-    tags: ['dessert'],
+    tags: ['Dessert'],
     description:
       "This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
     image: './images/apple-crisp.webp',
@@ -292,7 +292,7 @@ const recipes = [
     isBasedOn: '',
     cookTime: '20min',
     datePublished: '2026-02-11',
-    tags: ['salad'],
+    tags: ['Salad'],
     description: 'This healthy salad is perfect as all-season entree.',
     image: './images/salads/balsamic-tomato-mushroom-salad.jpeg',
     recipeIngredient: [
@@ -323,7 +323,7 @@ const recipes = [
     isBasedOn: '',
     cookTime: '20min',
     datePublished: '2026-02-11',
-    tags: ['salad'],
+    tags: ['Salad'],
     description: 'The perfect salad for those pasta lovers.',
     image: './images/salads/basil-angel-hair-salad.jpeg',
     recipeIngredient: [
@@ -340,6 +340,225 @@ const recipes = [
     name: 'Basil Angel Hair Salad',
     prepTime: '20 min',
     recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Do you like spinachs? Then, this is your salad.',
+    image: './images/salads/arugula-beet-salad.png',
+    recipeIngredient: ['1 bag arugula', '2 cooked beets, cubed', 'Pine nuts'],
+    dressingIngredient: [
+      '1/2 cup mayonnaise',
+      '1/4 cup vinegar',
+      '1 tbsp. truffle oil',
+      'salt and pepper'
+    ],
+    name: 'Arugula Beet Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Another spinach salad star.',
+    image: './images/salads/spinach-mushroom-salad.png',
+    recipeIngredient: [
+      'Spinach/Lettuce',
+      '1 box mushrooms, sliced',
+      '1 red pepper, diced',
+      '2-3 scallions, chopped'
+    ],
+    dressingIngredient: [
+      '1/2 cup oil',
+      '4 Tbsp. sugar',
+      '4 Tbsp. red wine vinegar',
+      '2 Tbsp. parsley',
+      '1-2 tsp. soy sauce'
+    ],
+    name: 'Spinach Mushroom Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'A bit of Mediterranean legacy.',
+    image: './images/salads/balsamic-mediterranean-salad.png',
+    recipeIngredient: [
+      '1 can of chickpeas',
+      'avocados, chopped finely',
+      'tomatoes, chopped finely',
+      'colorful peppers, chopped finely',
+      'purple onion, chopped finely',
+      'fresh parsley, chopped finely'
+    ],
+    dressingIngredient: [
+      '1/2 cup oil',
+      '1/3 cup lemon juice',
+      '1/4 cup balsamic vinegar',
+      '1 Tbs. oregano',
+      '1 Tbs. cumin',
+      '1 tsp. sea salt'
+    ],
+    name: 'Balsamic Mediterranean Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Simple and delicious.',
+    image: './images/salads/hearts-of-palm-salad.png',
+    recipeIngredient: [
+      '1 can of chickpeas',
+      '1 can hearts of palm, sliced',
+      '1 avocado, diced',
+      '3 tomatoes, diced'
+    ],
+    dressingIngredient: [
+      '1 Tbsp. mayonnaise',
+      '1 Tbsp. lemon juice',
+      'Garlic powder',
+      'Salt, to taste'
+    ],
+    name: 'Hearts of Palm Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Surprise, surprise!',
+    image: './images/salads/roasted-corn-salad.png',
+    recipeIngredient: [
+      'Spring Mix',
+      '1 can corn, roasted',
+      'grape tomatoes, halved',
+      'red onion, chopped',
+      'candied pecan, crushed',
+      'pastrami, sliced (optional)'
+    ],
+    dressingIngredient: [
+      '1/4 cup oil',
+      '1/4 cup dijon mustard',
+      '3 Tbsp vinegar',
+      '3 Tbsp. maple syrup',
+      'salt and pepper'
+    ],
+    name: 'Roasted Corn Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Surprise, surprise!',
+    image: './images/salads/sesame-noodle-salad.png',
+    recipeIngredient: [
+      '1 box angel hair pasta or spaghetti, cooked according to package directions',
+      '1/2 bunch scallions sliced',
+      'sesame seeds'
+    ],
+    dressingIngredient: [
+      '1/2 cup olive oil',
+      '1/3 cup soy sauce',
+      '1/4 cup sugar',
+      '1 clove garlic, crushed',
+      '1 tsp. ginger'
+    ],
+    name: 'Sesame Noodle Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Slice scallions and add to pasta. Pour on dressing. Sprinkle with sesame seeds.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Another surprise for corn lovers!',
+    image: './images/salads/corn-salad.png',
+    recipeIngredient: [
+      '3 corn on the cob, boiled/grilled',
+      '1 can hearts of palm, sliced',
+      '1 pt. grape tomatoes, sliced',
+      'Avocado, cubed',
+      'Cilantro (optional)'
+    ],
+    dressingIngredient: ['1/3 cup oil', '1/4 cup lemon juice', 'salt & pepper'],
+    name: 'Corn Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Using a sharp knife, slice down close to the core, separating corn into chunks.',
+      'Add rest of ingredients.',
+      'Mix dressing and pour over.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad', 'Dressing'],
+    description: 'Looking for the right dressing?',
+    image: './images/salads/balsamic-fig-vinaigrette.png',
+    recipeIngredient: [
+      '1/2 cup olive oil',
+      '1/4 cup balsamic vinegar',
+      '1/4 cup fig jam',
+      '1 Tbsp silan',
+      '2 tsp spicy brown mustard',
+      '1 small shallot, finely minced',
+      'salt and pepper'
+    ],
+    dressingIngredient: [],
+    name: 'Balsamic Fig Vinaigrette',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix thoroughly.'],
     recipeYield: '6 servings',
     rating: 5
   }
