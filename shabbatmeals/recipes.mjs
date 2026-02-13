@@ -546,7 +546,8 @@ const recipes = [
     tags: ['Salad', 'Dressing'],
     description: 'Looking for the right dressing?',
     image: './images/salads/balsamic-fig-vinaigrette.png',
-    recipeIngredient: [
+    recipeIngredient: [],
+    dressingIngredient: [
       '1/2 cup olive oil',
       '1/4 cup balsamic vinegar',
       '1/4 cup fig jam',
@@ -555,10 +556,185 @@ const recipes = [
       '1 small shallot, finely minced',
       'salt and pepper'
     ],
-    dressingIngredient: [],
     name: 'Balsamic Fig Vinaigrette',
     prepTime: '20 min',
     recipeInstructions: ['Mix thoroughly.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Mango & strawberry fan?',
+    image: './images/salads/strawberry-mango-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce or Spinach',
+      '2 mangos, peeled and cubed',
+      '1 pint strawberries, sliced',
+      '1 cup honey roasted almonds',
+      'Handful of Craisins'
+    ],
+    dressingIngredient: [
+      '1/3 cup olive oil',
+      '1/4 cup balsamic vinegar',
+      '1/4 cup sugar',
+      '1 Tbsp. parsley'
+    ],
+    name: 'Strawberry Mango Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix dressing and pour over salad.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Mango & strawberry fan?',
+    image: './images/salads/caesar-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce',
+      'Paprika or garlic croutons',
+      'Grape tomatoes/sun dried tomatoes'
+    ],
+    dressingIngredient: [
+      '1/2 cup oil',
+      '3 Tbsp. mayo',
+      '2 Tbsp. dried chives',
+      '2 Tbsp. parsley flakes',
+      '2 tsp. lemon juice',
+      '1 tsp. dry mustard',
+      '1 tsp. sugar',
+      '2 cloves garlic, crushed'
+    ],
+    name: 'Caesar Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Blend dressing and pour over salad.',
+      'Sprinkle croutons on right before serving.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad', 'Dressing'],
+    description: 'Awesome dressing!',
+    image: './images/salads/zesty-tahini-dressing.png',
+    recipeIngredient: [],
+    dressingIngredient: [
+      '1/4 cup tahini',
+      '1/4 cup apple cider vinegar',
+      '1/4 cup lemon juice',
+      '1/4 cup soy sauce, or coconut aminos',
+      '1/2 cup nutritional yeast',
+      '1 Tablespoon minced garlic'
+    ],
+    name: 'Zesty Tahini Dressing',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix thoroughly.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Mediterranean flavor at its best!',
+    image: './images/salads/mediterranean-chickpea-salad.png',
+    recipeIngredient: [
+      '2 cans of chickpeas',
+      'grape tomatoes, halved',
+      '3 scallions, sliced',
+      'fresh cilantro, chopped'
+    ],
+    dressingIngredient: [
+      '1/3 cup olive oil',
+      '1/4 cup lemon juice',
+      '1/2 tsp. garlic powder',
+      '1/2 tsp. cumin',
+      'salt and pepper'
+    ],
+    name: 'Mediterranean Chickpea Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix dressing and pour over salad.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Mediterranean flavor at its best!',
+    image: './images/salads/roasted-pepper-spinach-salad.png',
+    recipeIngredient: [
+      'Spinach',
+      'Red, yellow and orange peppers',
+      'Portobello mushrooms',
+      'Purple onion sliced in rings (optional)'
+    ],
+    dressingIngredient: [
+      '3/4 cup vinegar',
+      '1/4 cup sugar',
+      '1/2 cup oil',
+      '2 cloves garlic'
+    ],
+    name: 'Roasted Pepper Spinach Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Slice pepper and mushrooms.',
+      'Roast in oven till soft.',
+      'Cool vegetables.',
+      'Place roasted vegetables over spinach.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-11',
+    tags: ['Salad'],
+    description: 'Simple and delicious',
+    image: './images/salads/poppy-seed-salad.png',
+    recipeIngredient: [
+      'Romaine Lettuce',
+      '1 avocado, cubed',
+      '1/2 purple onion, diced',
+      'Pomegranate seeds',
+      'Mandarin oranges',
+      'Candied almonds (optional)'
+    ],
+    dressingIngredient: [
+      '3/4 cup olive oil',
+      '1/3 cup red wine vinegar',
+      '1/4 cup sugar',
+      '1 tsp. dry mustard powder',
+      '1 tsp. salt',
+      '1 tsp. poppy seeds'
+    ],
+    name: 'Poppy Seed Salad',
+    prepTime: '20 min',
+    recipeInstructions: [],
     recipeYield: '6 servings',
     rating: 5
   }

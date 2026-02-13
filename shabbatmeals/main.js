@@ -116,9 +116,18 @@ function openModal(recipeName) {
       recipe.description
 
     const ingredientsList = document.getElementById('modalRecipeIngredients')
-    ingredientsList.innerHTML = recipe.recipeIngredient
-      .map((ingredient) => `<li>${ingredient}</li>`)
-      .join('')
+    const ingredientsTitle = document.getElementById(
+      'modalRecipeIngredientsTitle'
+    )
+    if (recipe.recipeIngredient.length > 0) {
+      ingredientsTitle.innerHTML = 'Ingredients:'
+      ingredientsList.innerHTML = recipe.recipeIngredient
+        .map((ingredient) => `<li>${ingredient}</li>`)
+        .join('')
+    } else {
+      ingredientsTitle.innerHTML = ''
+      ingredientsList.innerHTML = ''
+    }
 
     const dressingList = document.getElementById('modalRecipeDressing')
     const dressingTitle = document.getElementById('modalRecipeDressingTitle')
@@ -134,9 +143,19 @@ function openModal(recipeName) {
     }
 
     const instructionsList = document.getElementById('modalRecipeInstructions')
-    instructionsList.innerHTML = recipe.recipeInstructions
-      .map((instruction) => `<li>${instruction}</li>`)
-      .join('')
+    const instructionsTitle = document.getElementById(
+      'modalRecipeIntructionsTitle'
+    )
+
+    if (recipe.recipeInstructions.length > 0) {
+      instructionsTitle.innerHTML = 'Instructions:'
+      instructionsList.innerHTML = recipe.recipeInstructions
+        .map((instruction) => `<li>${instruction}</li>`)
+        .join('')
+    } else {
+      instructionsTitle.innerHTML = ''
+      instructionsList.innerHTML = ''
+    }
 
     modal.style.display = 'block'
   }
