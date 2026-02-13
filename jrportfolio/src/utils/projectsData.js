@@ -83,7 +83,7 @@ export const projectsData = [
   {
     id: 7,
     title: 'Project Seven',
-    description: 'This project is a simple study card app."',
+    description: 'This project is a simple study card app.',
     image: `${BASE_PATH}assets/images/project07-400.webp`,
     tech: ['HTML 5', 'CSS 3'],
     class: 'no-modal',

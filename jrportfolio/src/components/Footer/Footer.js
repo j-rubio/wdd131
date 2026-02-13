@@ -5,7 +5,7 @@ export const Footer = () => {
         <p><a href="mailto:rubioconnect@gmail.com" style="padding: 3px 16px; display: inline-block;">rubioconnect@gmail.com</a></p>
       </address>
       <p style="text-align: center; margin-bottom: 0.3rem;">
-        © 2025 <span>J Rubio</span>. Designed and built with
+        © 2026 <span>J Rubio</span>. Designed and built with
         <span role="img" aria-label="love"> ❤️</span>
       </p> 
   `
