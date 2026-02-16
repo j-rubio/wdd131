@@ -182,8 +182,8 @@ const recipes = [
     description: 'Delicious soft chocolate chip cookies with coconut.',
     image: './images/chocolate-chip-cookies.webp',
     recipeIngredient: [
-      '1 Lb butter, softened',
-      '1 C white sugar',
+      '1 Lb Butter, softened',
+      '1 C White sugar',
       '3 Eggs',
       '1 1/2 C Brown sugar',
       '1 tsp Baking soda',
@@ -262,17 +262,17 @@ const recipes = [
       "This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
     image: './images/apple-crisp.webp',
     recipeIngredient: [
-      '10 C apples, cored and sliced',
-      '1 C white sugar',
-      '1 Tbsp white flour',
-      '1 tsp ground cinnamon',
-      '3 Tbsp water',
-      '1 C rolled oats',
+      '10 C Apples, cored and sliced',
+      '1 C White sugar',
+      '1 Tbsp White flour',
+      '1 tsp Ground cinnamon',
+      '3 Tbsp Water',
+      '1 C Rolled oats',
       '1 C Flour',
       '1 C Brown sugar',
-      '1/4 tsp baking powder',
-      '1/4 tsp baking soda',
-      '1/2 C butter, melted'
+      '1/4 tsp Baking powder',
+      '1/4 tsp Baking soda',
+      '1/2 C Butter, melted'
     ],
     dressingIngredient: [],
     name: 'Apple Crisp',
@@ -301,11 +301,11 @@ const recipes = [
       '2 scallions, chopped'
     ],
     dressingIngredient: [
-      '2 tbsp. olive oil',
-      '3 tbsp. balsamic vinegar',
-      '2-3 tbsp. sugar',
-      '1/2 tsp. salt',
-      '1/4 tsp. garlic',
+      '2 tbsp. Olive oil',
+      '3 tbsp. Balsamic vinegar',
+      '2-3 tbsp. Sugar (or Allulosa & Monk Fruit',
+      '1/2 tsp. Salt',
+      '1/4 tsp. Garlic',
       '1 tsp. Italian seasoning'
     ],
     name: 'Balsamic Tomato Mushroom Salad',
@@ -330,10 +330,10 @@ const recipes = [
       '1 box angel hair pasta (or any pasta of your choice), cooked according to package instructions.'
     ],
     dressingIngredient: [
-      '1/3 cup oil',
-      '6 cubes frozen basil',
-      '1/2 tsp. garlic powder',
-      '1/2 tsp. onion powder',
+      '1/3 cup Oil',
+      '6 cubes Frozen basil',
+      '1/2 tsp. Garlic powder',
+      '1/2 tsp. Onion powder',
       'Salt',
       'Pepper'
     ],
@@ -597,7 +597,7 @@ const recipes = [
     cookTime: '20min',
     datePublished: '2026-02-11',
     tags: ['Salad'],
-    description: 'Mango & strawberry fan?',
+    description: 'For the traditional taster.',
     image: './images/salads/caesar-salad.png',
     recipeIngredient: [
       'Romaine lettuce',
@@ -734,7 +734,127 @@ const recipes = [
     ],
     name: 'Poppy Seed Salad',
     prepTime: '20 min',
-    recipeInstructions: [],
+    recipeInstructions: ['Combine all salad ingredients and dress.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Julio Rubio',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description:
+      'Simple and delicious, and of course full of Mediterranean flavor.',
+    image: './images/salads/julio-salad.jpg',
+    recipeIngredient: [
+      '1 Romaine Lettuce',
+      '2 containers of cherry tomatoes, halved.',
+      '1 can of black olives.',
+      'Kosher salt'
+    ],
+    dressingIngredient: [
+      '2 oz. of apple cider vinegar',
+      '2 oz. of extra virgin olive oil'
+    ],
+    name: "Julio's Salad",
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Wash and cut the lettuce into pieces (size to your taste).',
+      'Wash and cut tomatoes in halves.',
+      'Place tomatoes onto the bottom of the serving bowl.',
+      'Add kosher salt to taste.',
+      'Add the lettuce.',
+      'Add the olives.',
+      'Prepare the dessing by gently mixing the vinegar and oil.',
+      'Add the dressing.',
+      'Mix gently.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image:
+      './images/salads/roasted-vegetable-salad-with-creamy-dairy-dressing.png',
+    recipeIngredient: [
+      '1 Sweet potato, diced',
+      '1 Small eggplant, cubed, salted, rinsed, and dried',
+      '12 oz. Baby bella mushrooms, sliced',
+      '1 Red onion, sliced in thin rounds',
+      'Salt, pepper, and garlic, to taste',
+      '12-16 Ounces romaine lettuce',
+      'Parmesan cheese, for sprinkling'
+    ],
+    dressingIngredient: [
+      '1/4 Cup Light mayonnaise',
+      '2 Tbsp. Vinegar',
+      '1 Tbsp. Soy sauce',
+      '1 1/2 Tbsp. Honey',
+      '1 Tbsp. Mustard',
+      '1 Clove garlic, crushed',
+      '1/2 tsp. Salt',
+      '2 1/2 Tbsp. grated Parmesan cheese'
+    ],
+    name: 'Roasted Vegetable Salad with Creamy Dairy Dressing',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Preheat oven to 400 degrees Fahrenheit.',
+      'Line two baking sheets with parchment paper and spray with nonstick cooking spray.',
+      'Place the sweet potato and eggplant pieces on one baking sheet.',
+      'Place mushroom and onion slices on the other baking sheet.',
+      'Spray vegetables with cooking spray and sprinkle with salt, pepper, and garlic.',
+      'Roast mushrooms and onions for 20 minutes.',
+      'Roast sweet potato and eggplant for 30 minutes.',
+      'Mix all dressing ingredients to combine.',
+      'In a large bowl, toss the lettuce with the roasted vegetables.',
+      'Add the dressing and toss again.',
+      'Sprinkle with Parmesan cheese and serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/purple-cabbage-salad.png',
+    recipeIngredient: [
+      '1 Bag purple cabbage',
+      '3 Scallions, sliced',
+      '1 Pkg. Ramen Noodles',
+      'Sprinkle of cilantro  on top (optional)'
+    ],
+    dressingIngredient: [
+      '--Dressing #1--',
+      ' ',
+      '8 Tbsp. Mayo',
+      '1/2 cup Sugar',
+      '3 Tbsp. Vinegar',
+      '1-2 cloves Garlic, minced',
+      'Salt and pepper',
+      ' ',
+      '--Dressing #2--',
+      ' ',
+      '1/3 cup Olive oil',
+      '5 Tbsp. Vinegar',
+      '1 tsp. Salt',
+      'Dash of pepper'
+    ],
+    name: 'Purple Cabbage Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix ingredients and dress to taste.'],
     recipeYield: '6 servings',
     rating: 5
   }
