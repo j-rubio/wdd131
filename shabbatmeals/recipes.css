@@ -274,6 +274,7 @@ button:hover {
 
 li[data-status='empty-space']::marker {
   content: ' ';
+  counter-reset: modalRecipeInstructions 0;
 }
 /* 
 #modalRecipeDescription {

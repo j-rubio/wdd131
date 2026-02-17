@@ -838,7 +838,6 @@ const recipes = [
     ],
     dressingIngredient: [
       '--Dressing #1--',
-      ' ',
       '8 Tbsp. Mayo',
       '1/2 cup Sugar',
       '3 Tbsp. Vinegar',
@@ -846,7 +845,6 @@ const recipes = [
       'Salt and pepper',
       ' ',
       '--Dressing #2--',
-      ' ',
       '1/3 cup Olive oil',
       '5 Tbsp. Vinegar',
       '1 tsp. Salt',
@@ -855,6 +853,52 @@ const recipes = [
     name: 'Purple Cabbage Salad',
     prepTime: '20 min',
     recipeInstructions: ['Mix ingredients and dress to taste.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/delicata-squash-salad.png',
+    recipeIngredient: [
+      '--Squash--',
+      '1 Delicata squash, sliced',
+      '2-3 tsp. Pure maple syrup',
+      'Salt',
+      'Pepper',
+      ' ',
+      '--Salad--',
+      '1 Box checked arugula',
+      '8-10 cherry tomatoes, sliced',
+      '1 Avocado, cubed',
+      'Red onion'
+    ],
+    dressingIngredient: [
+      '1/4 cup Olive oil',
+      '1/8 cup Balsamic vinegar',
+      '1 tsp. Honey',
+      '1 tsp. Mustard',
+      '1 Garlic, cubed',
+      'Salt and pepper'
+    ],
+    name: 'Delicata Squash Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      '--Prepare the Delicata Squash--',
+      'Spray well with olive oil.',
+      'Drizzle maple syrup and sprinkle salt and pepper.',
+      'Bake uncovered for 30 minutes on 350 degrees Fahrenheit.',
+      ' ',
+      '--To Assemble Salad--',
+      'Combine all ingredients in a bowl.',
+      'Add the delicata squash once it is cooled to room temperature.',
+      'Drizzle dressing.'
+    ],
     recipeYield: '6 servings',
     rating: 5
   }

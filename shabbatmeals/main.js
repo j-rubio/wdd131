@@ -119,15 +119,33 @@ function openModal(recipeName) {
     const ingredientsTitle = document.getElementById(
       'modalRecipeIngredientsTitle'
     )
+    //if the instruction list is not empty.
     if (recipe.recipeIngredient.length > 0) {
       ingredientsTitle.innerHTML = 'Ingredients:'
       ingredientsList.innerHTML = recipe.recipeIngredient
-        .map((ingredient) => `<li>${ingredient}</li>`)
+        .map((ingredient) => {
+          // Check if empty or starts with "--"
+          const isEmpty =
+            ingredient.trim() === '' || ingredient.startsWith('--')
+          return isEmpty
+            ? `<li data-status="empty-space">${ingredient}</li>`
+            : `<li>${ingredient}</li>`
+        })
         .join('')
     } else {
       ingredientsTitle.innerHTML = ''
       ingredientsList.innerHTML = ''
     }
+
+    // if (recipe.recipeIngredient.length > 0) {
+    //   ingredientsTitle.innerHTML = 'Ingredients:'
+    //   ingredientsList.innerHTML = recipe.recipeIngredient
+    //     .map((ingredient) => `<li>${ingredient}</li>`)
+    //     .join('')
+    // } else {
+    //   ingredientsTitle.innerHTML = ''
+    //   ingredientsList.innerHTML = ''
+    // }
 
     const dressingList = document.getElementById('modalRecipeDressing')
     const dressingTitle = document.getElementById('modalRecipeDressingTitle')
@@ -154,16 +172,33 @@ function openModal(recipeName) {
     const instructionsTitle = document.getElementById(
       'modalRecipeIntructionsTitle'
     )
-
+    //if the instruction list is not empty.
     if (recipe.recipeInstructions.length > 0) {
       instructionsTitle.innerHTML = 'Instructions:'
       instructionsList.innerHTML = recipe.recipeInstructions
-        .map((instruction) => `<li>${instruction}</li>`)
+        .map((instruction) => {
+          // Check if empty or starts with "--"
+          const isEmpty =
+            instruction.trim() === '' || instruction.startsWith('--')
+          return isEmpty
+            ? `<li data-status="empty-space">${instruction}</li>`
+            : `<li>${instruction}</li>`
+        })
         .join('')
     } else {
       instructionsTitle.innerHTML = ''
       instructionsList.innerHTML = ''
     }
+
+    // if (recipe.recipeInstructions.length > 0) {
+    //   instructionsTitle.innerHTML = 'Instructions:'
+    //   instructionsList.innerHTML = recipe.recipeInstructions
+    //     .map((instruction) => `<li>${instruction}</li>`)
+    //     .join('')
+    // } else {
+    //   instructionsTitle.innerHTML = ''
+    //   instructionsList.innerHTML = ''
+    // }
 
     modal.style.display = 'block'
   }
