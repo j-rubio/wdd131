@@ -404,11 +404,11 @@ const recipes = [
     image: './images/salads/balsamic-mediterranean-salad.png',
     recipeIngredient: [
       '1 can of chickpeas',
-      'avocados, chopped finely',
-      'tomatoes, chopped finely',
-      'colorful peppers, chopped finely',
-      'purple onion, chopped finely',
-      'fresh parsley, chopped finely'
+      'Avocados, chopped finely',
+      'Tomatoes, chopped finely',
+      'Colorful peppers, chopped finely',
+      'Purple onion, chopped finely',
+      'Fresh parsley, chopped finely'
     ],
     dressingIngredient: [
       '1/2 cup oil',
@@ -1179,6 +1179,848 @@ const recipes = [
     name: 'Chickpea Corn Salad',
     prepTime: '20 min',
     recipeInstructions: ['Mix ingredients and add dressing.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/avocado-dressing-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce',
+      'Pomegranate seeds',
+      'Red onion, diced',
+      '2 Portobello mushrooms, sauteed'
+    ],
+    dressingIngredient: [
+      '1 avocado',
+      '1/3 cup oil',
+      '1/4 cup red wine vinegar',
+      '1/8 cup sugar',
+      '2 cloves garlic, minced',
+      '1/2 Tbsp. salt'
+    ],
+    name: 'Avocado Dressing Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Mix ingredients.',
+      'Blend dressing ingredients and pour over salad.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/portobello-avocado-salad.png',
+    recipeIngredient: [
+      '5 portobello mushrooms, sauteed',
+      '3 small cucumbers',
+      '2 avocados, cubed',
+      '1 pint grape tomatoes,halved',
+      'purple onion, diced',
+      '1/4 cup pine nus, toasted'
+    ],
+    dressingIngredient: [
+      '1/4 cup olive oil',
+      '1 clove garlic, crushed',
+      '2 Tbsp. lemon juice',
+      '1/2 tsp. oregano',
+      '1/2 tsp. basil',
+      '1 tsp. salt'
+    ],
+    name: 'Portobello Avocado Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix ingredients.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/crisp-n-crunchy-salad.png',
+    recipeIngredient: [
+      '1/2 red onion, finely chopped',
+      '1/2 cup grape tomatoes, chopped',
+      '2 scallions, sliced',
+      '2 hearts of palm, chopped finely',
+      '1/2 avocado, chopped finely',
+      '1/4 cup chopped fresh cilantro'
+    ],
+    dressingIngredient: [
+      '2 Tbsp. red wine vinegar',
+      '1 Tbsp. olive oil',
+      'Salt and pepper'
+    ],
+    name: 'Crisp N`Crunchy Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Mix the chopped vegetables so the avocado slightly coats some of the other vegetables.',
+      'Add remaining ingredients and mix well.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/crunchy-coleslaw.png',
+    recipeIngredient: ['1 bag coleslaw', 'Scallions, chopped', 'Terra chips'],
+    dressingIngredient: [
+      '1/2 cup oil',
+      '1/2 cup sugar',
+      '3 Tbsp. red wine vinegar',
+      '2 tsp. soy sauce.'
+    ],
+    name: 'Crunchy Coleslaw',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Mix scallions and coleslaw.',
+      'Mix dressing and pour over salad.',
+      'Crunch terra chips and top salad prior to serving.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/tomato-olive-salad.png',
+    recipeIngredient: [
+      '1 pint grape tomatoes',
+      '4 scallions, chopped',
+      '1 can black olives, sliced',
+      '3/4 cup greed olives, sliced',
+      'Handful of pine nuts'
+    ],
+    dressingIngredient: [
+      '1/2 cup olive oil',
+      '2 Tbsp. red wine vinegar',
+      '1 Tbsp. sugar',
+      '1 tsp. oregano',
+      'Salt and pepper'
+    ],
+    name: 'Tomato Olive Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Mix salad ingredients.',
+      'Mix dressing and pour over salad.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/cauliflower-salad.png',
+    recipeIngredient: [
+      'Cauliflower, chopped',
+      '1 small red onion, chopped',
+      '1/4 cup craisins',
+      '1/2 cup pistachos, chopped'
+    ],
+    dressingIngredient: [
+      '1/4 cup olive oil',
+      '1/4 cup sugar',
+      '1/4 cup red wine vinegar',
+      '1 Tbsp. honey dijon mustard',
+      'Salt and pepper'
+    ],
+    name: 'Cauliflower Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Mix salad ingredients.',
+      'Mix dressing and pour over salad.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/sweet-potato-crips-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce',
+      '1 red pepper, cubed',
+      '1 yellow pepper, cubed',
+      '1 can hearts of palm, sliced',
+      '1 small red onion, diced',
+      '1 sweet potato (fried peels) or sweet potato chips'
+    ],
+    dressingIngredient: [
+      '1/2 cup olive oil',
+      '1/3 cup vinegar',
+      '1/3 cup sugar',
+      '2 cloves garlic, crushed',
+      '1 tsp. mustard'
+    ],
+    name: 'Sweet Potato Crips Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine the dressing and mix well.',
+      'Pour over salad when ready to serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/delectable-truffle-corn-salad.png',
+    recipeIngredient: [
+      'Arugula',
+      '2 ears of cornm roasted',
+      'Bella or shitake mushrooms, sauteed'
+    ],
+    dressingIngredient: [
+      '1/3 cup mayonnaise',
+      '1 Tbsp. truffle oil',
+      '3 Tbsp. apple cider vinegar',
+      '2 Tbsp. maple syrup',
+      'Salt and pepper'
+    ],
+    name: 'Delectable Truffle Corn Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine the dressing and mix well.',
+      'Pour over salad when ready to serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/arugula-quinoa-salad.png',
+    recipeIngredient: [
+      'Arugula',
+      'Quinoa',
+      'Roasted sweet potatoes, cubed',
+      'Avocado',
+      'Scallions'
+    ],
+    dressingIngredient: [
+      '1/4 cup sugar',
+      '1/3 cup oil',
+      '1/3 cup red wine vinegar',
+      '2 cloves garlic, crushed',
+      'Salt and pepper'
+    ],
+    name: 'Arugula Quinoa Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine the dressing and mix well.',
+      'Pour over salad when ready to serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/grilled-chicken-breast-salad.png',
+    recipeIngredient: [
+      '3 boneless chicken breasts, seasoned with salt and pepper, cubed',
+      '1 head romaine',
+      '1 avocado, cubed',
+      '1 pt cherry tomatoes',
+      '1/2 red onion, sliced'
+    ],
+    dressingIngredient: [
+      '1/3 cup olive oil',
+      '3 Tbsp. mayonnaise',
+      '1 tsp. lemon juice',
+      '1 tsp. soy sauce',
+      '1 tsp. red wine vinegar',
+      '1 tsp. dijon mustard',
+      '2 cloves garlic, crushed',
+      'Salt and pepper'
+    ],
+    name: 'Grilled Chicken Breast Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine the dressing and mix well.',
+      'Pour over salad when ready to serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/rebbetzins-kale-salad.png',
+    recipeIngredient: [
+      '1 bag Kale',
+      '1/4 red onion, chopped',
+      '1/2 sweet potato, cubed and roasted',
+      '1/2 avocado, cubed',
+      '1/8 cup sunflower seeds'
+    ],
+    dressingIngredient: [
+      '1/2 cup olive oil',
+      '1/3 cup vinegar',
+      '1/4 cup maple syrup',
+      '2 Tbsp. tahini',
+      'Salt and pepper'
+    ],
+    name: "Rebbetzin's Kale Salad",
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine the dressing and mix well.',
+      'Pour over salad when ready to serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/colorful-corn-salad.png',
+    recipeIngredient: [
+      '3 earns corn, roasted',
+      '1 can heart of palm, sliced',
+      '1 red pepper, diced',
+      '5 dill pickles, diced'
+    ],
+    dressingIngredient: [
+      '2 Tbsp. olive oil',
+      '1 Tbsp. vinegar',
+      '1 Tbsp. lemon juice',
+      '2 garlic cloves, crushed',
+      '1/2 tsp. salt',
+      '1 frozen dill cube or 1 tsp. dried dill'
+    ],
+    name: 'Colorful Corn Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine the dressing and mix well.',
+      'Pour over salad when ready to serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/avocado-tomato-salad.png',
+    recipeIngredient: [
+      '3 avocados, cubed',
+      '1 pt. cherry tomatoes, halved',
+      '1 small cucumber, sliced in half moons',
+      '1/3 cup corn',
+      '2 Tbsp. cilantro'
+    ],
+    dressingIngredient: [
+      '1/4 cup olive oil',
+      'Juice of 1 lime',
+      '1/4 tsp. cumin',
+      'Salt and pepper'
+    ],
+    name: 'Avocado Tomato Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'In a small bowl, whisk together olive, lime juice, and cumin.',
+      'Season with salt and pepper',
+      'In a large serving bowl, combine the salad ingredients.',
+      'Gently toss with dressing and serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/black-bean-salad.png',
+    recipeIngredient: [
+      '2 cans black beans, rinsed and drained',
+      '1 cup sweet corn, drained',
+      '1/2 cup red onion, chopped',
+      'Handful of cherry tomatoes, quartered',
+      '1 pepper, chopped',
+      '1 avocado, in chunks',
+      '1/4 cup cilantro, chopped',
+      '1 jalapeño pepper (optional)'
+    ],
+    dressingIngredient: [
+      '1 Tbsp. olive oil',
+      '2 Tbsp. lime juice',
+      '1 tsp. sugar, to taste'
+    ],
+    name: 'Black Bean Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix the ingredients gently, dress and serve.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/winter-harvest-kale-salad.png',
+    recipeIngredient: [
+      'Kale, shredded',
+      '1 cup roasted chestnuts, chopped',
+      '1/3 cup pomegranate arils',
+      '1/2 cup shaved Parmesan',
+      '1 cup farro or wheat berries',
+      'Avocado, slices'
+    ],
+    dressingIngredient: [
+      'Balsamic Fig Vinaigrette (search by vinaigrette or fig in the app.'
+    ],
+    name: 'Winter Harvest Kale Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix the ingredients gently, dress and serve.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/sweet-and-spicy-sister-salad.png',
+    recipeIngredient: [
+      '1 head of lettuce or bunch of spinach (or both)',
+      '1 pint cherry tomatoes, halved',
+      '1-2 cucumbers, chopped',
+      '1 mango, cubed',
+      '1 avocado',
+      '1 jalapeño',
+      '1 bunch of cilantro, chopped',
+      '1/2 cup halved pecans',
+      '1/2 red onion, thinly sliced'
+    ],
+    dressingIngredient: [
+      '1/4 cup olive oil',
+      '1/3 cup rice vinegar',
+      'Salt and pepper'
+    ],
+    name: 'Sweet and Spicy Sister Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Chop the vegetagles to desired size.',
+      'Add the dressing, toss and enjoy!',
+      '--Note: If using spinach, dress the salad immediately prior to serving as the leaves wilt when dressed.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/chatzilim-tomato-salad.png',
+    recipeIngredient: [
+      '3 large eggplants',
+      '2 onions',
+      '1 can crushed tomatoes or 6 fresh tomatoes, peeled and cubed',
+      '1 can black olives, pitted',
+      'Vegetable oil, for frying',
+      'Kosher salt'
+    ],
+    dressingIngredient: [],
+    name: 'Chatzilim Tomato Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Cut eggplants into 1/4-inch sized cubes.',
+      'Sprinkle with kosher salt so that all of the water is drained from the eggplants and let sit for an hour or more.',
+      'Rinse the eggplant and fry in small batches until golden brown.',
+      'Make sure to take out the eggplant and place on paper towel so that the eggplant drains from excess oil. Place eggplant to the side.',
+      'Dice onions into small cubes and fry until golden brown.',
+      'Add tomatoes and simmer until most of the water is gone.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/eggplant-tahini.png',
+    recipeIngredient: [
+      '1 eggplant',
+      'Plain Tahini',
+      '2 cloves garlic, crushed',
+      'Kosher salt',
+      'Pepper, coarsely ground',
+      'Lemon juice (optional)'
+    ],
+    dressingIngredient: [],
+    name: 'Eggplant Tahini',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Bake eggplant uncovered on 400 grades Fahrenheit for 45 minutes to an hour, until soft.',
+      'Flip it over after halfway through cooking time.',
+      'Let cool.',
+      'Cut eggplant lengthwise and spread thin layer of tahini.',
+      'Sprinkle remaining ingredients on top.',
+      'Serve at room temperature.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/london-broil-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce',
+      '1 can hearts of palm, sliced',
+      '1 avocado, cubed',
+      'grape tomatoes, halved',
+      'handful slivered almonds',
+      'London broil, grilled and sliced'
+    ],
+    dressingIngredient: [
+      '1/3 cup olive oil',
+      '1/3 cup vinegar',
+      '1/8 cup sugar',
+      '1 tsp. mustard',
+      '1 tsp. salt',
+      '2 tsp. dry minced onion',
+      '1 tsp. poppy seeds'
+    ],
+    name: 'London Broil Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix, dress, and serve.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/basil-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce, chopped',
+      '1 Persian cucumber, diced',
+      '5-20 cherry tomatoes, diced',
+      'red onion, diced',
+      'croutons'
+    ],
+    dressingIngredient: [
+      '1/2  cup light mayonnaise',
+      '2 Tbsp. oil',
+      '3 Tbsp. chopped fresh basil or 6 frozen basil cubes',
+      '3 1/2 Tbsp. lemon juice',
+      '2 garlic cloves'
+    ],
+    name: 'Basil Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Using an immersion blender, blend all dressing ingredients and pour over salad.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/arugula-and-mushroom-salad.png',
+    recipeIngredient: [
+      'Oil, for frying',
+      '1 box (4 ounce/110 grams) shiitake mushrooms, sliced',
+      '1 box (6 ounce/170 grams) portabella mushrooms, sliced',
+      'Garlic salt or umani spice',
+      '1 box(5 ounce/140 grams) pre-checked arugula',
+      '1 small red onion or shallot, thinly sliced (optional)',
+      '1 rainbow (watermelon) radish, sliced into thin rounds',
+      'cooking spray'
+    ],
+    dressingIngredient: [
+      '1 clove garlic, pressed',
+      'Juice of 1 lemon',
+      '2 Tbsp. red wine vinegar',
+      '1 heaping Tbsp. dijon mustard',
+      '2 tsp. sea salt',
+      'pinch of thyme',
+      '1 cup avocado oil',
+      '1/2 cup olive oil'
+    ],
+    name: 'Arugula and Mushroom Salad with Garlic-Dijon Dressing',
+    prepTime: '20 min',
+    recipeInstructions: [
+      '--Prepare the Mushrooms--',
+      'Preheat oven to 375 degrees Fahrenheit.',
+      'Lightly saute teh sliced shiitake mushroooms in a frying pan with oil.',
+      'Set aside.',
+      'Line a baking sheet with parchment paper and spray with olive oil.',
+      'Place sliced portabella mushrooms on sheet.',
+      'Spray with oil and season to taste with umami spice or garlic salt',
+      'Roast uncovered for about 20 minutes, then turn off oven, and leave mushrooms in for another 20 minutes.Mushrooms will be dry like chips',
+      '',
+      '--Prepare the Dressing--',
+      'Place garlic, lemon juice, vinegar, mustard, salt, and a pinch of thyme in a blender or food processor.',
+      'Blend or process for two minutes.',
+      'With the mixer or blender running on medium speed, slowly drizzle oils into the machine, pouring in a steady stream to emulsify.',
+      'Refrigerate in an airtight container.',
+      '',
+      '--Note: The dressing recipe will make about three times more than you need for this salad, but save it because it is addictive.',
+      '',
+      '--To Assemble--',
+      'Place arugula in a serving bowl.',
+      'Top with sauteed shiitake mushrooms and thinly sliced onion, if desired.',
+      'Coat with desired amount of dressing (see note) and toss.',
+      'Add the rainbow radish slices, arranging around the top of the bowl.',
+      'Top with dried portabella mushrooms.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/layered-salad-with-honey-mustard.png',
+    recipeIngredient: [
+      'Lettuce, cut',
+      'Shredded purple cabbage',
+      'Cherry tomatoes, cut in quarters',
+      'Cucumbers, sliced in half-moons',
+      'Mushrooms, sliced and sauteed',
+      'Sweet potatoes, roasted'
+    ],
+    dressingIngredient: [
+      '1/2 cup light mayonnaise',
+      '1 1/2 Tbsp. mustard',
+      '2 Tbsp. honey',
+      '1 Tbsp. vinegar',
+      '1 large clove garlic, crushed',
+      'Salt and pepper, to taste',
+      '2 tablespoons water, or more'
+    ],
+    name: 'Layered Salad with Honey Mustard Dressing',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Combine all dressing ingredients and blend with an immersion blender, (it yields approximately 1 cup dressing. Keeps in the fridge for at least a week).',
+      'Layer veggies in a salad container, along with the roasted sweet potato cubes.',
+      'Add a very small container of dressing on top and a small container of protein of your choice.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/the-italian-restaurant-salad.png',
+    recipeIngredient: [
+      '4 oz mushrooms, sliced',
+      'Romaine lettuce, chopped',
+      '1 tomato, diced',
+      '1 Persian or English cucummber, diced',
+      'Sweet potatoes, roasted',
+      '1/4 red onion, diced',
+      '1/2 cup croutons',
+      '6 Tbsp. grated Parmesan cheese'
+    ],
+    dressingIngredient: [
+      '1/3 cup balsamic vinegar',
+      '3 Tbsp. olive oil',
+      '1/4 tsp. basil',
+      '1/4 tsp. dried parsley',
+      '1 1/2 tsp. Dijon mustard',
+      '1/2 tsp. kosher salt'
+    ],
+    name: 'The Italian Restaurant Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Grease a sauce pan.',
+      'Heat over medium heat.',
+      'Add mushrooms and cook until brown, about 5 minutes.',
+      'In a bowl, combine all salad ingredients.',
+      'In a bowl, whisk together all dressing ingredients.',
+      'Toss with salad.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/kale-caesar-salad.png',
+    recipeIngredient: [
+      '5 cups finely shredded kale',
+      '1/2 cup chopped Medjool dates',
+      '1/4 cup roasted pepitas',
+      '3 Tbsp. of hemp hearts',
+      '',
+      '--Frizzle Leeks--',
+      '1/2 cup avocado oil',
+      '1 leek (white part only)'
+    ],
+    dressingIngredient: [
+      '1/3 cup mayonnaise',
+      '1 Tbsp. soy sauce or coconut aminos',
+      '2 Tbsp. nutritional yeast',
+      '1 Tbsp. Dijon mustard',
+      '1 Tbsp. pure maple syrup',
+      '1/4 tsp. apple cider vinegar',
+      '2 tsp. lemon juice',
+      'Salt and pepper'
+    ],
+    name: 'Kale Caesar Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      '-- To prepare frizzle leeks --',
+      'Clean the leek well.',
+      'Cut the leek into thin half-moons and pat dry very well.',
+      'Heat avocado oil in a frying pan over medium heat.',
+      'Add leeks and cook, stirring occasionally, until crispy and golden.',
+      'Remove with a slotted spoon and place on paper towels to drain.',
+      '',
+      '-- To prepare the salad --',
+      'In a small bowl, whisk all dressing ingredients until smooth.',
+      'In a large bowl, combine kale, romaine, chopped dates, and pepitas.',
+      'Pour dressing over salad; toss the combine.',
+      'Top with thinly sliced dates, hemp hearts or sesame seeds, and frizzled leeks.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/quinoa-salad.png',
+    recipeIngredient: [
+      'Lettuce, chopped',
+      'Fresh spinach',
+      'Sweet potato, cubed and roasted',
+      '1 cup quinoa, prepared according to package directions',
+      'Avocado, diced',
+      '1/2 cup dried cranberries'
+    ],
+    dressingIngredient: [
+      '1/2 cup olive oil',
+      '4 Tbsp. red wine vinegar',
+      '3 Tbsp. lemon juice',
+      '2 Tbsp. pure maple syrup',
+      '1 1/2 Tbsp. Dijon mustard',
+      '1/2 tsp. dried oregano',
+      '1/2 tsp. dried basil',
+      '1 clove garlic, crushed'
+    ],
+    name: 'Quinoa Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix, dress, and serve.'],
     recipeYield: '6 servings',
     rating: 5
   }
