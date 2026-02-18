@@ -901,6 +901,286 @@ const recipes = [
     ],
     recipeYield: '6 servings',
     rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/breaded-mushroom-salad.png',
+    recipeIngredient: [
+      '--Mushrooms--',
+      '1 box mushrooms',
+      '1 cup bread crumbs',
+      '3 eggs, beaten',
+      '1 cup flour',
+      '1 tsp. salt',
+      '1/4 tsp. pepper',
+      ' ',
+      '--Salad--',
+      'Romaine lettuce',
+      'Grape tomatoes, halved',
+      '1 purple onion, diced',
+      'Slivered almonds',
+      'Croutons'
+    ],
+    dressingIngredient: [
+      '1 cup mayonnaise',
+      '1/4 cup water',
+      '1/4 cup vinegar',
+      '1/4 cup sugar',
+      '1 tsp. mustard',
+      'Garlic, salt, and pepper'
+    ],
+    name: 'Breaded Mushroom Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      '--Prepare the Breaded Mushrooms--',
+      'Mix flour, salt, and pepper in one bowl.',
+      'Dip mushrooms into beaten eggs, then flour mixture, and then into breadcrumbs.',
+      'Pan fry mushrooms.',
+      '',
+      '--To Assemble Salad--',
+      'Combine all ingredients and top with breaded mushrooms.',
+      'Pour dressing over salad and enjoy!'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/greek-style-quinoa-salad.png',
+    recipeIngredient: [
+      '1 cup quinoa, cooked according to package directions',
+      '2 cups water',
+      '3 Tbsp. olive oil',
+      '3/4 cup fresh lemon juice',
+      '1 tsp dried oregano',
+      '1 clove garlic, minced',
+      '1/4 cup Kalamata olives',
+      '1 bunch scallions, chopped',
+      '1 pint grape tomatoes',
+      '1/4 cup diced red onion',
+      'salt and pepper to taste',
+      '7 ounces feta cheese, cubed'
+    ],
+    dressingIngredient: [],
+    name: 'Greek-Style Quinoa Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Spread cooked quinoa on a large dinner plate and freeze for 15 minutes to chill.',
+      'Combine olive oil, lemon juice, oregano, and garlic.',
+      'Toss with quinoa.',
+      'Add scallions, grape tomatoes, feta cheese, and red onion.',
+      'Gently mix ingredients.',
+      'Season with salt and pepper and serve.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/sushi-salad-platter.png',
+    recipeIngredient: [
+      '2 cps. sushi rice, cooked according to package instructions',
+      'Spicy mayonnaise',
+      'Sweet sauce',
+      'Avocado',
+      'Imitation crap',
+      '1/4 cup mayonnaise',
+      "French's crispy fried onions",
+      '1 Tbsp. sugar'
+    ],
+    dressingIngredient: [],
+    name: 'Sushi Salad Platter',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Allow rice to cool, then add rice, vinegar, sugar, and a pinch of salt.',
+      'Place rice on platter, spread it out; pushing it down with your hands.',
+      'Blend imitation crap and add mayonnaise to create paste.',
+      'Spread on top of rice.',
+      'Slice avocado in strips and place on crap mixture.',
+      'Drizzle sweet sauce and spicy mayo and sprinkle crispy onions.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/nish-nosh-salad.png',
+    recipeIngredient: [
+      'Romaine lettuce, shredded',
+      'Cabbage, shredded',
+      'Nish Nosh sour cream & onion crackers.'
+    ],
+    dressingIngredient: [
+      '1/2 cup oil',
+      '1/2 cup mayonnaise',
+      '3 cloves garlic, minced',
+      '1/4 cup sugar',
+      '1 Tbsp. lemon juice',
+      '1 tsp. mustard',
+      'Salt & pepper to taste'
+    ],
+    name: 'Nish Nosh Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Mix all dressing ingredients in a container and shake well.',
+      'Mix lettuce and cabbage.',
+      'Right before serving, pour dressing over salad as needed.',
+      'Cover salad with the pieces of broken Nish Nosh crackers.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/grilled-chicken-salad.png',
+    recipeIngredient: [
+      'Spinach or lettuce',
+      'Grape tomatoes',
+      'Ramen noodles',
+      'Chicken cutlets, grilled and cut in strips',
+      'Slivered almonds',
+      'Cucumbers, cut in strips'
+    ],
+    dressingIngredient: [
+      '3 Tbsp. sugar',
+      '3 Tbsp. rice vinegar',
+      '3 Tbsp. soy sauce',
+      '3 Tbsp. olive oil',
+      'Salt & pepper'
+    ],
+    name: 'Grilled Chicken Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix all ingredients nicely.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/wild-mushroom-salad.png',
+    recipeIngredient: [
+      'Arugula',
+      'Walnuts, chopped and roasted',
+      'Assorted mushrooms, roasted',
+      'Avocado, slices'
+    ],
+    dressingIngredient: [
+      '1/3 cup olive oil',
+      '1/4 cup balsamic vinegar',
+      '1 Tbsp. of maple syrup',
+      'Salt and pepper'
+    ],
+    name: 'Wild Mushroom Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix all ingredients nicely.'],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/cucumber-salad.png',
+    recipeIngredient: [
+      '2 English cucumbers',
+      '1/2 red onion',
+      '1 can Israel pickles, sliced',
+      'Scallions, radishes, dill (variation)'
+    ],
+    dressingIngredient: [
+      '1/2 cup mayonnaise',
+      '3 Tbsp. vinegar',
+      '1 tsp. salt',
+      '1 1/2 Tbsp. sugar',
+      '1 Tbsp. dried or fresh dill',
+      '1/4 tsp. black pepper'
+    ],
+    name: 'Cucumber Salad',
+    prepTime: '20 min',
+    recipeInstructions: [
+      'Slice cucumbers, pickles, and onions.',
+      'Combine dressing and pour over.',
+      'Will appear dry but will draw out moisture from cucumbers.',
+      '',
+      '--Variation--',
+      'Shred cucumbers, radishes and scallions.',
+      'Add dill.',
+      'Combine dressing in separate container and pour over shredded vegetables.'
+    ],
+    recipeYield: '6 servings',
+    rating: 5
+  },
+  {
+    author: 'Unknown',
+    url: 'Unknown',
+    isBasedOn: '',
+    cookTime: '20min',
+    datePublished: '2026-02-15',
+    tags: ['Salad'],
+    description: '',
+    image: './images/salads/chickpea-corn-salad.png',
+    recipeIngredient: [
+      '1 can hearts of palm',
+      '1 can baby corn',
+      'Grape tomatoes, halved',
+      '1 can chickpeas',
+      'Purple onion, diced'
+    ],
+    dressingIngredient: [
+      '1/4 cup oil',
+      '1/3 cup vinegar',
+      '4 tsp. sugar',
+      '1 tsp. dill',
+      '1 tsp. salt',
+      '2 cloves garlic',
+      '1/4 tsp. dry mustard',
+      '1/4 tsp. basil',
+      '1/4 tsp. oregano'
+    ],
+    name: 'Chickpea Corn Salad',
+    prepTime: '20 min',
+    recipeInstructions: ['Mix ingredients and add dressing.'],
+    recipeYield: '6 servings',
+    rating: 5
   }
 ]
 
