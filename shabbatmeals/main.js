@@ -109,6 +109,7 @@ const closeButton = document.querySelector('.close-button')
 
 function openModal(recipeName) {
   const recipe = recipes.find((r) => r.name === recipeName)
+
   if (recipe) {
     document.getElementById('modalRecipeName').textContent = recipe.name
     document.getElementById('modalRecipeImage').src = recipe.image

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OFD Sales Forecast — Login</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="login-page">
+    <div class="login-card">
+      <div class="login-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24">
+            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12" />
+          </svg>
+        </div>
+        <h1>OFD Sales Forecast</h1>
+        <p>Sales Intelligence Platform</p>
+      </div>
+
+      <div id="login-error" class="login-error"></div>
+
+      <div class="form-group" style="margin-bottom: 14px">
+        <label class="form-label">Username</label>
+        <input
+          id="l-username"
+          class="form-input"
+          type="text"
+          placeholder="Enter your username"
+          autocomplete="username"
+        />
+      </div>
+      <div class="form-group" style="margin-bottom: 24px">
+        <label class="form-label">Password</label>
+        <input
+          id="l-password"
+          class="form-input"
+          type="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"
+        />
+      </div>
+
+      <button
+        class="btn btn-cta"
+        style="width: 100%; justify-content: center"
+        onclick="doLogin()"
+      >
+        Sign In
+        <svg viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12,5 19,12 12,19" />
+        </svg>
+      </button>
+
+      <div
+        style="
+          margin-top: 20px;
+          text-align: center;
+          font-size: 12px;
+          color: var(--text3);
+        "
+      >
+        Demo: <strong>admin / admin123</strong> &nbsp;|&nbsp;
+        <strong>bdm1 / pass123</strong>
+      </div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script>
+      DB.seed()
+      // Apply saved theme
+      document.documentElement.setAttribute(
+        'data-theme',
+        localStorage.getItem('ofd2_theme') || 'light'
+      )
+
+      // Redirect if already logged in
+      const session = DB.Session.get()
+      if (session) window.location.href = 'app.html'
+
+      document.getElementById('l-password').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') doLogin()
+      })
+      document.getElementById('l-username').addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') document.getElementById('l-password').focus()
+      })
+
+      function doLogin() {
+        const u = document.getElementById('l-username').value.trim()
+        const p = document.getElementById('l-password').value
+        const errEl = document.getElementById('login-error')
+        if (!u || !p) {
+          errEl.textContent = 'Please enter username and password.'
+          errEl.classList.add('visible')
+          return
+        }
+        const user = DB.Session.login(u, p)
+        if (!user) {
+          errEl.textContent = 'Invalid username or password.'
+          errEl.classList.add('visible')
+          return
+        }
+        window.location.href = 'app.html'
+      }
+    </script>
+  </body>
+</html>

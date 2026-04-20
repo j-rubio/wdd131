@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OFD Sales Forecast</title>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div class="app-shell" id="app-shell">
+
+  <!-- Sidebar Backdrop (mobile) -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebar()"></div>
+
+  <!-- ── SIDEBAR ───────────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-icon">
+        <svg viewBox="0 0 24 24"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+      </div>
+      <div>
+        <div class="sidebar-logo-text">OFD Forecast</div>
+        <div class="sidebar-logo-sub">Sales Intelligence</div>
+      </div>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="sidebar-user-name" id="sb-username">—</div>
+      <div class="sidebar-user-role" id="sb-role">—</div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <!-- Rendered by JS based on role -->
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="btn btn-ghost" style="width:100%;justify-content:flex-start;color:var(--sidebar-text);padding:8px 12px;" onclick="toggleTheme()" id="theme-toggle"></button>
+      <button class="btn btn-ghost" style="width:100%;justify-content:flex-start;color:rgba(215,242,227,0.6);padding:8px 12px;" onclick="doLogout()">
+        <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16,17 21,12 16,7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Sign Out
+      </button>
+    </div>
+  </aside>
+
+  <!-- ── MAIN ──────────────────────────────────────────────────────── -->
+  <main class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="hamburger" id="hamburger" onclick="toggleSidebar()">
+          <span></span><span></span><span></span>
+        </button>
+        <div>
+          <div class="page-title" id="page-title">Dashboard</div>
+          <div class="breadcrumb" id="breadcrumb"></div>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <!-- Admin: BDM Selector -->
+        <div id="bdm-selector-wrap" class="hidden">
+          <select class="filter-select" id="admin-bdm-filter" onchange="onAdminBDMChange()">
+            <option value="">All BDMs</option>
+          </select>
+        </div>
+        <button class="btn btn-cta btn-sm" id="new-entry-btn" onclick="openEntryModal(null,'forecast')" style="display:none">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          New Entry
+        </button>
+      </div>
+    </header>
+
+    <!-- Views injected here -->
+    <div class="view-area" id="view-area"></div>
+  </main>
+</div>
+
+<!-- ── ENTRY MODAL (Forecast & Budget) ──────────────────────────── -->
+<div class="modal-overlay" id="entry-modal-overlay" onclick="closeModalOnBg(event,'entry-modal-overlay')">
+  <div class="modal modal-xl" id="entry-modal">
+    <div class="modal-header">
+      <h2 class="modal-title" id="entry-modal-title">New Forecast Entry</h2>
+      <button class="modal-close" onclick="closeModal('entry-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="em-id"/>
+      <input type="hidden" id="em-mode"/> <!-- forecast | budget -->
+      <div class="form-grid-3" style="margin-bottom:16px">
+        <div class="form-group">
+          <label class="form-label">BDM <span class="form-req">*</span></label>
+          <input id="em-bdm" class="form-input" type="text" list="em-bdm-list" placeholder="BDM name"/>
+          <datalist id="em-bdm-list"></datalist>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Account Name <span class="form-req">*</span></label>
+          <input id="em-account" class="form-input" type="text" list="em-account-list" placeholder="Company name"/>
+          <datalist id="em-account-list"></datalist>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Account Status</label>
+          <select id="em-status" class="form-select">
+            <option value="Purchasing Client">Purchasing Client</option>
+            <option value="Potential Client">Potential Client</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Product Name <span class="form-req">*</span></label>
+          <input id="em-product" class="form-input" type="text" list="em-product-list" placeholder="Product name"/>
+          <datalist id="em-product-list"></datalist>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Product Code</label>
+          <input id="em-code" class="form-input" type="text" placeholder="BHC..."/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Family Group</label>
+          <input id="em-family" class="form-input" type="text" placeholder="e.g. Ashwagandha"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <select id="em-category" class="form-select">
+            <option value="">— Select —</option>
+            <option value="Class A">Class A</option>
+            <option value="Class B">Class B</option>
+            <option value="Class C">Class C</option>
+            <option value="Branded">Branded</option>
+          </select>
+        </div>
+        <div class="form-group" id="em-type-group">
+          <label class="form-label">Entry Type</label>
+          <select id="em-type" class="form-select">
+            <option value="">— Select —</option>
+            <option value="Order">Order</option>
+            <option value="Deal Projection">Deal Projection</option>
+            <option value="Rolling Forecast">Rolling Forecast</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Selling Price ($/kg)</label>
+          <input id="em-price" class="form-input" type="number" min="0" step="0.01" placeholder="0.00"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Prior Year Projection (kg)</label>
+          <input id="em-projection" class="form-input" type="number" min="0" placeholder="0"/>
+        </div>
+      </div>
+
+      <div class="section-title" id="em-monthly-title">Monthly Forecast (kg)</div>
+      <div class="form-grid-4" id="em-monthly-inputs" style="margin-bottom:12px"></div>
+
+      <div style="display:flex;gap:20px;flex-wrap:wrap;background:var(--bg3);padding:12px 16px;border-radius:var(--radius-sm);font-size:13px;">
+        <span>Total Kgs: <strong class="mono" id="em-total-kgs">0</strong></span>
+        <span>Total Value: <strong class="mono" id="em-total-value">$0</strong></span>
+        <span>Q1+Q2: <strong class="mono" id="em-q12">0</strong> kg</span>
+        <span>Q3+Q4: <strong class="mono" id="em-q34">0</strong> kg</span>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('entry-modal-overlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveEntry()">Save Entry</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONFIRM DELETE MODAL ──────────────────────────────────────── -->
+<div class="modal-overlay" id="confirm-modal-overlay" onclick="closeModalOnBg(event,'confirm-modal-overlay')">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h2 class="modal-title">Confirm Delete</h2>
+      <button class="modal-close" onclick="closeModal('confirm-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p id="confirm-msg" style="color:var(--text2);line-height:1.6"></p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('confirm-modal-overlay')">Cancel</button>
+      <button class="btn btn-danger" onclick="executeDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── USER MODAL (Admin) ────────────────────────────────────────── -->
+<div class="modal-overlay" id="user-modal-overlay" onclick="closeModalOnBg(event,'user-modal-overlay')">
+  <div class="modal modal-md">
+    <div class="modal-header">
+      <h2 class="modal-title" id="user-modal-title">New User</h2>
+      <button class="modal-close" onclick="closeModal('user-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="um-id"/>
+      <div class="form-grid-2" style="margin-bottom:14px">
+        <div class="form-group">
+          <label class="form-label">Full Name <span class="form-req">*</span></label>
+          <input id="um-name" class="form-input" type="text" placeholder="Full name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Username <span class="form-req">*</span></label>
+          <input id="um-username" class="form-input" type="text" placeholder="login username"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input id="um-email" class="form-input" type="email" placeholder="email@company.com"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password <span class="form-req">*</span></label>
+          <input id="um-password" class="form-input" type="text" placeholder="Set password"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Role</label>
+          <select id="um-role" class="form-select">
+            <option value="bdm">BDM / Sales Person</option>
+            <option value="admin">Administrator</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Status</label>
+          <select id="um-active" class="form-select">
+            <option value="true">Active</option>
+            <option value="false">Inactive</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="section-title">Fiscal Period</div>
+      <div class="form-grid-2" style="margin-bottom:16px">
+        <div class="form-group">
+          <label class="form-label">Fiscal Start Date <span class="form-req">*</span></label>
+          <input id="um-fiscal-start" class="form-input" type="date"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Fiscal End Date <span class="form-req">*</span></label>
+          <input id="um-fiscal-end" class="form-input" type="date"/>
+        </div>
+      </div>
+
+      <div class="section-title">Permissions</div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="toggle-wrap">
+          <label class="toggle"><input type="checkbox" id="um-allow-upload"/><span class="toggle-slider"></span></label>
+          <span class="toggle-label">Allow user to import Budget from file</span>
+        </div>
+        <div class="toggle-wrap">
+          <label class="toggle"><input type="checkbox" id="um-show-team"/><span class="toggle-slider"></span></label>
+          <span class="toggle-label">Show team comparison charts to this user</span>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('user-modal-overlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveUser()">Save User</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── FISCAL PERIOD BULK MODAL (Admin) ─────────────────────────── -->
+<div class="modal-overlay" id="fiscal-modal-overlay" onclick="closeModalOnBg(event,'fiscal-modal-overlay')">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h2 class="modal-title">Set Fiscal Period for All Users</h2>
+      <button class="modal-close" onclick="closeModal('fiscal-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="color:var(--text3);font-size:13px;margin-bottom:16px">This will update the fiscal period for ALL BDM users.</p>
+      <div class="form-grid-2">
+        <div class="form-group">
+          <label class="form-label">Start Date</label>
+          <input id="fp-start" class="form-input" type="date" value="2026-04-01"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">End Date</label>
+          <input id="fp-end" class="form-input" type="date" value="2027-03-31"/>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('fiscal-modal-overlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="applyBulkFiscal()">Apply to All</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── REASSIGN CLIENT MODAL (Admin) ────────────────────────────── -->
+<div class="modal-overlay" id="reassign-modal-overlay" onclick="closeModalOnBg(event,'reassign-modal-overlay')">
+  <div class="modal modal-md">
+    <div class="modal-header">
+      <h2 class="modal-title">Reassign Clients</h2>
+      <button class="modal-close" onclick="closeModal('reassign-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-grid-2" style="margin-bottom:16px">
+        <div class="form-group">
+          <label class="form-label">From BDM</label>
+          <select id="ra-from" class="form-select" onchange="loadReassignAccounts()"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">To BDM</label>
+          <select id="ra-to" class="form-select"></select>
+        </div>
+      </div>
+      <div class="section-title">Select Accounts to Move</div>
+      <div id="ra-accounts" style="max-height:280px;overflow-y:auto;display:flex;flex-direction:column;gap:6px"></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('reassign-modal-overlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="executeReassign()">Move Selected</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── IMPORT BUDGET MODAL ───────────────────────────────────────── -->
+<div class="modal-overlay" id="import-modal-overlay" onclick="closeModalOnBg(event,'import-modal-overlay')">
+  <div class="modal modal-md">
+    <div class="modal-header">
+      <h2 class="modal-title">Import Budget</h2>
+      <button class="modal-close" onclick="closeModal('import-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size:13px;color:var(--text3);margin-bottom:16px">Upload an Excel (.xlsx), CSV, or JSON file. The first row must be headers. Monthly columns should match the fiscal period months.</p>
+      <div class="drop-zone" id="import-drop-zone" onclick="document.getElementById('import-file-input').click()">
+        <div class="drop-zone-icon">📂</div>
+        <div class="drop-zone-text">Click to browse or drag & drop</div>
+        <div class="drop-zone-hint">Supported: .xlsx, .csv, .json</div>
+      </div>
+      <input type="file" id="import-file-input" accept=".xlsx,.csv,.json" style="display:none" onchange="handleImportFile(event)"/>
+      <div id="import-preview" style="margin-top:16px;display:none">
+        <div class="section-title">Preview</div>
+        <div id="import-preview-content"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('import-modal-overlay')">Cancel</button>
+      <button class="btn btn-primary" id="import-confirm-btn" onclick="confirmImport()" style="display:none">Import Data</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── PASSWORD CHANGE MODAL ─────────────────────────────────────── -->
+<div class="modal-overlay" id="pw-modal-overlay" onclick="closeModalOnBg(event,'pw-modal-overlay')">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h2 class="modal-title">Change Password</h2>
+      <button class="modal-close" onclick="closeModal('pw-modal-overlay')">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body" style="display:flex;flex-direction:column;gap:14px">
+      <div class="form-group">
+        <label class="form-label">Current Password</label>
+        <input id="pw-current" class="form-input" type="password"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">New Password</label>
+        <input id="pw-new" class="form-input" type="password"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm New Password</label>
+        <input id="pw-confirm" class="form-input" type="password"/>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeModal('pw-modal-overlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="savePassword()">Update Password</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="global-toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="js/db.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
