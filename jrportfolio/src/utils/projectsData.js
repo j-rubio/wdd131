@@ -91,5 +91,19 @@ export const projectsData = [
     // github: 'https://github.com/j-rubio/wdd131/tree/main/crc'
     // link: 'https://www.github.com',
     github: 'https://www.github.com'
+  },
+
+  {
+    id: 8,
+    title: 'Project Eight',
+    description:
+      'This project is a simple BDM dashboard to manage a sales team.',
+    image: `${BASE_PATH}assets/images/project08-400.webp`,
+    tech: ['HTML 5', 'CSS 3', 'JavaScript'],
+    class: 'no-modal',
+    link: 'https://j-rubio.github.io/wdd131/ofd/index.html',
+    // github: 'https://github.com/j-rubio/wdd131/tree/main/crc'
+    // link: 'https://www.github.com',
+    github: 'https://www.github.com'
   }
 ]
